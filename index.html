@@ -33,6 +33,98 @@
         <p class="heading-note">先观察部分和，再选择判别法。</p>
       </div>
 
+      <section class="knowledge-map" aria-labelledby="mapTitle">
+        <div class="map-heading">
+          <div>
+            <p class="section-number">全景地图</p>
+            <h2 id="mapTitle">先知道知识放在哪里</h2>
+          </div>
+          <div class="map-legend" aria-label="地图说明">
+            <span><i class="legend-basic"></i>基础</span>
+            <span><i class="legend-method"></i>判别</span>
+            <span><i class="legend-advanced"></i>拓展</span>
+          </div>
+        </div>
+
+        <div class="map-scroll" tabindex="0" aria-label="无穷级数知识地图，可横向滚动">
+          <p class="map-scroll-hint">左右滑动查看完整地图 <span aria-hidden="true">→</span></p>
+          <div class="map-root-wrap">
+            <button class="map-root is-selected" data-point="series-root">
+              <small>总入口</small><strong>无穷级数</strong><span>研究无穷多项的和</span>
+            </button>
+          </div>
+          <div class="map-trunk" aria-hidden="true"></div>
+          <div class="map-branches">
+            <article class="map-branch branch-basic">
+              <header><span>01</span><strong>基础语言</strong><small>先读懂题目</small></header>
+              <div class="branch-line" aria-hidden="true"></div>
+              <button class="map-node" data-point="term">通项 aₙ</button>
+              <button class="map-node" data-point="partial-sum">部分和 Sₙ</button>
+              <button class="map-node" data-point="convergence">收敛与发散</button>
+              <button class="map-node" data-point="necessary">必要条件</button>
+              <button class="map-node" data-point="cauchy">柯西准则</button>
+            </article>
+
+            <article class="map-branch branch-model">
+              <header><span>02</span><strong>典型样板</strong><small>判断时的尺子</small></header>
+              <div class="branch-line" aria-hidden="true"></div>
+              <button class="map-node" data-point="geometric">几何级数</button>
+              <button class="map-node" data-point="p-series">p 级数</button>
+              <button class="map-node" data-point="telescoping">裂项相消</button>
+            </article>
+
+            <article class="map-branch branch-positive">
+              <header><span>03</span><strong>正项级数</strong><small>所有项非负</small></header>
+              <div class="branch-line" aria-hidden="true"></div>
+              <button class="map-node" data-point="comparison">比较判别</button>
+              <button class="map-node" data-point="limit-comparison">极限比较</button>
+              <button class="map-node" data-point="ratio">比值判别</button>
+              <button class="map-node" data-point="root">根值判别</button>
+              <button class="map-node" data-point="integral">积分判别</button>
+            </article>
+
+            <article class="map-branch branch-general">
+              <header><span>04</span><strong>一般项级数</strong><small>含正负与振荡</small></header>
+              <div class="branch-line" aria-hidden="true"></div>
+              <button class="map-node" data-point="absolute">绝对收敛</button>
+              <button class="map-node" data-point="conditional">条件收敛</button>
+              <button class="map-node" data-point="leibniz">莱布尼茨</button>
+              <button class="map-node" data-point="dirichlet">狄利克雷</button>
+              <button class="map-node" data-point="abel">阿贝尔</button>
+            </article>
+
+            <article class="map-branch branch-power">
+              <header><span>05</span><strong>幂级数</strong><small>把 x 放进级数</small></header>
+              <div class="branch-line" aria-hidden="true"></div>
+              <button class="map-node" data-point="radius">收敛半径</button>
+              <button class="map-node" data-point="interval">收敛区间</button>
+              <button class="map-node" data-point="power-ops">逐项求导积分</button>
+              <button class="map-node" data-point="sum-function">和函数</button>
+              <button class="map-node" data-point="taylor-series">泰勒级数</button>
+            </article>
+          </div>
+        </div>
+
+        <div class="map-detail" id="mapDetail" aria-live="polite">
+          <div class="detail-identity">
+            <span id="mapDetailBranch">总入口</span>
+            <h3 id="mapDetailTitle">无穷级数</h3>
+          </div>
+          <div class="detail-block">
+            <span>什么时候用</span>
+            <p id="mapDetailUse">研究无限多个数相加后，部分和是否趋近一个有限值。</p>
+          </div>
+          <div class="detail-block">
+            <span>核心</span>
+            <strong id="mapDetailRule">看 Sₙ 的极限</strong>
+          </div>
+          <div class="detail-block detail-warning">
+            <span>易错点</span>
+            <p id="mapDetailPitfall">级数研究的是部分和 Sₙ，不是只看通项 aₙ。</p>
+          </div>
+        </div>
+      </section>
+
       <div class="workbench series-workbench">
         <aside class="lesson-rail" aria-label="级数学习路线">
           <p class="rail-title">学习路线</p>

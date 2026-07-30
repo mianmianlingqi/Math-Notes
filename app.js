@@ -144,7 +144,48 @@ const decisionDetails = {
   result: ['最后分类', '原级数与绝对值级数都收敛叫绝对收敛；只有原级数收敛叫条件收敛。', 'Σ |aₙ|']
 };
 
+const seriesMapPoints = {
+  'series-root': ['总入口', '无穷级数', '研究无限多个数相加后，部分和是否趋近一个有限值。', '看 Sₙ 的极限', '级数研究的是部分和 Sₙ，不是只看通项 aₙ。'],
+  term: ['基础语言', '通项 aₙ', '描述级数中的第 n 项，是所有判别法首先观察的对象。', '先算 lim aₙ', 'aₙ → 0 只能继续判断，不能直接说明收敛。'],
+  'partial-sum': ['基础语言', '部分和 Sₙ', '把前 n 项真正加起来，是定义级数收敛的核心数列。', 'Sₙ = a₁ + ··· + aₙ', '不要把 Sₙ 和第 n 项 aₙ 混为一谈。'],
+  convergence: ['基础语言', '收敛与发散', '判断无限相加是否趋近一个有限结果。', 'lim Sₙ = S', '部分和有界不一定收敛，还可能振荡。'],
+  necessary: ['基础语言', '收敛的必要条件', '用于第一时间排除必定发散的级数。', '收敛 ⇒ aₙ → 0', '逆命题错误；调和级数就是反例。'],
+  cauchy: ['基础语言', '柯西收敛准则', '不预先知道和是多少，也能从尾部判断收敛。', '任意尾和都能充分小', '量词顺序重要：对所有尾段都必须成立。'],
+  geometric: ['典型样板', '几何级数', '通项是固定比值的幂时直接使用。', '|q| < 1 才收敛', '首项位置不同会改变和，但不改变敛散性。'],
+  'p-series': ['典型样板', 'p 级数', '作为比较判别中最常见的参照物。', 'Σ1/nᵖ：p > 1 收敛', 'p = 1 是发散的调和级数。'],
+  telescoping: ['典型样板', '裂项相消', '分式通项能拆成前后两项之差时使用。', '先写 Sₙ 再消项', '必须保留首尾没有被消掉的项。'],
+  comparison: ['正项级数', '比较判别法', '通项能直接与熟悉的正项级数比较大小时使用。', '小于收敛项则收敛', '方向别反：大于发散项才可推出发散。'],
+  'limit-comparison': ['正项级数', '极限比较判别法', '通项长得像某个 p 级数但难以直接比较时使用。', 'lim aₙ/bₙ = c ∈ (0,∞)', '极限为 0 或 ∞ 时需要使用单向结论。'],
+  ratio: ['正项级数', '比值判别法', '出现阶乘、指数或连乘结构时优先尝试。', 'lim aₙ₊₁/aₙ = L', 'L = 1 时判别法失效，不代表级数收敛。'],
+  root: ['正项级数', '根值判别法', '通项整体带 n 次幂时通常比比值法更方便。', 'lim ⁿ√aₙ = L', '与比值法一样，L = 1 时没有结论。'],
+  integral: ['正项级数', '积分判别法', '通项来自连续、正值、递减函数 f(n) 时使用。', 'Σf(n) 与 ∫f(x)dx 同敛散', '需要检查正值、连续和最终递减。'],
+  absolute: ['一般项级数', '绝对收敛', '级数有正有负时，先去掉符号检查更强的收敛性。', 'Σ|aₙ| 收敛 ⇒ Σaₙ 收敛', '绝对收敛比普通收敛更强。'],
+  conditional: ['一般项级数', '条件收敛', '原级数收敛，但绝对值级数发散时使用这个分类。', 'Σaₙ 收敛且 Σ|aₙ| 发散', '必须分别完成两次判断，缺一不可。'],
+  leibniz: ['一般项级数', '莱布尼茨判别法', '正负严格交替的级数最常用。', 'bₙ ↓ 0 ⇒ Σ(-1)ⁿbₙ 收敛', '只得到普通收敛，还需另查是否绝对收敛。'],
+  dirichlet: ['一般项级数', '狄利克雷判别法', '一部分振荡但部分和有界，另一部分单调趋零时使用。', 'Aₙ 有界，bₙ ↓ 0', '检查的是前一部分的部分和有界。'],
+  abel: ['一般项级数', '阿贝尔判别法', '一个级数已知收敛，再乘一个有界单调因子时使用。', 'Σaₙ 收敛，bₙ 单调有界', '不要与幂级数的阿贝尔定理混淆。'],
+  radius: ['幂级数', '收敛半径', '先确定以展开中心为圆心的收敛范围大小。', '|x-x₀| < R 绝对收敛', '半径不能决定两个端点是否收敛。'],
+  interval: ['幂级数', '收敛区间', '得到半径以后，补做两个端点判断。', '先求 R，再逐个代端点', '端点可能一个收敛、一个发散。'],
+  'power-ops': ['幂级数', '逐项求导与积分', '在收敛区间内部求和函数或构造新级数。', '运算后收敛半径不变', '端点敛散性可能改变，必须重查。'],
+  'sum-function': ['幂级数', '和函数', '把无穷级数看成关于 x 的函数并求其表达式。', '从几何级数出发变形', '代数变形必须在收敛区间内进行。'],
+  'taylor-series': ['幂级数', '泰勒级数', '把光滑函数展开成幂级数，用于近似与求和。', 'Σ f⁽ⁿ⁾(x₀)(x-x₀)ⁿ/n!', '存在所有阶导数也不自动保证等于原函数。']
+};
+
+function selectMapPoint(key) {
+  const point = seriesMapPoints[key];
+  if (!point) return;
+  $$('.map-node, .map-root').forEach(node => node.classList.toggle('is-selected', node.dataset.point === key));
+  const [branch, title, use, rule, pitfall] = point;
+  $('#mapDetailBranch').textContent = branch;
+  $('#mapDetailTitle').textContent = title;
+  $('#mapDetailUse').textContent = use;
+  $('#mapDetailRule').textContent = rule;
+  $('#mapDetailPitfall').textContent = pitfall;
+  saveProgress(`map-${key}`);
+}
+
 function setupSeries() {
+  $$('.map-node, .map-root').forEach(node => node.addEventListener('click', () => selectMapPoint(node.dataset.point)));
   $$('.preset-btn').forEach(button => button.addEventListener('click', () => selectPreset(button.dataset.preset)));
   $('#termSlider').addEventListener('input', drawSeries);
   $('#seriesReset').addEventListener('click', () => { $('#termSlider').value = 24; drawSeries(); });
@@ -161,6 +202,19 @@ function setupSeries() {
     const [title, body, formula] = decisionDetails[button.dataset.detail];
     $('#decisionDetail').innerHTML = `<strong>${title}</strong><p>${body}</p><span class="formula-chip">${formula}</span>`;
   }));
+}
+
+function positionSeriesMap() {
+  const map = $('.map-scroll');
+  if (window.matchMedia('(max-width: 760px)').matches) {
+    if (!map.dataset.mobilePositioned) {
+      map.scrollLeft = (map.scrollWidth - map.clientWidth) / 2;
+      map.dataset.mobilePositioned = 'true';
+    }
+  } else {
+    delete map.dataset.mobilePositioned;
+    map.scrollLeft = 0;
+  }
 }
 
 const linearTopics = {
@@ -279,6 +333,7 @@ window.addEventListener('resize', () => { drawSeries(); drawLinear(); });
 requestAnimationFrame(() => requestAnimationFrame(() => {
   drawSeries();
   drawLinear();
+  positionSeriesMap();
 }));
 
 const canvasObserver = new ResizeObserver(entries => {
@@ -289,3 +344,4 @@ const canvasObserver = new ResizeObserver(entries => {
 });
 canvasObserver.observe($('#seriesCanvas'));
 canvasObserver.observe($('#linearCanvas'));
+window.addEventListener('resize', positionSeriesMap);
