@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="无穷级数与线性代数交互学习工具">
+  <title>数形实验室</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="数形实验室首页">
+      <span class="brand-mark" aria-hidden="true">∑</span>
+      <span>数形实验室</span>
+    </a>
+    <nav class="module-switch" aria-label="学习模块">
+      <button class="module-btn is-active" data-module="series">无穷级数</button>
+      <button class="module-btn" data-module="linear">线性代数</button>
+    </nav>
+    <div class="progress-summary" aria-live="polite">
+      <span>今日进度</span>
+      <strong id="progressCount">0 / 6</strong>
+    </div>
+  </header>
+
+  <main>
+    <section class="module is-active" id="seriesModule" aria-labelledby="seriesTitle">
+      <div class="module-heading">
+        <div>
+          <p class="section-number">01</p>
+          <h1 id="seriesTitle">看见级数如何收敛</h1>
+        </div>
+        <p class="heading-note">先观察部分和，再选择判别法。</p>
+      </div>
+
+      <div class="workbench series-workbench">
+        <aside class="lesson-rail" aria-label="级数学习路线">
+          <p class="rail-title">学习路线</p>
+          <button class="rail-step is-active" data-series-step="observe">
+            <span>1</span><span><strong>观察</strong><small>部分和在做什么</small></span>
+          </button>
+          <button class="rail-step" data-series-step="classify">
+            <span>2</span><span><strong>分类</strong><small>正项还是交错</small></span>
+          </button>
+          <button class="rail-step" data-series-step="decide">
+            <span>3</span><span><strong>判断</strong><small>选择正确工具</small></span>
+          </button>
+        </aside>
+
+        <div class="visual-stage">
+          <div class="stage-toolbar">
+            <div class="segmented" aria-label="示例级数">
+              <button class="preset-btn is-active" data-preset="harmonic">调和级数</button>
+              <button class="preset-btn" data-preset="square">平方倒数</button>
+              <button class="preset-btn" data-preset="alternating">交错调和</button>
+            </div>
+            <button class="icon-button" id="seriesReset" title="重新播放" aria-label="重新播放">↻</button>
+          </div>
+
+          <div class="canvas-wrap">
+            <canvas id="seriesCanvas" width="900" height="390" aria-label="级数部分和动态图"></canvas>
+            <div class="canvas-caption">
+              <span id="seriesFormula">Σ 1 / n</span>
+              <span><i id="seriesStatusDot"></i><strong id="seriesStatus">仍在缓慢增长</strong></span>
+            </div>
+          </div>
+
+          <div class="term-control">
+            <label for="termSlider">观察前 <strong id="termCount">24</strong> 项</label>
+            <input id="termSlider" type="range" min="3" max="80" value="24">
+            <div class="term-readout">
+              <span>当前部分和</span>
+              <strong id="partialSum">3.77596</strong>
+            </div>
+          </div>
+        </div>
+
+        <aside class="insight-panel">
+          <p class="panel-label">当前观察</p>
+          <h2 id="insightTitle">项越来越小，但总和仍在走高</h2>
+          <p id="insightBody">通项趋于 0 只是必要条件，不能单独保证级数收敛。</p>
+          <div class="key-rule">
+            <span>先问</span>
+            <strong id="keyQuestion">aₙ → 0 吗？</strong>
+          </div>
+          <button class="text-button" id="nextSeriesStep">进入判别流程 <span aria-hidden="true">→</span></button>
+        </aside>
+      </div>
+
+      <section class="decision-section" id="seriesDecision">
+        <div class="section-copy">
+          <p class="section-number">判别地图</p>
+          <h2>拿到一个级数，从这里开始</h2>
+        </div>
+        <div class="decision-flow" aria-label="级数判别流程">
+          <button class="decision-node is-selected" data-detail="term">
+            <span class="node-index">01</span><strong>通项归零？</strong><small>不归零，立即停止</small>
+          </button>
+          <span class="flow-arrow">→</span>
+          <button class="decision-node" data-detail="sign">
+            <span class="node-index">02</span><strong>符号结构？</strong><small>正项 / 交错 / 一般项</small>
+          </button>
+          <span class="flow-arrow">→</span>
+          <button class="decision-node" data-detail="shape">
+            <span class="node-index">03</span><strong>通项长相？</strong><small>幂 / 阶乘 / 指数</small>
+          </button>
+          <span class="flow-arrow">→</span>
+          <button class="decision-node" data-detail="result">
+            <span class="node-index">04</span><strong>收敛类型</strong><small>绝对 / 条件 / 发散</small>
+          </button>
+        </div>
+        <div class="decision-detail" id="decisionDetail">
+          <strong>必要条件</strong>
+          <p>若 aₙ 不趋于 0，级数一定发散；若趋于 0，还要继续检查。</p>
+          <span class="formula-chip">lim aₙ = 0</span>
+        </div>
+      </section>
+
+      <section class="quiz-section" data-quiz="series">
+        <div class="quiz-prompt">
+          <p class="section-number">快速检查</p>
+          <h2>看到这个结构，第一反应是什么？</h2>
+          <div class="quiz-formula">Σ (-1)ⁿ / nᵖ</div>
+        </div>
+        <div class="quiz-options">
+          <button data-correct="false">直接判断绝对收敛</button>
+          <button data-correct="true">分别检查交错收敛与绝对收敛</button>
+          <button data-correct="false">只检查通项是否趋于零</button>
+          <p class="quiz-feedback" aria-live="polite"></p>
+        </div>
+      </section>
+    </section>
+
+    <section class="module" id="linearModule" aria-labelledby="linearTitle" hidden>
+      <div class="module-heading">
+        <div>
+          <p class="section-number">02</p>
+          <h1 id="linearTitle">把线性代数画出来</h1>
+        </div>
+        <p class="heading-note">向量是箭头，矩阵是变换，行列式是面积。</p>
+      </div>
+
+      <div class="linear-tabs" role="tablist" aria-label="线性代数主题">
+        <button class="linear-tab is-active" data-topic="vector">向量</button>
+        <button class="linear-tab" data-topic="matrix">矩阵</button>
+        <button class="linear-tab" data-topic="determinant">行列式</button>
+        <button class="linear-tab" data-topic="relation">线性相关</button>
+      </div>
+
+      <div class="workbench linear-workbench">
+        <div class="visual-stage linear-stage">
+          <div class="stage-toolbar">
+            <div>
+              <p class="panel-label" id="linearEyebrow">向量 · VECTOR</p>
+              <h2 id="linearStageTitle">一组有方向、有长度的数</h2>
+            </div>
+            <button class="icon-button" id="linearReset" title="重置图形" aria-label="重置图形">↻</button>
+          </div>
+          <div class="canvas-wrap linear-canvas-wrap">
+            <canvas id="linearCanvas" width="900" height="500" aria-label="线性代数交互图形"></canvas>
+            <div class="canvas-legend">
+              <span><i class="legend-a"></i>向量 a</span>
+              <span><i class="legend-b"></i>向量 b</span>
+              <span id="areaLegend"><i class="legend-area"></i>张成面积</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="control-panel">
+          <p class="panel-label">动手改变它</p>
+          <div class="vector-control"><span>a₁</span><button class="step-button" data-target="ax" data-delta="-1" aria-label="减小 a₁">−</button><input id="ax" aria-label="a₁" type="range" min="-4" max="4" step="1" value="3"><button class="step-button" data-target="ax" data-delta="1" aria-label="增大 a₁">+</button><strong id="axValue">3</strong></div>
+          <div class="vector-control"><span>a₂</span><button class="step-button" data-target="ay" data-delta="-1" aria-label="减小 a₂">−</button><input id="ay" aria-label="a₂" type="range" min="-4" max="4" step="1" value="1"><button class="step-button" data-target="ay" data-delta="1" aria-label="增大 a₂">+</button><strong id="ayValue">1</strong></div>
+          <div class="vector-control"><span>b₁</span><button class="step-button" data-target="bx" data-delta="-1" aria-label="减小 b₁">−</button><input id="bx" aria-label="b₁" type="range" min="-4" max="4" step="1" value="1"><button class="step-button" data-target="bx" data-delta="1" aria-label="增大 b₁">+</button><strong id="bxValue">1</strong></div>
+          <div class="vector-control"><span>b₂</span><button class="step-button" data-target="by" data-delta="-1" aria-label="减小 b₂">−</button><input id="by" aria-label="b₂" type="range" min="-4" max="4" step="1" value="3"><button class="step-button" data-target="by" data-delta="1" aria-label="增大 b₂">+</button><strong id="byValue">3</strong></div>
+          <div class="det-readout">
+            <span>det(a, b)</span>
+            <strong id="detValue">8</strong>
+            <small id="relationText">面积不为 0：两个向量线性无关</small>
+          </div>
+        </aside>
+
+        <aside class="insight-panel linear-insight">
+          <p class="panel-label">一句话理解</p>
+          <h2 id="linearInsightTitle">向量不是一列孤立的数字</h2>
+          <p id="linearInsightBody">在二维平面中，它可以看成从原点出发的一支箭头。</p>
+          <div class="key-rule linear-rule">
+            <span>记住</span>
+            <strong id="linearRule">坐标决定终点</strong>
+          </div>
+        </aside>
+      </div>
+
+      <section class="concept-strip">
+        <article>
+          <span class="concept-symbol">→</span>
+          <h3>向量</h3>
+          <p>描述方向与大小</p>
+        </article>
+        <span class="concept-arrow">→</span>
+        <article>
+          <span class="concept-symbol matrix-symbol">▦</span>
+          <h3>矩阵</h3>
+          <p>把向量变到新位置</p>
+        </article>
+        <span class="concept-arrow">→</span>
+        <article>
+          <span class="concept-symbol">▱</span>
+          <h3>行列式</h3>
+          <p>记录面积缩放倍数</p>
+        </article>
+        <span class="concept-arrow">→</span>
+        <article>
+          <span class="concept-symbol">∥</span>
+          <h3>线性相关</h3>
+          <p>方向是否发生重复</p>
+        </article>
+      </section>
+
+      <section class="quiz-section linear-quiz" data-quiz="linear">
+        <div class="quiz-prompt">
+          <p class="section-number">快速检查</p>
+          <h2>两个二维向量的行列式为 0，图上发生了什么？</h2>
+        </div>
+        <div class="quiz-options">
+          <button data-correct="false">两支箭头一定长度相等</button>
+          <button data-correct="true">两支箭头共线，张成面积为 0</button>
+          <button data-correct="false">两支箭头一定互相垂直</button>
+          <p class="quiz-feedback" aria-live="polite"></p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <span>Math Notes · 交互学习页</span>
+    <button id="clearProgress">清除学习记录</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
