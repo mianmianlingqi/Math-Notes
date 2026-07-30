@@ -123,6 +123,46 @@
             <p id="mapDetailPitfall">级数研究的是部分和 Sₙ，不是只看通项 aₙ。</p>
           </div>
         </div>
+        <button class="map-expand-button" id="mapExpandButton" aria-expanded="false" aria-controls="mapLesson">
+          <span>展开完整讲解</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+
+        <section class="map-lesson" id="mapLesson" hidden aria-labelledby="lessonTitle">
+          <header class="lesson-header">
+            <div>
+              <span id="lessonBranch">总入口</span>
+              <h3 id="lessonTitle">无穷级数</h3>
+            </div>
+            <p id="lessonIntuition">把无穷级数想成一条不断追加新项的账单，我们关心总额是否稳定下来。</p>
+          </header>
+          <div class="lesson-body">
+            <section class="lesson-definition">
+              <span>正式定义</span>
+              <strong id="lessonDefinition">若部分和数列 Sₙ 存在有限极限 S，就称级数收敛到 S。</strong>
+            </section>
+            <section class="lesson-steps">
+              <span>做题三步</span>
+              <ol id="lessonSteps">
+                <li>先检查通项是否趋于 0</li>
+                <li>识别正项、交错或幂级数结构</li>
+                <li>选择判别法并检查使用条件</li>
+              </ol>
+            </section>
+            <section class="lesson-example">
+              <span>代表例子</span>
+              <p id="lessonExample">几何级数 1+q+q²+··· 在 |q|&lt;1 时，部分和趋于 1/(1-q)。</p>
+            </section>
+            <section class="lesson-check">
+              <span>自己想一想</span>
+              <strong id="lessonQuestion">只知道 aₙ→0，能否断定级数收敛？</strong>
+              <details>
+                <summary>查看提示</summary>
+                <p id="lessonHint">想一想调和级数 Σ1/n。</p>
+              </details>
+            </section>
+          </div>
+        </section>
       </section>
 
       <div class="workbench series-workbench">

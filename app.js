@@ -171,6 +171,55 @@ const seriesMapPoints = {
   'taylor-series': ['幂级数', '泰勒级数', '把光滑函数展开成幂级数，用于近似与求和。', 'Σ f⁽ⁿ⁾(x₀)(x-x₀)ⁿ/n!', '存在所有阶导数也不自动保证等于原函数。']
 };
 
+const seriesLessons = {
+  'series-root': { intuition: '把级数想成一条不断追加新项的账单。单项可以越来越小，但累计总额未必稳定。', definition: '令 Sₙ=a₁+a₂+···+aₙ。若 lim Sₙ=S 且 S 有限，则 Σaₙ 收敛到 S；否则发散。', steps: ['先算 lim aₙ，排除通项不归零的情况', '识别通项属于正项、交错、一般项还是幂级数', '选择判别法，逐条核对它的使用条件'], example: '几何级数 1+q+q²+··· 在 |q|<1 时，部分和趋于 1/(1-q)。', question: '只知道 aₙ→0，能否断定 Σaₙ 收敛？', hint: '不能。调和级数 Σ1/n 的通项趋零，但级数发散。' },
+  term: { intuition: '通项是每次往总和里放进去的“新金额”，先看它有没有小到趋近于零。', definition: 'aₙ 表示级数的第 n 项；通项数列与级数的部分和数列是两个不同对象。', steps: ['写清楚 aₙ 的表达式', '计算 lim aₙ', '若极限非零直接判发散；若为零继续判断'], example: 'Σ n/(n+1) 的通项趋于 1，不趋于 0，因此不用再选判别法。', question: 'aₙ→0 为什么还不能保证累计总和稳定？', hint: '每项虽小，却可能有无穷多项持续同向累加。' },
+  'partial-sum': { intuition: '部分和就是“目前为止一共加了多少”，级数是否收敛完全由它决定。', definition: 'Sₙ=Σₖ₌₁ⁿaₖ。级数 Σaₙ 的和定义为部分和数列 {Sₙ} 的极限。', steps: ['先写有限的 Sₙ', '通过裂项、等比求和等方式化简', '计算 n→∞ 时 Sₙ 的极限'], example: 'Σ1/[n(n+1)] 裂成 1/n-1/(n+1)，Sₙ 中间项相消，只留下首尾。', question: '若 Sₙ 有界，是否一定收敛？', hint: '不一定，例如 Sₙ=(-1)ⁿ 有界但振荡。' },
+  convergence: { intuition: '收敛表示无论再加多少后续项，总和都只能在某个数附近轻微移动。', definition: '存在有限 S，使对任意 ε>0，都能找到 N，当 n>N 时 |Sₙ-S|<ε。', steps: ['明确研究对象是 Sₙ', '判断 Sₙ 是否存在有限极限', '极限存在写出和；不存在说明发散方式'], example: '等比级数 q=1/2 时，Sₙ=2-(1/2)ⁿ⁻¹，最终趋于 2。', question: '部分和趋于无穷大算不算收敛？', hint: '不算。级数收敛要求极限是有限数。' },
+  necessary: { intuition: '如果每次新增的金额一直不够小，总额当然不可能稳定。', definition: '若 Σaₙ 收敛，则 aₙ=Sₙ-Sₙ₋₁→0。这只是必要条件，不是充分条件。', steps: ['先计算 lim aₙ', '非零或不存在时立即判发散', '等于零时不要停，继续选其他判别法'], example: 'Σ(-1)ⁿ 的通项不趋零，所以发散；Σ1/n 通项趋零但仍发散。', question: '“通项趋零”在判断中扮演什么角色？', hint: '它是入场检查，只能排除，不能确认收敛。' },
+  cauchy: { intuition: '若级数真的稳定，足够靠后的任意一小段尾和都应该很小。', definition: 'Σaₙ 收敛当且仅当：任意 ε>0，存在 N，使 m>n>N 时 |aₙ₊₁+···+aₘ|<ε。', steps: ['写出任意尾和 Sₘ-Sₙ', '估计它的绝对值', '证明它对所有 m>n>N 都能小于 ε'], example: '它常用于证明理论结论；判断基础选择题时通常不直接计算。', question: '柯西准则需要提前知道级数的和 S 吗？', hint: '不需要，这正是它的价值。' },
+  geometric: { intuition: '每一项都是上一项乘同一个比例 q，缩小得足够快就能收敛。', definition: 'Σaqⁿ 在 |q|<1 时收敛；|q|≥1 时发散。常见和为 a/(1-q)，注意起始下标。', steps: ['确认相邻项比值是常数 q', '判断 |q| 与 1 的关系', '需要求和时核对首项和起始下标'], example: '1+1/2+1/4+··· 的 q=1/2，因此收敛。', question: 'q=-1/2 时正负交替，几何级数是否收敛？', hint: '看的是 |q|，不是 q 是否为正。' },
+  'p-series': { intuition: '它是正项级数最重要的“标准尺子”，其他级数经常先化得像它。', definition: 'Σ1/nᵖ 当且仅当 p>1 时收敛；p≤1 时发散。', steps: ['把通项主导部分整理成 1/nᵖ', '读出指数 p', '用 p>1 的分界线判断'], example: 'Σ1/n² 收敛；Σ1/√n 的 p=1/2，因此发散。', question: 'Σ1/n¹·⁰¹ 与 Σ1/n⁰·⁹⁹ 哪一个收敛？', hint: '只比较指数是否严格大于 1。' },
+  telescoping: { intuition: '每项拆成一正一负，相邻项像拉链一样大量抵消。', definition: '若 aₙ=bₙ-bₙ₊₁，则 Sₙ=b₁-bₙ₊₁，敛散由剩余首尾项决定。', steps: ['对通项做部分分式或恒等变形', '写出前几项观察相消结构', '保留未消掉的首项和尾项后取极限'], example: '1/[n(n+1)]=1/n-1/(n+1)，部分和只剩 1-1/(n+1)。', question: '裂项后能否直接把所有项都说成抵消为 0？', hint: '不能，必须保留边界处没有配对的项。' },
+  comparison: { intuition: '不知道一个正项级数时，把它夹在已知级数的上方或下方。', definition: '0≤aₙ≤bₙ 时：Σbₙ 收敛可推出 Σaₙ 收敛；Σaₙ 发散可推出 Σbₙ 发散。', steps: ['确认从某项起两者都非负', '选择合适的 p 级数或几何级数作参照', '根据要证明收敛还是发散决定比较方向'], example: '1/(n²+1)≤1/n²，所以对应级数收敛。', question: '要证明一个级数发散，应该找比它更大还是更小的发散级数？', hint: '找一个不超过它、但已经发散的级数。' },
+  'limit-comparison': { intuition: '若两个正项通项最终是同一量级，它们通常同收敛或同发散。', definition: 'aₙ,bₙ>0 且 lim(aₙ/bₙ)=c∈(0,∞)，则 Σaₙ 与 Σbₙ 同敛散。', steps: ['只保留通项中最高阶或主导部分', '选出简单参照 bₙ', '计算比值极限并确认是正常数'], example: 'aₙ=(3n+1)/(n³+2)，与 1/n² 比值趋于 3，因此同样收敛。', question: '比值极限等于正常数说明了什么？', hint: '说明两者只差一个稳定的倍数，量级相同。' },
+  ratio: { intuition: '观察后一项相对前一项缩小得多快，特别适合阶乘和指数。', definition: '对正项级数，若 L=lim(aₙ₊₁/aₙ)，L<1 绝对收敛，L>1 发散，L=1 无结论。', steps: ['写出 aₙ₊₁ 并与 aₙ 作比', '约掉阶乘、指数或连乘公共部分', '求 L 并与 1 比较'], example: 'aₙ=1/n! 时，aₙ₊₁/aₙ=1/(n+1)→0，所以收敛。', question: '比值极限 L=1 时能否判为发散？', hint: '不能；Σ1/n 与 Σ1/n² 都得到 L=1，但敛散不同。' },
+  root: { intuition: '当整个通项像“某个东西的 n 次方”时，直接开 n 次根看底数。', definition: '对正项级数，若 L=lim ⁿ√aₙ，L<1 收敛，L>1 发散，L=1 无结论。', steps: ['识别通项的 n 次幂结构', '计算 n 次根并化简', '求极限后与 1 比较'], example: 'aₙ=[n/(2n+1)]ⁿ，开 n 次根后趋于 1/2，因此收敛。', question: '根值法和比值法的结论边界有什么共同点？', hint: '都以 1 为分界，等于 1 时都失效。' },
+  integral: { intuition: '把离散的小柱子与连续曲线下的面积比较。', definition: '若 f 在 [1,∞) 连续、正值且递减，则 Σf(n) 与反常积分 ∫₁∞f(x)dx 同敛散。', steps: ['找出满足 aₙ=f(n) 的函数', '检查连续、正值、最终递减', '计算对应反常积分'], example: '取 f(x)=1/xᵖ，可由积分再次得到 p>1 才收敛。', question: '若 f(x) 不递减，可以直接套积分判别吗？', hint: '不能，至少需要从某一点开始满足条件。' },
+  absolute: { intuition: '先忽略正负抵消；若所有绝对值相加都稳定，原级数当然更稳定。', definition: '若 Σ|aₙ| 收敛，则称 Σaₙ 绝对收敛，并且原级数一定收敛。', steps: ['把通项换成 |aₙ|', '按正项级数选择判别法', '绝对值级数收敛即可结束'], example: 'Σ(-1)ⁿ/n² 的绝对值级数是 Σ1/n²，因此绝对收敛。', question: '绝对收敛能否推出普通收敛？', hint: '可以；反方向不一定成立。' },
+  conditional: { intuition: '级数依靠正负抵消才收敛，一旦去掉符号就会发散。', definition: 'Σaₙ 收敛而 Σ|aₙ| 发散时，称为条件收敛。', steps: ['先证明带符号的原级数收敛', '再判断绝对值级数发散', '两个结论同时成立才叫条件收敛'], example: '交错调和级数 Σ(-1)ⁿ⁻¹/n 收敛，但 Σ1/n 发散。', question: '只证明交错级数收敛，能否直接说它条件收敛？', hint: '不能，还必须检查绝对值级数。' },
+  leibniz: { intuition: '正项和负项轮流拉扯，拉扯幅度持续减小到零时，总和会稳定。', definition: '若 bₙ≥0、bₙ 单调递减且 bₙ→0，则 Σ(-1)ⁿbₙ 收敛。', steps: ['确认符号严格交替', '证明 bₙ 最终单调递减', '检查 bₙ→0，再另查绝对收敛'], example: 'Σ(-1)ⁿ⁻¹/n 满足三个条件，因此收敛。', question: '莱布尼茨判别直接得到的是绝对收敛吗？', hint: '不是，它只保证原交错级数收敛。' },
+  dirichlet: { intuition: '一部分不断振荡、累计不跑远，另一部分把振幅逐渐压到零。', definition: '若 Aₙ=Σₖ₌₁ⁿaₖ 有界，bₙ 单调且 bₙ→0，则 Σaₙbₙ 收敛。', steps: ['把通项拆成振荡因子 aₙ 与衰减因子 bₙ', '检查 aₙ 的部分和 Aₙ 有界', '检查 bₙ 单调趋零'], example: 'Σsin(n)/n 可用狄利克雷思想：sin(n) 的部分和有界，1/n 单调趋零。', question: '要求有界的是 aₙ 本身还是它的部分和？', hint: '是 aₙ 的部分和 Aₙ。' },
+  abel: { intuition: '一个已经收敛的级数，再乘上变化温和且有界的权重，仍能保持收敛。', definition: '若 Σaₙ 收敛，bₙ 单调且有界，则 Σaₙbₙ 收敛。', steps: ['识别已知收敛的 Σaₙ', '检查权重 bₙ 单调', '检查 bₙ 有界'], example: '它比莱布尼茨更一般，常用于理论证明和含参数级数。', question: '阿贝尔判别要求 bₙ 趋于 0 吗？', hint: '不要求，只需单调有界，因此它必有有限极限。' },
+  radius: { intuition: '幂级数以 x₀ 为中心，通常在一段对称距离内收敛，距离就是 R。', definition: 'Σaₙ(x-x₀)ⁿ 存在 R∈[0,∞]：|x-x₀|<R 绝对收敛，|x-x₀|>R 发散。', steps: ['用比值法或根值法处理含 x 的通项', '解出 |x-x₀|<R', '先记录开区间，暂不处理端点'], example: 'Σxⁿ/n 的比值判别给出 |x|<1，因此 R=1。', question: '求出 R=1 后，x=±1 是否自动收敛？', hint: '不自动，两个端点必须分别代回原级数。' },
+  interval: { intuition: '半径确定内部，端点像两扇单独的门，需要逐扇检查。', definition: '收敛区间由 |x-x₀|<R 加上可能收敛的左、右端点共同组成。', steps: ['先求收敛半径 R', '分别将 x=x₀-R 与 x=x₀+R 代入', '把端点结论写成区间或区间并端点'], example: 'Σxⁿ/n 在 x=1 变成调和级数发散，在 x=-1 变成交错调和级数收敛。', question: '左右端点的敛散结果必须相同吗？', hint: '不必，可能一收敛一发散。' },
+  'power-ops': { intuition: '在收敛区间内部，幂级数像多项式一样可以逐项求导和积分。', definition: '幂级数逐项求导或积分后收敛半径 R 不变，但端点敛散性可能改变。', steps: ['先确认操作发生在收敛区间内部', '对每一项按幂函数规则运算', '保留原半径，并重新检查端点'], example: '由 Σxⁿ=1/(1-x) 逐项积分，可构造与 ln(1-x) 有关的级数。', question: '逐项求导后，原来的端点结论能否照搬？', hint: '不能；半径不变，但端点必须重查。' },
+  'sum-function': { intuition: '把无穷多个含 x 的项合并成一个普通函数。', definition: '幂级数在收敛区间内定义函数 S(x)=Σaₙ(x-x₀)ⁿ，称为和函数。', steps: ['寻找与几何级数有关的基础形式', '通过乘 x、换元、求导或积分变形', '写出和函数并标明有效收敛区间'], example: '在 |x|<1 内，1+x+x²+···=1/(1-x)。', question: '求出的代数表达式在收敛区间外也等于原级数吗？', hint: '不等于；级数在区间外可能根本不收敛。' },
+  'taylor-series': { intuition: '用函数在一点处的所有阶导数，拼出一串幂函数来逼近它。', definition: '函数在 x₀ 的泰勒级数为 Σ f⁽ⁿ⁾(x₀)(x-x₀)ⁿ/n!；若余项趋零，级数才等于原函数。', steps: ['计算各阶导数在 x₀ 的值', '写出一般项并确定收敛范围', '检查泰勒余项是否趋于 0'], example: 'eˣ=1+x+x²/2!+x³/3!+···，对所有实数 x 成立。', question: '函数存在所有阶导数，就一定等于它的泰勒级数吗？', hint: '不一定，还需证明余项趋于 0。' }
+};
+
+let currentMapPoint = 'series-root';
+
+function renderSeriesLesson(key) {
+  const lesson = seriesLessons[key];
+  const summary = seriesMapPoints[key];
+  if (!lesson || !summary) return;
+  $('#lessonBranch').textContent = summary[0];
+  $('#lessonTitle').textContent = summary[1];
+  $('#lessonIntuition').textContent = lesson.intuition;
+  $('#lessonDefinition').textContent = lesson.definition;
+  $('#lessonSteps').replaceChildren(...lesson.steps.map(step => {
+    const item = document.createElement('li');
+    item.textContent = step;
+    return item;
+  }));
+  $('#lessonExample').textContent = lesson.example;
+  $('#lessonQuestion').textContent = lesson.question;
+  $('#lessonHint').textContent = lesson.hint;
+  const details = $('.lesson-check details');
+  details.open = false;
+}
+
 function selectMapPoint(key) {
   const point = seriesMapPoints[key];
   if (!point) return;
@@ -181,11 +230,24 @@ function selectMapPoint(key) {
   $('#mapDetailUse').textContent = use;
   $('#mapDetailRule').textContent = rule;
   $('#mapDetailPitfall').textContent = pitfall;
+  currentMapPoint = key;
+  if (!$('#mapLesson').hidden) renderSeriesLesson(key);
   saveProgress(`map-${key}`);
 }
 
 function setupSeries() {
   $$('.map-node, .map-root').forEach(node => node.addEventListener('click', () => selectMapPoint(node.dataset.point)));
+  $('#mapExpandButton').addEventListener('click', () => {
+    const lesson = $('#mapLesson');
+    const willOpen = lesson.hidden;
+    lesson.hidden = !willOpen;
+    $('#mapExpandButton').setAttribute('aria-expanded', String(willOpen));
+    $('#mapExpandButton span').textContent = willOpen ? '收起完整讲解' : '展开完整讲解';
+    if (willOpen) {
+      renderSeriesLesson(currentMapPoint);
+      lesson.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
   $$('.preset-btn').forEach(button => button.addEventListener('click', () => selectPreset(button.dataset.preset)));
   $('#termSlider').addEventListener('input', drawSeries);
   $('#seriesReset').addEventListener('click', () => { $('#termSlider').value = 24; drawSeries(); });
