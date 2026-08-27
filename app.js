@@ -1,5 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  if (typeof renderMathInElement === 'undefined') return;
+function renderMath() {
+  if (typeof renderMathInElement === 'undefined') {
+    console.warn('KaTeX auto-render not loaded');
+    return;
+  }
   renderMathInElement(document.body, {
     delimiters: [
       { left: '$$', right: '$$', display: true },
@@ -7,4 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     throwOnError: false
   });
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', renderMath);
+} else {
+  renderMath();
+}
