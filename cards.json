@@ -1,0 +1,6084 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-27T14:58:16.904Z",
+  "total": 385,
+  "subjects": [
+    {
+      "id": "limit",
+      "prefix": "f",
+      "title": "函数与极限",
+      "short": "极限",
+      "moduleAnchor": "limit",
+      "count": 55
+    },
+    {
+      "id": "deriv",
+      "prefix": "d",
+      "title": "导数与微分",
+      "short": "导数",
+      "moduleAnchor": "deriv",
+      "count": 55
+    },
+    {
+      "id": "integ",
+      "prefix": "i",
+      "title": "积分",
+      "short": "积分",
+      "moduleAnchor": "integ",
+      "count": 55
+    },
+    {
+      "id": "de",
+      "prefix": "e",
+      "title": "微分方程",
+      "short": "微分方程",
+      "moduleAnchor": "de",
+      "count": 55
+    },
+    {
+      "id": "partial",
+      "prefix": "p",
+      "title": "偏导数与多元函数",
+      "short": "偏导",
+      "moduleAnchor": "partial",
+      "count": 55
+    },
+    {
+      "id": "series",
+      "prefix": "s",
+      "title": "无穷级数",
+      "short": "级数",
+      "moduleAnchor": "series",
+      "count": 55
+    },
+    {
+      "id": "linear",
+      "prefix": "l",
+      "title": "线性代数",
+      "short": "线代",
+      "moduleAnchor": "linear",
+      "count": 55
+    }
+  ],
+  "chapters": [
+    {
+      "id": "limit-1",
+      "subjectId": "limit",
+      "title": "一、函数（8 题）",
+      "chapterRef": null,
+      "readAnchor": "f1",
+      "count": 8
+    },
+    {
+      "id": "limit-2",
+      "subjectId": "limit",
+      "title": "二、极限（14 题）",
+      "chapterRef": null,
+      "readAnchor": "f2",
+      "count": 14
+    },
+    {
+      "id": "limit-3",
+      "subjectId": "limit",
+      "title": "三、连续（8 题）",
+      "chapterRef": null,
+      "readAnchor": "f3",
+      "count": 8
+    },
+    {
+      "id": "limit-4",
+      "subjectId": "limit",
+      "title": "四、补充覆盖（25 题）",
+      "chapterRef": null,
+      "readAnchor": "f4",
+      "count": 25
+    },
+    {
+      "id": "deriv-1",
+      "subjectId": "deriv",
+      "title": "一、求导公式（10 题）",
+      "chapterRef": null,
+      "readAnchor": "d1",
+      "count": 10
+    },
+    {
+      "id": "deriv-2",
+      "subjectId": "deriv",
+      "title": "二、中值定理与洛必达（6 题）",
+      "chapterRef": null,
+      "readAnchor": "d2",
+      "count": 6
+    },
+    {
+      "id": "deriv-3",
+      "subjectId": "deriv",
+      "title": "三、导数应用（8 题）",
+      "chapterRef": null,
+      "readAnchor": "d3",
+      "count": 8
+    },
+    {
+      "id": "deriv-4",
+      "subjectId": "deriv",
+      "title": "四、参数与隐函数（6 题）",
+      "chapterRef": null,
+      "readAnchor": "d4",
+      "count": 6
+    },
+    {
+      "id": "deriv-5",
+      "subjectId": "deriv",
+      "title": "五、补充覆盖（25 题）",
+      "chapterRef": null,
+      "readAnchor": "d5",
+      "count": 25
+    },
+    {
+      "id": "integ-1",
+      "subjectId": "integ",
+      "title": "一、不定积分（10 题）",
+      "chapterRef": null,
+      "readAnchor": "i1",
+      "count": 10
+    },
+    {
+      "id": "integ-2",
+      "subjectId": "integ",
+      "title": "二、定积分（12 题）",
+      "chapterRef": null,
+      "readAnchor": "i2",
+      "count": 12
+    },
+    {
+      "id": "integ-3",
+      "subjectId": "integ",
+      "title": "三、方法与应用（8 题）",
+      "chapterRef": null,
+      "readAnchor": "i3",
+      "count": 8
+    },
+    {
+      "id": "integ-4",
+      "subjectId": "integ",
+      "title": "四、补充覆盖（25 题）",
+      "chapterRef": null,
+      "readAnchor": "i4",
+      "count": 25
+    },
+    {
+      "id": "de-1",
+      "subjectId": "de",
+      "title": "一、基本概念（5 题）",
+      "chapterRef": null,
+      "readAnchor": "e1",
+      "count": 5
+    },
+    {
+      "id": "de-2",
+      "subjectId": "de",
+      "title": "二、一阶方程（8 题）",
+      "chapterRef": null,
+      "readAnchor": "e2",
+      "count": 8
+    },
+    {
+      "id": "de-3",
+      "subjectId": "de",
+      "title": "三、二阶常系数（12 题）",
+      "chapterRef": null,
+      "readAnchor": "e3",
+      "count": 12
+    },
+    {
+      "id": "de-4",
+      "subjectId": "de",
+      "title": "四、补充覆盖（30 题）",
+      "chapterRef": null,
+      "readAnchor": "e4",
+      "count": 30
+    },
+    {
+      "id": "partial-1",
+      "subjectId": "partial",
+      "title": "一、偏导与全微分（10 题）",
+      "chapterRef": null,
+      "readAnchor": "p1",
+      "count": 10
+    },
+    {
+      "id": "partial-2",
+      "subjectId": "partial",
+      "title": "二、复合与隐函数（8 题）",
+      "chapterRef": null,
+      "readAnchor": "p2",
+      "count": 8
+    },
+    {
+      "id": "partial-3",
+      "subjectId": "partial",
+      "title": "三、极值与二重积分（12 题）",
+      "chapterRef": null,
+      "readAnchor": "p3",
+      "count": 12
+    },
+    {
+      "id": "partial-4",
+      "subjectId": "partial",
+      "title": "四、补充覆盖（25 题）",
+      "chapterRef": null,
+      "readAnchor": "p4",
+      "count": 25
+    },
+    {
+      "id": "series-1",
+      "subjectId": "series",
+      "title": "一、基本概念（8 题）",
+      "chapterRef": null,
+      "readAnchor": "s1",
+      "count": 8
+    },
+    {
+      "id": "series-2",
+      "subjectId": "series",
+      "title": "二、判别法（20 题）",
+      "chapterRef": null,
+      "readAnchor": "s2",
+      "count": 22
+    },
+    {
+      "id": "series-3",
+      "subjectId": "series",
+      "title": "三、幂级数与泰勒（17 题）",
+      "chapterRef": null,
+      "readAnchor": "s3",
+      "count": 17
+    },
+    {
+      "id": "series-4",
+      "subjectId": "series",
+      "title": "四、综合（10 题）",
+      "chapterRef": null,
+      "readAnchor": "s4",
+      "count": 8
+    },
+    {
+      "id": "linear-1",
+      "subjectId": "linear",
+      "title": "一、行列式（15 题）",
+      "chapterRef": null,
+      "readAnchor": "l1",
+      "count": 15
+    },
+    {
+      "id": "linear-2",
+      "subjectId": "linear",
+      "title": "二、矩阵（12 题）",
+      "chapterRef": null,
+      "readAnchor": "l2",
+      "count": 12
+    },
+    {
+      "id": "linear-3",
+      "subjectId": "linear",
+      "title": "三、向量与方程组（18 题）",
+      "chapterRef": null,
+      "readAnchor": "l3",
+      "count": 18
+    },
+    {
+      "id": "linear-4",
+      "subjectId": "linear",
+      "title": "四、特征值（10 题，了解）",
+      "chapterRef": null,
+      "readAnchor": "l4",
+      "count": 10
+    }
+  ],
+  "cards": [
+    {
+      "id": "limit-001",
+      "subjectId": "limit",
+      "chapterId": "limit-1",
+      "num": 1,
+      "prompt": "初等函数由基本初等函数经有限次 ________ 和 ________ 得到。",
+      "promptHtml": "初等函数由基本初等函数经有限次 <span class=\"blank\">______</span> 和 <span class=\"blank\">______</span> 得到。",
+      "answers": [
+        "四则运算",
+        "复合"
+      ],
+      "answerText": "四则运算；复合",
+      "blankCount": 2,
+      "must": false,
+      "readAnchor": "f1"
+    },
+    {
+      "id": "limit-002",
+      "subjectId": "limit",
+      "chapterId": "limit-1",
+      "num": 2,
+      "prompt": "反函数存在条件：函数必须 ________ 对应。",
+      "promptHtml": "反函数存在条件：函数必须 <span class=\"blank\">______</span> 对应。",
+      "answers": [
+        "一一"
+      ],
+      "answerText": "一一",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f1"
+    },
+    {
+      "id": "limit-003",
+      "subjectId": "limit",
+      "chapterId": "limit-1",
+      "num": 3,
+      "prompt": "奇函数满足 f(−x) = ________；偶函数满足 f(−x) = ________。",
+      "promptHtml": "奇函数满足 f(−x) = <span class=\"blank\">______</span>；偶函数满足 f(−x) = <span class=\"blank\">______</span>。",
+      "answers": [
+        "−f(x)",
+        "f(x)"
+      ],
+      "answerText": "−f(x)；f(x)",
+      "blankCount": 2,
+      "must": false,
+      "readAnchor": "f1"
+    },
+    {
+      "id": "limit-004",
+      "subjectId": "limit",
+      "chapterId": "limit-1",
+      "num": 4,
+      "prompt": "求复合函数定义域口诀：先 ________ 后外，________ 收尾。",
+      "promptHtml": "求复合函数定义域口诀：先 <span class=\"blank\">______</span> 后外，<span class=\"blank\">______</span> 收尾。",
+      "answers": [
+        "内",
+        "交集"
+      ],
+      "answerText": "内；交集",
+      "blankCount": 2,
+      "must": false,
+      "readAnchor": "f1"
+    },
+    {
+      "id": "limit-005",
+      "subjectId": "limit",
+      "chapterId": "limit-1",
+      "num": 5,
+      "prompt": "log_a u 要求 u ________ 0。",
+      "promptHtml": "log_a u 要求 u <span class=\"blank\">______</span> 0。",
+      "answers": [
+        ">"
+      ],
+      "answerText": ">",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f1"
+    },
+    {
+      "id": "limit-006",
+      "subjectId": "limit",
+      "chapterId": "limit-1",
+      "num": 6,
+      "prompt": "arcsin u 要求 u 在 [________, ________] 内。",
+      "promptHtml": "arcsin u 要求 u 在 [<span class=\"blank\">______</span>, <span class=\"blank\">______</span>] 内。",
+      "answers": [
+        "−1",
+        "1"
+      ],
+      "answerText": "−1；1",
+      "blankCount": 2,
+      "must": false,
+      "readAnchor": "f1"
+    },
+    {
+      "id": "limit-007",
+      "subjectId": "limit",
+      "chapterId": "limit-1",
+      "num": 7,
+      "prompt": "tan u 要求 u ≠ ________ + kπ。",
+      "promptHtml": "tan u 要求 u ≠ <span class=\"blank\">______</span> + kπ。",
+      "answers": [
+        "π"
+      ],
+      "answerText": "π/2",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f1"
+    },
+    {
+      "id": "limit-008",
+      "subjectId": "limit",
+      "chapterId": "limit-1",
+      "num": 8,
+      "prompt": "严格单调的函数才存在 ________ 函数。",
+      "promptHtml": "严格单调的函数才存在 <span class=\"blank\">______</span> 函数。",
+      "answers": [
+        "反"
+      ],
+      "answerText": "反",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f1"
+    },
+    {
+      "id": "limit-009",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 9,
+      "prompt": "第一重要极限：lim(sin x / x) = ________（x→0）。",
+      "promptHtml": "第一重要极限：lim(sin x / x) = <span class=\"blank\">______</span>（x→0）。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-010",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 10,
+      "prompt": "第二重要极限：lim(1 + 1/x)^x = ________（x→∞）。",
+      "promptHtml": "第二重要极限：lim(1 + 1/x)^x = <span class=\"blank\">______</span>（x→∞）。",
+      "answers": [
+        "e"
+      ],
+      "answerText": "e",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-011",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 11,
+      "prompt": "x→0 时，sin x ∼ ________。",
+      "promptHtml": "x→0 时，sin x ∼ <span class=\"blank\">______</span>。",
+      "answers": [
+        "x"
+      ],
+      "answerText": "x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-012",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 12,
+      "prompt": "x→0 时，1 − cos x ∼ ________。",
+      "promptHtml": "x→0 时，1 − cos x ∼ <span class=\"blank\">______</span>。",
+      "answers": [
+        "x²"
+      ],
+      "answerText": "x²/2",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-013",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 13,
+      "prompt": "x→0 时，ln(1+x) ∼ ________。",
+      "promptHtml": "x→0 时，ln(1+x) ∼ <span class=\"blank\">______</span>。",
+      "answers": [
+        "x"
+      ],
+      "answerText": "x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-014",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 14,
+      "prompt": "等价无穷小替换：________ 式中不能随意替换。",
+      "promptHtml": "等价无穷小替换：<span class=\"blank\">______</span> 式中不能随意替换。",
+      "answers": [
+        "加减"
+      ],
+      "answerText": "加减",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-015",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 15,
+      "prompt": "0/0 型常用方法：等价无穷小、________、洛必达。",
+      "promptHtml": "0/0 型常用方法：等价无穷小、<span class=\"blank\">______</span>、洛必达。",
+      "answers": [
+        "因式分解（或有理化）"
+      ],
+      "answerText": "因式分解（或有理化）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-016",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 16,
+      "prompt": "∞−∞ 型常先 ________ 或有理化。",
+      "promptHtml": "∞−∞ 型常先 <span class=\"blank\">______</span> 或有理化。",
+      "answers": [
+        "通分"
+      ],
+      "answerText": "通分",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-017",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 17,
+      "prompt": "1^∞ 型可用 e 的 ________ 法。",
+      "promptHtml": "1^∞ 型可用 e 的 <span class=\"blank\">______</span> 法。",
+      "answers": [
+        "指数"
+      ],
+      "answerText": "指数",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-018",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 18,
+      "prompt": "夹逼定理：g ≤ f ≤ h 且两侧极限为 A，则 lim f = ________。",
+      "promptHtml": "夹逼定理：g ≤ f ≤ h 且两侧极限为 A，则 lim f = <span class=\"blank\">______</span>。",
+      "answers": [
+        "A"
+      ],
+      "answerText": "A",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-019",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 19,
+      "prompt": "单调递增且有上界 ⇒ 数列 ________。",
+      "promptHtml": "单调递增且有上界 ⇒ 数列 <span class=\"blank\">______</span>。",
+      "answers": [
+        "收敛"
+      ],
+      "answerText": "收敛",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-020",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 20,
+      "prompt": "极限存在 ⟺ ________ 极限 = 右极限。",
+      "promptHtml": "极限存在 ⟺ <span class=\"blank\">______</span> 极限 = 右极限。",
+      "answers": [
+        "左"
+      ],
+      "answerText": "左",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-021",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 21,
+      "prompt": "α = o(β) 表示 α 是比 β 更 ________ 的无穷小。",
+      "promptHtml": "α = o(β) 表示 α 是比 β 更 <span class=\"blank\">______</span> 的无穷小。",
+      "answers": [
+        "高阶"
+      ],
+      "answerText": "高阶",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-022",
+      "subjectId": "limit",
+      "chapterId": "limit-2",
+      "num": 22,
+      "prompt": "α ∼ β 表示 lim(α/β) = ________。",
+      "promptHtml": "α ∼ β 表示 lim(α/β) = <span class=\"blank\">______</span>。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f2"
+    },
+    {
+      "id": "limit-023",
+      "subjectId": "limit",
+      "chapterId": "limit-3",
+      "num": 23,
+      "prompt": "f 在 x₀ 连续 ⟺ lim f(x) = ________（x→x₀）。",
+      "promptHtml": "f 在 x₀ 连续 ⟺ lim f(x) = <span class=\"blank\">______</span>（x→x₀）。",
+      "answers": [
+        "f(x₀)"
+      ],
+      "answerText": "f(x₀)",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f3"
+    },
+    {
+      "id": "limit-024",
+      "subjectId": "limit",
+      "chapterId": "limit-3",
+      "num": 24,
+      "prompt": "第一类间断点：左右极限均 ________。",
+      "promptHtml": "第一类间断点：左右极限均 <span class=\"blank\">______</span>。",
+      "answers": [
+        "存在"
+      ],
+      "answerText": "存在",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f3"
+    },
+    {
+      "id": "limit-025",
+      "subjectId": "limit",
+      "chapterId": "limit-3",
+      "num": 25,
+      "prompt": "可去间断点：左右极限存在且 ________，但 ≠ 函数值。",
+      "promptHtml": "可去间断点：左右极限存在且 <span class=\"blank\">______</span>，但 ≠ 函数值。",
+      "answers": [
+        "相等"
+      ],
+      "answerText": "相等",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f3"
+    },
+    {
+      "id": "limit-026",
+      "subjectId": "limit",
+      "chapterId": "limit-3",
+      "num": 26,
+      "prompt": "跳跃间断点：左右极限存在但 ________。",
+      "promptHtml": "跳跃间断点：左右极限存在但 <span class=\"blank\">______</span>。",
+      "answers": [
+        "不相等"
+      ],
+      "answerText": "不相等",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f3"
+    },
+    {
+      "id": "limit-027",
+      "subjectId": "limit",
+      "chapterId": "limit-3",
+      "num": 27,
+      "prompt": "第二类间断点：至少一侧极限 ________。",
+      "promptHtml": "第二类间断点：至少一侧极限 <span class=\"blank\">______</span>。",
+      "answers": [
+        "不存在"
+      ],
+      "answerText": "不存在",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f3"
+    },
+    {
+      "id": "limit-028",
+      "subjectId": "limit",
+      "chapterId": "limit-3",
+      "num": 28,
+      "prompt": "闭区间连续函数必有 ________ 和最小值。",
+      "promptHtml": "闭区间连续函数必有 <span class=\"blank\">______</span> 和最小值。",
+      "answers": [
+        "最大值"
+      ],
+      "answerText": "最大值",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f3"
+    },
+    {
+      "id": "limit-029",
+      "subjectId": "limit",
+      "chapterId": "limit-3",
+      "num": 29,
+      "prompt": "零点定理：f(a)f(b) < 0 ⇒ 存在 ξ∈(a,b) 使 f(ξ) = ________。",
+      "promptHtml": "零点定理：f(a)f(b) < 0 ⇒ 存在 ξ∈(a,b) 使 f(ξ) = <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f3"
+    },
+    {
+      "id": "limit-030",
+      "subjectId": "limit",
+      "chapterId": "limit-3",
+      "num": 30,
+      "prompt": "初等函数在定义域内处处 ________。",
+      "promptHtml": "初等函数在定义域内处处 <span class=\"blank\">______</span>。",
+      "answers": [
+        "连续"
+      ],
+      "answerText": "连续",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f3"
+    },
+    {
+      "id": "limit-031",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 31,
+      "prompt": "幂函数 x^a 当 a 为分数偶次根时定义域要求被开方数 ≥ ________。",
+      "promptHtml": "幂函数 x^a 当 a 为分数偶次根时定义域要求被开方数 ≥ <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-032",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 32,
+      "prompt": "指数函数 a^x 要求底数 a________ 0 且 a≠1。",
+      "promptHtml": "指数函数 a^x 要求底数 a<span class=\"blank\">______</span> 0 且 a≠1。",
+      "answers": [
+        ">"
+      ],
+      "answerText": ">",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-033",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 33,
+      "prompt": "对数 log_a x 定义域 (________, +∞)。",
+      "promptHtml": "对数 log_a x 定义域 (<span class=\"blank\">______</span>, +∞)。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-034",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 34,
+      "prompt": "分段函数整体仍是 ________ 个函数。",
+      "promptHtml": "分段函数整体仍是 <span class=\"blank\">______</span> 个函数。",
+      "answers": [
+        "一"
+      ],
+      "answerText": "一",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-035",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 35,
+      "prompt": "有界函数 |f(x)|≤M 中 M>________。",
+      "promptHtml": "有界函数 |f(x)|≤M 中 M><span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-036",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 36,
+      "prompt": "周期函数最小正周期记为 ________。",
+      "promptHtml": "周期函数最小正周期记为 <span class=\"blank\">______</span>。",
+      "answers": [
+        "T"
+      ],
+      "answerText": "T",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-037",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 37,
+      "prompt": "lim(f±g) = lim f ± lim g 要求两侧极限均 ________。",
+      "promptHtml": "lim(f±g) = lim f ± lim g 要求两侧极限均 <span class=\"blank\">______</span>。",
+      "answers": [
+        "存在"
+      ],
+      "answerText": "存在",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-038",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 38,
+      "prompt": "0·∞ 型化为 0/(________) 或 ∞/(1/0)。",
+      "promptHtml": "0·∞ 型化为 0/(<span class=\"blank\">______</span>) 或 ∞/(1/0)。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1/∞",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-039",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 39,
+      "prompt": "数列极限可用 ________ 定理夹逼。",
+      "promptHtml": "数列极限可用 <span class=\"blank\">______</span> 定理夹逼。",
+      "answers": [
+        "夹逼"
+      ],
+      "answerText": "夹逼",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-040",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 40,
+      "prompt": "单调递减且有下界 ⇒ 数列 ________。",
+      "promptHtml": "单调递减且有下界 ⇒ 数列 <span class=\"blank\">______</span>。",
+      "answers": [
+        "收敛"
+      ],
+      "answerText": "收敛",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-041",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 41,
+      "prompt": "无穷大量与无穷小互为 ________。",
+      "promptHtml": "无穷大量与无穷小互为 <span class=\"blank\">______</span>。",
+      "answers": [
+        "倒数"
+      ],
+      "answerText": "倒数",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-042",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 42,
+      "prompt": "第一类间断点含可去和 ________ 两类。",
+      "promptHtml": "第一类间断点含可去和 <span class=\"blank\">______</span> 两类。",
+      "answers": [
+        "跳跃"
+      ],
+      "answerText": "跳跃",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-043",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 43,
+      "prompt": "闭区间连续函数介值定理中 m,M 为 ________ 与最小值。",
+      "promptHtml": "闭区间连续函数介值定理中 m,M 为 <span class=\"blank\">______</span> 与最小值。",
+      "answers": [
+        "最大"
+      ],
+      "answerText": "最大",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-044",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 44,
+      "prompt": "1^∞ 型不是四则直接算，要用 ________ 法。",
+      "promptHtml": "1^∞ 型不是四则直接算，要用 <span class=\"blank\">______</span> 法。",
+      "answers": [
+        "e 指数"
+      ],
+      "answerText": "e 指数",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-045",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 45,
+      "prompt": "x−sin x 与 x³ 同阶，阶数为 ________。",
+      "promptHtml": "x−sin x 与 x³ 同阶，阶数为 <span class=\"blank\">______</span>。",
+      "answers": [
+        "3"
+      ],
+      "answerText": "3",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-046",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 46,
+      "prompt": "tan x − x 最低阶非零项阶数为 ________。",
+      "promptHtml": "tan x − x 最低阶非零项阶数为 <span class=\"blank\">______</span>。",
+      "answers": [
+        "3"
+      ],
+      "answerText": "3",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-047",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 47,
+      "prompt": "左极限 f(x₀⁻) 表示 x 从 ________ 趋于 x₀。",
+      "promptHtml": "左极限 f(x₀⁻) 表示 x 从 <span class=\"blank\">______</span> 趋于 x₀。",
+      "answers": [
+        "左侧"
+      ],
+      "answerText": "左侧",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-048",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 48,
+      "prompt": "函数在 x₀ 可去间断可补定义使其 ________。",
+      "promptHtml": "函数在 x₀ 可去间断可补定义使其 <span class=\"blank\">______</span>。",
+      "answers": [
+        "连续"
+      ],
+      "answerText": "连续",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-049",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 49,
+      "prompt": "两个重要极限中 sin x/x 在 x→________。",
+      "promptHtml": "两个重要极限中 sin x/x 在 x→<span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-050",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 50,
+      "prompt": "(1+x)^α−1 ∼ αx 在 x→________。",
+      "promptHtml": "(1+x)^α−1 ∼ αx 在 x→<span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-051",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 51,
+      "prompt": "夹逼定理数列版 yₙ≤xₙ≤zₙ 两侧极限需 ________。",
+      "promptHtml": "夹逼定理数列版 yₙ≤xₙ≤zₙ 两侧极限需 <span class=\"blank\">______</span>。",
+      "answers": [
+        "相同"
+      ],
+      "answerText": "相同",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-052",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 52,
+      "prompt": "初等函数由五种基本初等函数经 ________ 运算与复合得到。",
+      "promptHtml": "初等函数由五种基本初等函数经 <span class=\"blank\">______</span> 运算与复合得到。",
+      "answers": [
+        "四则"
+      ],
+      "answerText": "四则",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-053",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 53,
+      "prompt": "反函数图像关于直线 ________ 对称。",
+      "promptHtml": "反函数图像关于直线 <span class=\"blank\">______</span> 对称。",
+      "answers": [
+        "y=x"
+      ],
+      "answerText": "y=x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-054",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 54,
+      "prompt": "复合函数定义域取各层限制的 ________。",
+      "promptHtml": "复合函数定义域取各层限制的 <span class=\"blank\">______</span>。",
+      "answers": [
+        "交集"
+      ],
+      "answerText": "交集",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "limit-055",
+      "subjectId": "limit",
+      "chapterId": "limit-4",
+      "num": 55,
+      "prompt": "极限不存在时左极限与右极限至少一侧 ________ 或两者不等。",
+      "promptHtml": "极限不存在时左极限与右极限至少一侧 <span class=\"blank\">______</span> 或两者不等。",
+      "answers": [
+        "不存在"
+      ],
+      "answerText": "不存在",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "f4"
+    },
+    {
+      "id": "deriv-001",
+      "subjectId": "deriv",
+      "chapterId": "deriv-1",
+      "num": 1,
+      "prompt": "(xⁿ)' = ________ x^(n−1)。",
+      "promptHtml": "(xⁿ)' = <span class=\"blank\">______</span> x^(n−1)。",
+      "answers": [
+        "n"
+      ],
+      "answerText": "n",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d1"
+    },
+    {
+      "id": "deriv-002",
+      "subjectId": "deriv",
+      "chapterId": "deriv-1",
+      "num": 2,
+      "prompt": "(e^x)' = ________；(ln x)' = ________。",
+      "promptHtml": "(e^x)' = <span class=\"blank\">______</span>；(ln x)' = <span class=\"blank\">______</span>。",
+      "answers": [
+        "e^x",
+        "1"
+      ],
+      "answerText": "e^x；1/x",
+      "blankCount": 2,
+      "must": false,
+      "readAnchor": "d1"
+    },
+    {
+      "id": "deriv-003",
+      "subjectId": "deriv",
+      "chapterId": "deriv-1",
+      "num": 3,
+      "prompt": "(sin x)' = ________；(cos x)' = ________。",
+      "promptHtml": "(sin x)' = <span class=\"blank\">______</span>；(cos x)' = <span class=\"blank\">______</span>。",
+      "answers": [
+        "cos x",
+        "−sin x"
+      ],
+      "answerText": "cos x；−sin x",
+      "blankCount": 2,
+      "must": false,
+      "readAnchor": "d1"
+    },
+    {
+      "id": "deriv-004",
+      "subjectId": "deriv",
+      "chapterId": "deriv-1",
+      "num": 4,
+      "prompt": "(tan x)' = ________² x。",
+      "promptHtml": "(tan x)' = <span class=\"blank\">______</span>² x。",
+      "answers": [
+        "sec"
+      ],
+      "answerText": "sec",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d1"
+    },
+    {
+      "id": "deriv-005",
+      "subjectId": "deriv",
+      "chapterId": "deriv-1",
+      "num": 5,
+      "prompt": "(arctan x)' = 1 / (________)。",
+      "promptHtml": "(arctan x)' = 1 / (<span class=\"blank\">______</span>)。",
+      "answers": [
+        "1+x²"
+      ],
+      "answerText": "1+x²",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d1"
+    },
+    {
+      "id": "deriv-006",
+      "subjectId": "deriv",
+      "chapterId": "deriv-1",
+      "num": 6,
+      "prompt": "(uv)' = u'v + ________。",
+      "promptHtml": "(uv)' = u'v + <span class=\"blank\">______</span>。",
+      "answers": [
+        "uv'"
+      ],
+      "answerText": "uv'",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d1"
+    },
+    {
+      "id": "deriv-007",
+      "subjectId": "deriv",
+      "chapterId": "deriv-1",
+      "num": 7,
+      "prompt": "(u/v)' = (u'v − uv') / ________。",
+      "promptHtml": "(u/v)' = (u'v − uv') / <span class=\"blank\">______</span>。",
+      "answers": [
+        "v²"
+      ],
+      "answerText": "v²",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d1"
+    },
+    {
+      "id": "deriv-008",
+      "subjectId": "deriv",
+      "chapterId": "deriv-1",
+      "num": 8,
+      "prompt": "复合函数求导口诀：由 ________ 到内，层层相乘。",
+      "promptHtml": "复合函数求导口诀：由 <span class=\"blank\">______</span> 到内，层层相乘。",
+      "answers": [
+        "外"
+      ],
+      "answerText": "外",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d1"
+    },
+    {
+      "id": "deriv-009",
+      "subjectId": "deriv",
+      "chapterId": "deriv-1",
+      "num": 9,
+      "prompt": "dy = ________ · dx。",
+      "promptHtml": "dy = <span class=\"blank\">______</span> · dx。",
+      "answers": [
+        "f'(x)"
+      ],
+      "answerText": "f'(x)",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d1"
+    },
+    {
+      "id": "deriv-010",
+      "subjectId": "deriv",
+      "chapterId": "deriv-1",
+      "num": 10,
+      "prompt": "可导 ________ 连续；连续 ________ 可导（填“推出”或“推不出”）。",
+      "promptHtml": "可导 <span class=\"blank\">______</span> 连续；连续 <span class=\"blank\">______</span> 可导（填“推出”或“推不出”）。",
+      "answers": [
+        "推出",
+        "推不出"
+      ],
+      "answerText": "推出；推不出",
+      "blankCount": 2,
+      "must": false,
+      "readAnchor": "d1"
+    },
+    {
+      "id": "deriv-011",
+      "subjectId": "deriv",
+      "chapterId": "deriv-2",
+      "num": 11,
+      "prompt": "罗尔定理结论：存在 ξ 使 f'(ξ) = ________。",
+      "promptHtml": "罗尔定理结论：存在 ξ 使 f'(ξ) = <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d2"
+    },
+    {
+      "id": "deriv-012",
+      "subjectId": "deriv",
+      "chapterId": "deriv-2",
+      "num": 12,
+      "prompt": "拉格朗日：f(b)−f(a) = f'(ξ)(________)。",
+      "promptHtml": "拉格朗日：f(b)−f(a) = f'(ξ)(<span class=\"blank\">______</span>)。",
+      "answers": [
+        "b−a"
+      ],
+      "answerText": "b−a",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d2"
+    },
+    {
+      "id": "deriv-013",
+      "subjectId": "deriv",
+      "chapterId": "deriv-2",
+      "num": 13,
+      "prompt": "洛必达适用于 ________ 型和 ________ 型。",
+      "promptHtml": "洛必达适用于 <span class=\"blank\">______</span> 型和 <span class=\"blank\">______</span> 型。",
+      "answers": [
+        "0",
+        "0"
+      ],
+      "answerText": "0/0；∞/∞",
+      "blankCount": 2,
+      "must": false,
+      "readAnchor": "d2"
+    },
+    {
+      "id": "deriv-014",
+      "subjectId": "deriv",
+      "chapterId": "deriv-2",
+      "num": 14,
+      "prompt": "lim(f/g) = lim(f'/g') 的条件之一是 lim(f'/g') ________。",
+      "promptHtml": "lim(f/g) = lim(f'/g') 的条件之一是 lim(f'/g') <span class=\"blank\">______</span>。",
+      "answers": [
+        "存在（或为∞）"
+      ],
+      "answerText": "存在（或为∞）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d2"
+    },
+    {
+      "id": "deriv-015",
+      "subjectId": "deriv",
+      "chapterId": "deriv-2",
+      "num": 15,
+      "prompt": "∞−∞ 型使用洛必达前要先 ________。",
+      "promptHtml": "∞−∞ 型使用洛必达前要先 <span class=\"blank\">______</span>。",
+      "answers": [
+        "变形"
+      ],
+      "answerText": "变形",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d2"
+    },
+    {
+      "id": "deriv-016",
+      "subjectId": "deriv",
+      "chapterId": "deriv-2",
+      "num": 16,
+      "prompt": "f'≡0 在区间上 ⇒ f 为 ________ 函数。",
+      "promptHtml": "f'≡0 在区间上 ⇒ f 为 <span class=\"blank\">______</span> 函数。",
+      "answers": [
+        "常数"
+      ],
+      "answerText": "常数",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d2"
+    },
+    {
+      "id": "deriv-017",
+      "subjectId": "deriv",
+      "chapterId": "deriv-3",
+      "num": 17,
+      "prompt": "f'(x)>0 ⇒ f ________（单调性）。",
+      "promptHtml": "f'(x)>0 ⇒ f <span class=\"blank\">______</span>（单调性）。",
+      "answers": [
+        "递增"
+      ],
+      "answerText": "递增",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d3"
+    },
+    {
+      "id": "deriv-018",
+      "subjectId": "deriv",
+      "chapterId": "deriv-3",
+      "num": 18,
+      "prompt": "可导点取极值的必要条件：f'(x₀) = ________。",
+      "promptHtml": "可导点取极值的必要条件：f'(x₀) = <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d3"
+    },
+    {
+      "id": "deriv-019",
+      "subjectId": "deriv",
+      "chapterId": "deriv-3",
+      "num": 19,
+      "prompt": "f''(x₀)<0 且 f'(x₀)=0 ⇒ ________ 值点。",
+      "promptHtml": "f''(x₀)<0 且 f'(x₀)=0 ⇒ <span class=\"blank\">______</span> 值点。",
+      "answers": [
+        "极大"
+      ],
+      "answerText": "极大",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d3"
+    },
+    {
+      "id": "deriv-020",
+      "subjectId": "deriv",
+      "chapterId": "deriv-3",
+      "num": 20,
+      "prompt": "闭区间最值比较：端点 + 驻点 + ________ 点。",
+      "promptHtml": "闭区间最值比较：端点 + 驻点 + <span class=\"blank\">______</span> 点。",
+      "answers": [
+        "不可导"
+      ],
+      "answerText": "不可导",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d3"
+    },
+    {
+      "id": "deriv-021",
+      "subjectId": "deriv",
+      "chapterId": "deriv-3",
+      "num": 21,
+      "prompt": "f''>0 时曲线 ________（凹/凸，开口向上）。",
+      "promptHtml": "f''>0 时曲线 <span class=\"blank\">______</span>（凹/凸，开口向上）。",
+      "answers": [
+        "凹"
+      ],
+      "answerText": "凹",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d3"
+    },
+    {
+      "id": "deriv-022",
+      "subjectId": "deriv",
+      "chapterId": "deriv-3",
+      "num": 22,
+      "prompt": "f'' 变号点称为 ________ 点。",
+      "promptHtml": "f'' 变号点称为 <span class=\"blank\">______</span> 点。",
+      "answers": [
+        "拐点"
+      ],
+      "answerText": "拐点",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d3"
+    },
+    {
+      "id": "deriv-023",
+      "subjectId": "deriv",
+      "chapterId": "deriv-3",
+      "num": 23,
+      "prompt": "水平渐近线 y=b：lim f(x) = ________（x→∞）。",
+      "promptHtml": "水平渐近线 y=b：lim f(x) = <span class=\"blank\">______</span>（x→∞）。",
+      "answers": [
+        "b"
+      ],
+      "answerText": "b",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d3"
+    },
+    {
+      "id": "deriv-024",
+      "subjectId": "deriv",
+      "chapterId": "deriv-3",
+      "num": 24,
+      "prompt": "需求弹性 |Ep|>1 称为 ________ 弹性。",
+      "promptHtml": "需求弹性 |Ep|>1 称为 <span class=\"blank\">______</span> 弹性。",
+      "answers": [
+        "富有"
+      ],
+      "answerText": "富有",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d3"
+    },
+    {
+      "id": "deriv-025",
+      "subjectId": "deriv",
+      "chapterId": "deriv-4",
+      "num": 25,
+      "prompt": "参数方程 dy/dx = (dy/dt) / (________)。",
+      "promptHtml": "参数方程 dy/dx = (dy/dt) / (<span class=\"blank\">______</span>)。",
+      "answers": [
+        "dx"
+      ],
+      "answerText": "dx/dt",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d4"
+    },
+    {
+      "id": "deriv-026",
+      "subjectId": "deriv",
+      "chapterId": "deriv-4",
+      "num": 26,
+      "prompt": "隐函数求导：对方程两边对 ________ 求导。",
+      "promptHtml": "隐函数求导：对方程两边对 <span class=\"blank\">______</span> 求导。",
+      "answers": [
+        "x"
+      ],
+      "answerText": "x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d4"
+    },
+    {
+      "id": "deriv-027",
+      "subjectId": "deriv",
+      "chapterId": "deriv-4",
+      "num": 27,
+      "prompt": "对数求导法适用于 ________ 函数。",
+      "promptHtml": "对数求导法适用于 <span class=\"blank\">______</span> 函数。",
+      "answers": [
+        "幂指"
+      ],
+      "answerText": "幂指",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d4"
+    },
+    {
+      "id": "deriv-028",
+      "subjectId": "deriv",
+      "chapterId": "deriv-4",
+      "num": 28,
+      "prompt": "驻点不一定是 ________ 值点。",
+      "promptHtml": "驻点不一定是 <span class=\"blank\">______</span> 值点。",
+      "answers": [
+        "极"
+      ],
+      "answerText": "极",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d4"
+    },
+    {
+      "id": "deriv-029",
+      "subjectId": "deriv",
+      "chapterId": "deriv-4",
+      "num": 29,
+      "prompt": "拐点在曲线上，是点 (x₀, ________)。",
+      "promptHtml": "拐点在曲线上，是点 (x₀, <span class=\"blank\">______</span>)。",
+      "answers": [
+        "f(x₀)"
+      ],
+      "answerText": "f(x₀)",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d4"
+    },
+    {
+      "id": "deriv-030",
+      "subjectId": "deriv",
+      "chapterId": "deriv-4",
+      "num": 30,
+      "prompt": "边际成本 C'(x) 表示成本对产量的 ________ 率。",
+      "promptHtml": "边际成本 C'(x) 表示成本对产量的 <span class=\"blank\">______</span> 率。",
+      "answers": [
+        "变化"
+      ],
+      "answerText": "变化",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d4"
+    },
+    {
+      "id": "deriv-031",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 31,
+      "prompt": "(cot x)' = −________² x。",
+      "promptHtml": "(cot x)' = −<span class=\"blank\">______</span>² x。",
+      "answers": [
+        "csc"
+      ],
+      "answerText": "csc",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-032",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 32,
+      "prompt": "(sec x)' = sec x ________ x。",
+      "promptHtml": "(sec x)' = sec x <span class=\"blank\">______</span> x。",
+      "answers": [
+        "tan"
+      ],
+      "answerText": "tan",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-033",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 33,
+      "prompt": "(arcsin x)' = 1/√(________)。",
+      "promptHtml": "(arcsin x)' = 1/√(<span class=\"blank\">______</span>)。",
+      "answers": [
+        "1−x²"
+      ],
+      "answerText": "1−x²",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-034",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 34,
+      "prompt": "莱布尼茨公式用于高阶 ________ 导数。",
+      "promptHtml": "莱布尼茨公式用于高阶 <span class=\"blank\">______</span> 导数。",
+      "answers": [
+        "乘积"
+      ],
+      "answerText": "乘积",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-035",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 35,
+      "prompt": "柯西中值定理是 ________ 法则理论基础。",
+      "promptHtml": "柯西中值定理是 <span class=\"blank\">______</span> 法则理论基础。",
+      "answers": [
+        "洛必达"
+      ],
+      "answerText": "洛必达",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-036",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 36,
+      "prompt": "罗尔定理要求 f(a)________ f(b)。",
+      "promptHtml": "罗尔定理要求 f(a)<span class=\"blank\">______</span> f(b)。",
+      "answers": [
+        "="
+      ],
+      "answerText": "=",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-037",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 37,
+      "prompt": "拉格朗日 ξ∈(________, b)。",
+      "promptHtml": "拉格朗日 ξ∈(<span class=\"blank\">______</span>, b)。",
+      "answers": [
+        "a"
+      ],
+      "answerText": "a",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-038",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 38,
+      "prompt": "f''>0 时曲线开口向 ________。",
+      "promptHtml": "f''>0 时曲线开口向 <span class=\"blank\">______</span>。",
+      "answers": [
+        "上"
+      ],
+      "answerText": "上",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-039",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 39,
+      "prompt": "斜渐近线 k = lim f(x)/________。",
+      "promptHtml": "斜渐近线 k = lim f(x)/<span class=\"blank\">______</span>。",
+      "answers": [
+        "x"
+      ],
+      "answerText": "x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-040",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 40,
+      "prompt": "|Ep|=1 为 ________ 弹性。",
+      "promptHtml": "|Ep|=1 为 <span class=\"blank\">______</span> 弹性。",
+      "answers": [
+        "单位"
+      ],
+      "answerText": "单位",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-041",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 41,
+      "prompt": "曲率 K 公式含 y'' 和 y' 的 ________ 次方。",
+      "promptHtml": "曲率 K 公式含 y'' 和 y' 的 <span class=\"blank\">______</span> 次方。",
+      "answers": [
+        "3"
+      ],
+      "answerText": "3",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-042",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 42,
+      "prompt": "参数二阶导需再对 t 求导后乘 1/(________)。",
+      "promptHtml": "参数二阶导需再对 t 求导后乘 1/(<span class=\"blank\">______</span>)。",
+      "answers": [
+        "dx"
+      ],
+      "answerText": "dx/dt",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-043",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 43,
+      "prompt": "微分形式 ________ 性：du 换元形式不变。",
+      "promptHtml": "微分形式 <span class=\"blank\">______</span> 性：du 换元形式不变。",
+      "answers": [
+        "不变"
+      ],
+      "answerText": "不变",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-044",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 44,
+      "prompt": "极值第一充分：f' 两侧 ________ 号。",
+      "promptHtml": "极值第一充分：f' 两侧 <span class=\"blank\">______</span> 号。",
+      "answers": [
+        "变"
+      ],
+      "answerText": "变",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-045",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 45,
+      "prompt": "最值题比较端点、驻点、不可导点共 ________ 类候选。",
+      "promptHtml": "最值题比较端点、驻点、不可导点共 <span class=\"blank\">______</span> 类候选。",
+      "answers": [
+        "三"
+      ],
+      "answerText": "三",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-046",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 46,
+      "prompt": "(ln f)' = f'/________。",
+      "promptHtml": "(ln f)' = f'/<span class=\"blank\">______</span>。",
+      "answers": [
+        "f"
+      ],
+      "answerText": "f",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-047",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 47,
+      "prompt": "(a^f(x))' 含因子 ln ________。",
+      "promptHtml": "(a^f(x))' 含因子 ln <span class=\"blank\">______</span>。",
+      "answers": [
+        "a"
+      ],
+      "answerText": "a",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-048",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 48,
+      "prompt": "洛必达分子分母分别 ________ 后再取极限。",
+      "promptHtml": "洛必达分子分母分别 <span class=\"blank\">______</span> 后再取极限。",
+      "answers": [
+        "求导"
+      ],
+      "answerText": "求导",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-049",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 49,
+      "prompt": "经济题边际利润 L'(x)=R'(x)−________。",
+      "promptHtml": "经济题边际利润 L'(x)=R'(x)−<span class=\"blank\">______</span>。",
+      "answers": [
+        "C'(x)"
+      ],
+      "answerText": "C'(x)",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-050",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 50,
+      "prompt": "铅直渐近线 x=x₀ 处 f(x)→________。",
+      "promptHtml": "铅直渐近线 x=x₀ 处 f(x)→<span class=\"blank\">______</span>。",
+      "answers": [
+        "∞"
+      ],
+      "answerText": "∞",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-051",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 51,
+      "prompt": "驻点 f'(x₀)=0 只是极值 ________ 条件。",
+      "promptHtml": "驻点 f'(x₀)=0 只是极值 <span class=\"blank\">______</span> 条件。",
+      "answers": [
+        "必要"
+      ],
+      "answerText": "必要",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-052",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 52,
+      "prompt": "凹凸分界点 f'' 变 ________。",
+      "promptHtml": "凹凸分界点 f'' 变 <span class=\"blank\">______</span>。",
+      "answers": [
+        "号"
+      ],
+      "answerText": "号",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-053",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 53,
+      "prompt": "导数几何意义为切线 ________。",
+      "promptHtml": "导数几何意义为切线 <span class=\"blank\">______</span>。",
+      "answers": [
+        "斜率"
+      ],
+      "answerText": "斜率",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-054",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 54,
+      "prompt": "可导点必 ________ 连续。",
+      "promptHtml": "可导点必 <span class=\"blank\">______</span> 连续。",
+      "answers": [
+        "必"
+      ],
+      "answerText": "必",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "deriv-055",
+      "subjectId": "deriv",
+      "chapterId": "deriv-5",
+      "num": 55,
+      "prompt": "链式法则：由外到内 ________ 相乘。",
+      "promptHtml": "链式法则：由外到内 <span class=\"blank\">______</span> 相乘。",
+      "answers": [
+        "层层"
+      ],
+      "answerText": "层层",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "d5"
+    },
+    {
+      "id": "integ-001",
+      "subjectId": "integ",
+      "chapterId": "integ-1",
+      "num": 1,
+      "prompt": "∫xⁿ dx = x^(n+1)/(________) + C（n≠−1）。",
+      "promptHtml": "∫xⁿ dx = x^(n+1)/(<span class=\"blank\">______</span>) + C（n≠−1）。",
+      "answers": [
+        "n+1"
+      ],
+      "answerText": "n+1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i1"
+    },
+    {
+      "id": "integ-002",
+      "subjectId": "integ",
+      "chapterId": "integ-1",
+      "num": 2,
+      "prompt": "∫(1/x) dx = ln|________| + C。",
+      "promptHtml": "∫(1/x) dx = ln|<span class=\"blank\">______</span>| + C。",
+      "answers": [
+        "x"
+      ],
+      "answerText": "x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i1"
+    },
+    {
+      "id": "integ-003",
+      "subjectId": "integ",
+      "chapterId": "integ-1",
+      "num": 3,
+      "prompt": "∫e^x dx = ________ + C。",
+      "promptHtml": "∫e^x dx = <span class=\"blank\">______</span> + C。",
+      "answers": [
+        "e^x"
+      ],
+      "answerText": "e^x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i1"
+    },
+    {
+      "id": "integ-004",
+      "subjectId": "integ",
+      "chapterId": "integ-1",
+      "num": 4,
+      "prompt": "∫sin x dx = ________ + C；∫cos x dx = ________ + C。",
+      "promptHtml": "∫sin x dx = <span class=\"blank\">______</span> + C；∫cos x dx = <span class=\"blank\">______</span> + C。",
+      "answers": [
+        "−cos x",
+        "sin x"
+      ],
+      "answerText": "−cos x；sin x",
+      "blankCount": 2,
+      "must": false,
+      "readAnchor": "i1"
+    },
+    {
+      "id": "integ-005",
+      "subjectId": "integ",
+      "chapterId": "integ-1",
+      "num": 5,
+      "prompt": "∫1/(1+x²) dx = ________ x + C。",
+      "promptHtml": "∫1/(1+x²) dx = <span class=\"blank\">______</span> x + C。",
+      "answers": [
+        "arctan"
+      ],
+      "answerText": "arctan",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i1"
+    },
+    {
+      "id": "integ-006",
+      "subjectId": "integ",
+      "chapterId": "integ-1",
+      "num": 6,
+      "prompt": "不定积分结果必须加任意常数 ________。",
+      "promptHtml": "不定积分结果必须加任意常数 <span class=\"blank\">______</span>。",
+      "answers": [
+        "C"
+      ],
+      "answerText": "C",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i1"
+    },
+    {
+      "id": "integ-007",
+      "subjectId": "integ",
+      "chapterId": "integ-1",
+      "num": 7,
+      "prompt": "第一类换元又称 ________ 微分法。",
+      "promptHtml": "第一类换元又称 <span class=\"blank\">______</span> 微分法。",
+      "answers": [
+        "凑"
+      ],
+      "answerText": "凑",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i1"
+    },
+    {
+      "id": "integ-008",
+      "subjectId": "integ",
+      "chapterId": "integ-1",
+      "num": 8,
+      "prompt": "∫f(ax+b) dx = (1/a)∫f(ax+b) d(________)。",
+      "promptHtml": "∫f(ax+b) dx = (1/a)∫f(ax+b) d(<span class=\"blank\">______</span>)。",
+      "answers": [
+        "ax+b"
+      ],
+      "answerText": "ax+b",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i1"
+    },
+    {
+      "id": "integ-009",
+      "subjectId": "integ",
+      "chapterId": "integ-1",
+      "num": 9,
+      "prompt": "分部积分公式：∫u dv = uv − ∫________ du。",
+      "promptHtml": "分部积分公式：∫u dv = uv − ∫<span class=\"blank\">______</span> du。",
+      "answers": [
+        "v"
+      ],
+      "answerText": "v",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i1"
+    },
+    {
+      "id": "integ-010",
+      "subjectId": "integ",
+      "chapterId": "integ-1",
+      "num": 10,
+      "prompt": "分部积分选 u 口诀：反对 ________ 三。",
+      "promptHtml": "分部积分选 u 口诀：反对 <span class=\"blank\">______</span> 三。",
+      "answers": [
+        "幂指"
+      ],
+      "answerText": "幂指",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i1"
+    },
+    {
+      "id": "integ-011",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 11,
+      "prompt": "牛顿-莱布尼茨：∫ₐᵇ f(x) dx = F(b) − ________。",
+      "promptHtml": "牛顿-莱布尼茨：∫ₐᵇ f(x) dx = F(b) − <span class=\"blank\">______</span>。",
+      "answers": [
+        "F(a)"
+      ],
+      "answerText": "F(a)",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-012",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 12,
+      "prompt": "定积分换元必须 ________ 积分限。",
+      "promptHtml": "定积分换元必须 <span class=\"blank\">______</span> 积分限。",
+      "answers": [
+        "更换（换）"
+      ],
+      "answerText": "更换（换）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-013",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 13,
+      "prompt": "奇函数在对称区间 [−a,a] 上积分为 ________。",
+      "promptHtml": "奇函数在对称区间 [−a,a] 上积分为 <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-014",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 14,
+      "prompt": "偶函数在对称区间上积分等于 ________ ∫₀ᵃ f(x) dx。",
+      "promptHtml": "偶函数在对称区间上积分等于 <span class=\"blank\">______</span> ∫₀ᵃ f(x) dx。",
+      "answers": [
+        "2 倍"
+      ],
+      "answerText": "2 倍",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-015",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 15,
+      "prompt": "d/dx ∫ₐˣ f(t) dt = ________。",
+      "promptHtml": "d/dx ∫ₐˣ f(t) dt = <span class=\"blank\">______</span>。",
+      "answers": [
+        "f(x)"
+      ],
+      "answerText": "f(x)",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-016",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 16,
+      "prompt": "定积分几何意义：曲边梯形 ________ 面积。",
+      "promptHtml": "定积分几何意义：曲边梯形 <span class=\"blank\">______</span> 面积。",
+      "answers": [
+        "有向"
+      ],
+      "answerText": "有向",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-017",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 17,
+      "prompt": "估值定理：m(b−a) ≤ ∫ₐᵇ f ≤ ________ (b−a)。",
+      "promptHtml": "估值定理：m(b−a) ≤ ∫ₐᵇ f ≤ <span class=\"blank\">______</span> (b−a)。",
+      "answers": [
+        "M"
+      ],
+      "answerText": "M",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-018",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 18,
+      "prompt": "∫ₐᵃ f dx = ________。",
+      "promptHtml": "∫ₐᵃ f dx = <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-019",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 19,
+      "prompt": "∫ₐᵇ f dx = −∫ᵇₐ f dx 体现积分的 ________ 性。",
+      "promptHtml": "∫ₐᵇ f dx = −∫ᵇₐ f dx 体现积分的 <span class=\"blank\">______</span> 性。",
+      "answers": [
+        "方向（可加）"
+      ],
+      "answerText": "方向（可加）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-020",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 20,
+      "prompt": "反常积分 ∫₁^∞ 1/x^p 当 p>________ 时收敛。",
+      "promptHtml": "反常积分 ∫₁^∞ 1/x^p 当 p><span class=\"blank\">______</span> 时收敛。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-021",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 21,
+      "prompt": "∫₀¹ 1/x^p 当 p<________ 时收敛。",
+      "promptHtml": "∫₀¹ 1/x^p 当 p<<span class=\"blank\">______</span> 时收敛。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-022",
+      "subjectId": "integ",
+      "chapterId": "integ-2",
+      "num": 22,
+      "prompt": "旋转体绕 x 轴体积 V = π∫[f(x)]² dx，积分变量是 ________。",
+      "promptHtml": "旋转体绕 x 轴体积 V = π∫[f(x)]² dx，积分变量是 <span class=\"blank\">______</span>。",
+      "answers": [
+        "x"
+      ],
+      "answerText": "x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i2"
+    },
+    {
+      "id": "integ-023",
+      "subjectId": "integ",
+      "chapterId": "integ-3",
+      "num": 23,
+      "prompt": "第二类换元 √(a²−x²) 常令 x = a ________ t。",
+      "promptHtml": "第二类换元 √(a²−x²) 常令 x = a <span class=\"blank\">______</span> t。",
+      "answers": [
+        "sin"
+      ],
+      "answerText": "sin",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i3"
+    },
+    {
+      "id": "integ-024",
+      "subjectId": "integ",
+      "chapterId": "integ-3",
+      "num": 24,
+      "prompt": "有理函数积分：假分式先化为多项式 + ________ 分式。",
+      "promptHtml": "有理函数积分：假分式先化为多项式 + <span class=\"blank\">______</span> 分式。",
+      "answers": [
+        "真"
+      ],
+      "answerText": "真",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i3"
+    },
+    {
+      "id": "integ-025",
+      "subjectId": "integ",
+      "chapterId": "integ-3",
+      "num": 25,
+      "prompt": "微元法四步：分割 → 近似 → 求和 → 取 ________。",
+      "promptHtml": "微元法四步：分割 → 近似 → 求和 → 取 <span class=\"blank\">______</span>。",
+      "answers": [
+        "极限"
+      ],
+      "answerText": "极限",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i3"
+    },
+    {
+      "id": "integ-026",
+      "subjectId": "integ",
+      "chapterId": "integ-3",
+      "num": 26,
+      "prompt": "不定积分换元后必须 ________ 到原变量。",
+      "promptHtml": "不定积分换元后必须 <span class=\"blank\">______</span> 到原变量。",
+      "answers": [
+        "回代"
+      ],
+      "answerText": "回代",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i3"
+    },
+    {
+      "id": "integ-027",
+      "subjectId": "integ",
+      "chapterId": "integ-3",
+      "num": 27,
+      "prompt": "定积分换元 ________ 回代（填“需要”或“不需要”）。",
+      "promptHtml": "定积分换元 <span class=\"blank\">______</span> 回代（填“需要”或“不需要”）。",
+      "answers": [
+        "不需要"
+      ],
+      "answerText": "不需要",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i3"
+    },
+    {
+      "id": "integ-028",
+      "subjectId": "integ",
+      "chapterId": "integ-3",
+      "num": 28,
+      "prompt": "平面图形面积 S = ∫|f(x)−g(x)| dx，注意取 ________ 值。",
+      "promptHtml": "平面图形面积 S = ∫|f(x)−g(x)| dx，注意取 <span class=\"blank\">______</span> 值。",
+      "answers": [
+        "绝对"
+      ],
+      "answerText": "绝对",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i3"
+    },
+    {
+      "id": "integ-029",
+      "subjectId": "integ",
+      "chapterId": "integ-3",
+      "num": 29,
+      "prompt": "弧长元素 ds = √(1 + [y']²) dx 属于 ________ 应用。",
+      "promptHtml": "弧长元素 ds = √(1 + [y']²) dx 属于 <span class=\"blank\">______</span> 应用。",
+      "answers": [
+        "几何"
+      ],
+      "answerText": "几何",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i3"
+    },
+    {
+      "id": "integ-030",
+      "subjectId": "integ",
+      "chapterId": "integ-3",
+      "num": 30,
+      "prompt": "变上限积分求导别漏 ________ 法则。",
+      "promptHtml": "变上限积分求导别漏 <span class=\"blank\">______</span> 法则。",
+      "answers": [
+        "链式"
+      ],
+      "answerText": "链式",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i3"
+    },
+    {
+      "id": "integ-031",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 31,
+      "prompt": "∫sec² x dx = ________ x + C。",
+      "promptHtml": "∫sec² x dx = <span class=\"blank\">______</span> x + C。",
+      "answers": [
+        "tan"
+      ],
+      "answerText": "tan",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-032",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 32,
+      "prompt": "∫csc² x dx = −________ x + C。",
+      "promptHtml": "∫csc² x dx = −<span class=\"blank\">______</span> x + C。",
+      "answers": [
+        "cot"
+      ],
+      "answerText": "cot",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-033",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 33,
+      "prompt": "∫1/√(1−x²) dx = ________ x + C。",
+      "promptHtml": "∫1/√(1−x²) dx = <span class=\"blank\">______</span> x + C。",
+      "answers": [
+        "arcsin"
+      ],
+      "answerText": "arcsin",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-034",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 34,
+      "prompt": "∫a^x dx = a^x / ________ a + C。",
+      "promptHtml": "∫a^x dx = a^x / <span class=\"blank\">______</span> a + C。",
+      "answers": [
+        "ln"
+      ],
+      "answerText": "ln",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-035",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 35,
+      "prompt": "有理函数假分式先化多项式+真分式，用 ________ 分式分解。",
+      "promptHtml": "有理函数假分式先化多项式+真分式，用 <span class=\"blank\">______</span> 分式分解。",
+      "answers": [
+        "部分"
+      ],
+      "answerText": "部分",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-036",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 36,
+      "prompt": "√(a²+x²) 换元 x = a tan t 对应邻边 ________。",
+      "promptHtml": "√(a²+x²) 换元 x = a tan t 对应邻边 <span class=\"blank\">______</span>。",
+      "answers": [
+        "a"
+      ],
+      "answerText": "a",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-037",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 37,
+      "prompt": "分部积分 u 优先顺序：反、对、________、指、三。",
+      "promptHtml": "分部积分 u 优先顺序：反、对、<span class=\"blank\">______</span>、指、三。",
+      "answers": [
+        "幂"
+      ],
+      "answerText": "幂",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-038",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 38,
+      "prompt": "定积分中值定理：∃ξ∈[a,b] 使积分 = f(ξ)(________)。",
+      "promptHtml": "定积分中值定理：∃ξ∈[a,b] 使积分 = f(ξ)(<span class=\"blank\">______</span>)。",
+      "answers": [
+        "b−a"
+      ],
+      "answerText": "b−a",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-039",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 39,
+      "prompt": "反常积分瑕点处函数 ________ 界。",
+      "promptHtml": "反常积分瑕点处函数 <span class=\"blank\">______</span> 界。",
+      "answers": [
+        "无"
+      ],
+      "answerText": "无",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-040",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 40,
+      "prompt": "旋转体绕 y 轴 V_y = 2π∫ x|f(x)| dx 为 ________ 法。",
+      "promptHtml": "旋转体绕 y 轴 V_y = 2π∫ x|f(x)| dx 为 <span class=\"blank\">______</span> 法。",
+      "answers": [
+        "柱壳"
+      ],
+      "answerText": "柱壳",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-041",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 41,
+      "prompt": "平面面积被积函数取两曲线之 ________ 值。",
+      "promptHtml": "平面面积被积函数取两曲线之 <span class=\"blank\">______</span> 值。",
+      "answers": [
+        "差绝对"
+      ],
+      "answerText": "差绝对",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-042",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 42,
+      "prompt": "微元法：分割→近似→求和→取 ________。",
+      "promptHtml": "微元法：分割→近似→求和→取 <span class=\"blank\">______</span>。",
+      "answers": [
+        "极限"
+      ],
+      "answerText": "极限",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-043",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 43,
+      "prompt": "∫ₐᵇ kf = k∫ₐᵇ f 体现积分的 ________ 性。",
+      "promptHtml": "∫ₐᵇ kf = k∫ₐᵇ f 体现积分的 <span class=\"blank\">______</span> 性。",
+      "answers": [
+        "线性"
+      ],
+      "answerText": "线性",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-044",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 44,
+      "prompt": "区间可加 ∫ₐᵇ = ∫ₐᶜ + ∫________。",
+      "promptHtml": "区间可加 ∫ₐᵇ = ∫ₐᶜ + ∫<span class=\"blank\">______</span>。",
+      "answers": [
+        "c"
+      ],
+      "answerText": "c",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-045",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 45,
+      "prompt": "p 积分 ∫₁^∞ 1/x^p 收敛当 p________ 1。",
+      "promptHtml": "p 积分 ∫₁^∞ 1/x^p 收敛当 p<span class=\"blank\">______</span> 1。",
+      "answers": [
+        ">"
+      ],
+      "answerText": ">",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-046",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 46,
+      "prompt": "牛顿-莱布尼茨中 F 是 f 的 ________ 函数。",
+      "promptHtml": "牛顿-莱布尼茨中 F 是 f 的 <span class=\"blank\">______</span> 函数。",
+      "answers": [
+        "原"
+      ],
+      "answerText": "原",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-047",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 47,
+      "prompt": "凑微分 ∫f'(x)/f(x) dx = ln|________| + C。",
+      "promptHtml": "凑微分 ∫f'(x)/f(x) dx = ln|<span class=\"blank\">______</span>| + C。",
+      "answers": [
+        "f(x)"
+      ],
+      "answerText": "f(x)",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-048",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 48,
+      "prompt": "∫ e^f(x) f'(x) dx = e^f(x) + ________。",
+      "promptHtml": "∫ e^f(x) f'(x) dx = e^f(x) + <span class=\"blank\">______</span>。",
+      "answers": [
+        "C"
+      ],
+      "answerText": "C",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-049",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 49,
+      "prompt": "定积分换元 ________ 回代原变量。",
+      "promptHtml": "定积分换元 <span class=\"blank\">______</span> 回代原变量。",
+      "answers": [
+        "不需"
+      ],
+      "answerText": "不需",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-050",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 50,
+      "prompt": "奇偶性简化只适用于对称区间 [−a, ________]。",
+      "promptHtml": "奇偶性简化只适用于对称区间 [−a, <span class=\"blank\">______</span>]。",
+      "answers": [
+        "a"
+      ],
+      "answerText": "a",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-051",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 51,
+      "prompt": "变上限上限为 x 时下限常数为 a 时导数 = ________。",
+      "promptHtml": "变上限上限为 x 时下限常数为 a 时导数 = <span class=\"blank\">______</span>。",
+      "answers": [
+        "f(x)"
+      ],
+      "answerText": "f(x)",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-052",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 52,
+      "prompt": "弧长 L = ∫√(1+[y']²) dx 属于 ________ 应用。",
+      "promptHtml": "弧长 L = ∫√(1+[y']²) dx 属于 <span class=\"blank\">______</span> 应用。",
+      "answers": [
+        "几何"
+      ],
+      "answerText": "几何",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-053",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 53,
+      "prompt": "功 W=∫F dx 中 F 为 ________ 力。",
+      "promptHtml": "功 W=∫F dx 中 F 为 <span class=\"blank\">______</span> 力。",
+      "answers": [
+        "变"
+      ],
+      "answerText": "变",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-054",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 54,
+      "prompt": "反常积分收敛比较判别与级数 ________ 思想类似。",
+      "promptHtml": "反常积分收敛比较判别与级数 <span class=\"blank\">______</span> 思想类似。",
+      "answers": [
+        "比较"
+      ],
+      "answerText": "比较",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "integ-055",
+      "subjectId": "integ",
+      "chapterId": "integ-4",
+      "num": 55,
+      "prompt": "检验不定积分结果应对答案 ________ 回去。",
+      "promptHtml": "检验不定积分结果应对答案 <span class=\"blank\">______</span> 回去。",
+      "answers": [
+        "求导"
+      ],
+      "answerText": "求导",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "i4"
+    },
+    {
+      "id": "de-001",
+      "subjectId": "de",
+      "chapterId": "de-1",
+      "num": 1,
+      "prompt": "微分方程的阶由 ________ 阶导数的阶数决定。",
+      "promptHtml": "微分方程的阶由 <span class=\"blank\">______</span> 阶导数的阶数决定。",
+      "answers": [
+        "最高"
+      ],
+      "answerText": "最高",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e1"
+    },
+    {
+      "id": "de-002",
+      "subjectId": "de",
+      "chapterId": "de-1",
+      "num": 2,
+      "prompt": "通解所含任意常数个数 = 方程的 ________。",
+      "promptHtml": "通解所含任意常数个数 = 方程的 <span class=\"blank\">______</span>。",
+      "answers": [
+        "阶"
+      ],
+      "answerText": "阶",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e1"
+    },
+    {
+      "id": "de-003",
+      "subjectId": "de",
+      "chapterId": "de-1",
+      "num": 3,
+      "prompt": "由初值条件确定常数后得到 ________ 解。",
+      "promptHtml": "由初值条件确定常数后得到 <span class=\"blank\">______</span> 解。",
+      "answers": [
+        "特"
+      ],
+      "answerText": "特",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e1"
+    },
+    {
+      "id": "de-004",
+      "subjectId": "de",
+      "chapterId": "de-1",
+      "num": 4,
+      "prompt": "线性齐次方程：解的和仍是 ________。",
+      "promptHtml": "线性齐次方程：解的和仍是 <span class=\"blank\">______</span>。",
+      "answers": [
+        "解"
+      ],
+      "answerText": "解",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e1"
+    },
+    {
+      "id": "de-005",
+      "subjectId": "de",
+      "chapterId": "de-1",
+      "num": 5,
+      "prompt": "初值问题又称 ________ 问题。",
+      "promptHtml": "初值问题又称 <span class=\"blank\">______</span> 问题。",
+      "answers": [
+        "Cauchy"
+      ],
+      "answerText": "Cauchy",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e1"
+    },
+    {
+      "id": "de-006",
+      "subjectId": "de",
+      "chapterId": "de-2",
+      "num": 6,
+      "prompt": "可分离变量：dy/dx = f(x)g(y)，先 ________ 变量。",
+      "promptHtml": "可分离变量：dy/dx = f(x)g(y)，先 <span class=\"blank\">______</span> 变量。",
+      "answers": [
+        "分离"
+      ],
+      "answerText": "分离",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e2"
+    },
+    {
+      "id": "de-007",
+      "subjectId": "de",
+      "chapterId": "de-2",
+      "num": 7,
+      "prompt": "分离时可能丢失 g(y)=0 的 ________ 解，需单独检验。",
+      "promptHtml": "分离时可能丢失 g(y)=0 的 <span class=\"blank\">______</span> 解，需单独检验。",
+      "answers": [
+        "常数"
+      ],
+      "answerText": "常数",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e2"
+    },
+    {
+      "id": "de-008",
+      "subjectId": "de",
+      "chapterId": "de-2",
+      "num": 8,
+      "prompt": "齐次方程令 u = ________ / x。",
+      "promptHtml": "齐次方程令 u = <span class=\"blank\">______</span> / x。",
+      "answers": [
+        "y"
+      ],
+      "answerText": "y",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e2"
+    },
+    {
+      "id": "de-009",
+      "subjectId": "de",
+      "chapterId": "de-2",
+      "num": 9,
+      "prompt": "一阶线性标准形：y' + P(x)y = ________。",
+      "promptHtml": "一阶线性标准形：y' + P(x)y = <span class=\"blank\">______</span>。",
+      "answers": [
+        "Q(x)"
+      ],
+      "answerText": "Q(x)",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e2"
+    },
+    {
+      "id": "de-010",
+      "subjectId": "de",
+      "chapterId": "de-2",
+      "num": 10,
+      "prompt": "积分因子 μ(x) = e^∫________ dx。",
+      "promptHtml": "积分因子 μ(x) = e^∫<span class=\"blank\">______</span> dx。",
+      "answers": [
+        "P"
+      ],
+      "answerText": "P",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e2"
+    },
+    {
+      "id": "de-011",
+      "subjectId": "de",
+      "chapterId": "de-2",
+      "num": 11,
+      "prompt": "伯努利方程令 z = y^(________)。",
+      "promptHtml": "伯努利方程令 z = y^(<span class=\"blank\">______</span>)。",
+      "answers": [
+        "1−n"
+      ],
+      "answerText": "1−n",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e2"
+    },
+    {
+      "id": "de-012",
+      "subjectId": "de",
+      "chapterId": "de-2",
+      "num": 12,
+      "prompt": "一阶线性通解先乘积分因子，左边化为 (μy)' 再 ________。",
+      "promptHtml": "一阶线性通解先乘积分因子，左边化为 (μy)' 再 <span class=\"blank\">______</span>。",
+      "answers": [
+        "积分"
+      ],
+      "answerText": "积分",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e2"
+    },
+    {
+      "id": "de-013",
+      "subjectId": "de",
+      "chapterId": "de-2",
+      "num": 13,
+      "prompt": "齐次方程 dy/dx = φ(y/x) 换元后化为 ________ 变量方程。",
+      "promptHtml": "齐次方程 dy/dx = φ(y/x) 换元后化为 <span class=\"blank\">______</span> 变量方程。",
+      "answers": [
+        "可分离"
+      ],
+      "answerText": "可分离",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e2"
+    },
+    {
+      "id": "de-014",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 14,
+      "prompt": "齐次方程特征方程：r² + pr + q = ________。",
+      "promptHtml": "齐次方程特征方程：r² + pr + q = <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-015",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 15,
+      "prompt": "Δ>0 两不等实根，通解含 e^(r₁x) 和 e^(________)。",
+      "promptHtml": "Δ>0 两不等实根，通解含 e^(r₁x) 和 e^(<span class=\"blank\">______</span>)。",
+      "answers": [
+        "r₂x"
+      ],
+      "answerText": "r₂x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-016",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 16,
+      "prompt": "Δ=0 重根 r，通解 (C₁+C₂x)e^(________)。",
+      "promptHtml": "Δ=0 重根 r，通解 (C₁+C₂x)e^(<span class=\"blank\">______</span>)。",
+      "answers": [
+        "rx"
+      ],
+      "answerText": "rx",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-017",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 17,
+      "prompt": "Δ<0 共轭根 α±iβ，通解含 e^(αx)cos βx 和 e^(αx)________ βx。",
+      "promptHtml": "Δ<0 共轭根 α±iβ，通解含 e^(αx)cos βx 和 e^(αx)<span class=\"blank\">______</span> βx。",
+      "answers": [
+        "sin"
+      ],
+      "answerText": "sin",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-018",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 18,
+      "prompt": "非齐次通解 = 齐次通解 + ________ 解。",
+      "promptHtml": "非齐次通解 = 齐次通解 + <span class=\"blank\">______</span> 解。",
+      "answers": [
+        "特"
+      ],
+      "answerText": "特",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-019",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 19,
+      "prompt": "右端为 P_m(x)e^(λx)，特解形式含 x^k，k 由 λ 是否为 ________ 决定。",
+      "promptHtml": "右端为 P_m(x)e^(λx)，特解形式含 x^k，k 由 λ 是否为 <span class=\"blank\">______</span> 决定。",
+      "answers": [
+        "特征根"
+      ],
+      "answerText": "特征根",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-020",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 20,
+      "prompt": "λ 是单特征根时 k = ________。",
+      "promptHtml": "λ 是单特征根时 k = <span class=\"blank\">______</span>。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-021",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 21,
+      "prompt": "λ 是二重特征根时 k = ________。",
+      "promptHtml": "λ 是二重特征根时 k = <span class=\"blank\">______</span>。",
+      "answers": [
+        "2"
+      ],
+      "answerText": "2",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-022",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 22,
+      "prompt": "右端为 cos x 时特解常设为 A cos x + B ________ x。",
+      "promptHtml": "右端为 cos x 时特解常设为 A cos x + B <span class=\"blank\">______</span> x。",
+      "answers": [
+        "sin"
+      ],
+      "answerText": "sin",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-023",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 23,
+      "prompt": "二阶齐次通解含 ________ 个任意常数。",
+      "promptHtml": "二阶齐次通解含 <span class=\"blank\">______</span> 个任意常数。",
+      "answers": [
+        "2"
+      ],
+      "answerText": "2",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-024",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 24,
+      "prompt": "解二阶题顺序：先齐次，再设 ________。",
+      "promptHtml": "解二阶题顺序：先齐次，再设 <span class=\"blank\">______</span>。",
+      "answers": [
+        "特解"
+      ],
+      "answerText": "特解",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-025",
+      "subjectId": "de",
+      "chapterId": "de-3",
+      "num": 25,
+      "prompt": "复根通解必须写成 e^(αx)(C₁cos βx + C₂sin βx)，不能留 ________ 数。",
+      "promptHtml": "复根通解必须写成 e^(αx)(C₁cos βx + C₂sin βx)，不能留 <span class=\"blank\">______</span> 数。",
+      "answers": [
+        "虚"
+      ],
+      "answerText": "虚",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e3"
+    },
+    {
+      "id": "de-026",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 26,
+      "prompt": "微分方程阶数由最高阶 ________ 决定。",
+      "promptHtml": "微分方程阶数由最高阶 <span class=\"blank\">______</span> 决定。",
+      "answers": [
+        "导数"
+      ],
+      "answerText": "导数",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-027",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 27,
+      "prompt": "通解常数个数等于方程 ________。",
+      "promptHtml": "通解常数个数等于方程 <span class=\"blank\">______</span>。",
+      "answers": [
+        "阶"
+      ],
+      "answerText": "阶",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-028",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 28,
+      "prompt": "可分离 dy/g(y) = f(x)dx 后两边 ________。",
+      "promptHtml": "可分离 dy/g(y) = f(x)dx 后两边 <span class=\"blank\">______</span>。",
+      "answers": [
+        "积分"
+      ],
+      "answerText": "积分",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-029",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 29,
+      "prompt": "齐次方程 u=y/x 则 y=________。",
+      "promptHtml": "齐次方程 u=y/x 则 y=<span class=\"blank\">______</span>。",
+      "answers": [
+        "ux"
+      ],
+      "answerText": "ux",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-030",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 30,
+      "prompt": "一阶线性积分因子 μ=e^∫P ________。",
+      "promptHtml": "一阶线性积分因子 μ=e^∫P <span class=\"blank\">______</span>。",
+      "answers": [
+        "dx"
+      ],
+      "answerText": "dx",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-031",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 31,
+      "prompt": "伯努利 z=y^(1−n) 化为 ________ 阶线性。",
+      "promptHtml": "伯努利 z=y^(1−n) 化为 <span class=\"blank\">______</span> 阶线性。",
+      "answers": [
+        "一"
+      ],
+      "answerText": "一",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-032",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 32,
+      "prompt": "特征方程 r²+pr+q=0 的 Δ=p²−________。",
+      "promptHtml": "特征方程 r²+pr+q=0 的 Δ=p²−<span class=\"blank\">______</span>。",
+      "answers": [
+        "4q"
+      ],
+      "answerText": "4q",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-033",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 33,
+      "prompt": "重根通解 (C₁+C₂x)e^(rx) 中多乘因子 ________。",
+      "promptHtml": "重根通解 (C₁+C₂x)e^(rx) 中多乘因子 <span class=\"blank\">______</span>。",
+      "answers": [
+        "x"
+      ],
+      "answerText": "x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-034",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 34,
+      "prompt": "非齐次 y=y_h + y* 中 y* 为 ________ 解。",
+      "promptHtml": "非齐次 y=y_h + y* 中 y* 为 <span class=\"blank\">______</span> 解。",
+      "answers": [
+        "特"
+      ],
+      "answerText": "特",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-035",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 35,
+      "prompt": "右端 e^(2x) 且 2 非特征根时特解设 ________ e^(2x)。",
+      "promptHtml": "右端 e^(2x) 且 2 非特征根时特解设 <span class=\"blank\">______</span> e^(2x)。",
+      "answers": [
+        "A"
+      ],
+      "answerText": "A",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-036",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 36,
+      "prompt": "右端为常数 3 时特解设 ________。",
+      "promptHtml": "右端为常数 3 时特解设 <span class=\"blank\">______</span>。",
+      "answers": [
+        "A"
+      ],
+      "answerText": "A",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-037",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 37,
+      "prompt": "右端 x² 时特解设二次多项式共 ________ 个待定系数。",
+      "promptHtml": "右端 x² 时特解设二次多项式共 <span class=\"blank\">______</span> 个待定系数。",
+      "answers": [
+        "3"
+      ],
+      "answerText": "3",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-038",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 38,
+      "prompt": "特征根为单根 λ 时特解乘 x^k 中 k=________。",
+      "promptHtml": "特征根为单根 λ 时特解乘 x^k 中 k=<span class=\"blank\">______</span>。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-039",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 39,
+      "prompt": "y''=f(x) 不显含 y,y' 时积分 ________ 次。",
+      "promptHtml": "y''=f(x) 不显含 y,y' 时积分 <span class=\"blank\">______</span> 次。",
+      "answers": [
+        "两"
+      ],
+      "answerText": "两",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-040",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 40,
+      "prompt": "y''=f(x,y') 令 p=y' 降阶为 ________ 阶。",
+      "promptHtml": "y''=f(x,y') 令 p=y' 降阶为 <span class=\"blank\">______</span> 阶。",
+      "answers": [
+        "一"
+      ],
+      "answerText": "一",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-041",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 41,
+      "prompt": "y''=f(y,y') 令 p=y' 用 p'=pp' 消去 ________。",
+      "promptHtml": "y''=f(y,y') 令 p=y' 用 p'=pp' 消去 <span class=\"blank\">______</span>。",
+      "answers": [
+        "x"
+      ],
+      "answerText": "x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-042",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 42,
+      "prompt": "分离变量可能丢失 g(y)=0 的 ________ 解。",
+      "promptHtml": "分离变量可能丢失 g(y)=0 的 <span class=\"blank\">______</span> 解。",
+      "answers": [
+        "常数"
+      ],
+      "answerText": "常数",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-043",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 43,
+      "prompt": "二阶齐次通解含 e^(r₁x) 与 e^(r₂x) 当根 ________ 不等。",
+      "promptHtml": "二阶齐次通解含 e^(r₁x) 与 e^(r₂x) 当根 <span class=\"blank\">______</span> 不等。",
+      "answers": [
+        "互"
+      ],
+      "answerText": "互",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-044",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 44,
+      "prompt": "共轭复根 α±iβ 中 β 为虚部 ________ 系数。",
+      "promptHtml": "共轭复根 α±iβ 中 β 为虚部 <span class=\"blank\">______</span> 系数。",
+      "answers": [
+        "的"
+      ],
+      "answerText": "的",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-045",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 45,
+      "prompt": "初值 y(x₀)=y₀ 代入通解定 ________。",
+      "promptHtml": "初值 y(x₀)=y₀ 代入通解定 <span class=\"blank\">______</span>。",
+      "answers": [
+        "C"
+      ],
+      "answerText": "C",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-046",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 46,
+      "prompt": "线性齐次解的和仍是 ________。",
+      "promptHtml": "线性齐次解的和仍是 <span class=\"blank\">______</span>。",
+      "answers": [
+        "解"
+      ],
+      "answerText": "解",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-047",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 47,
+      "prompt": "待定系数法代入后比较 ________ 系数。",
+      "promptHtml": "待定系数法代入后比较 <span class=\"blank\">______</span> 系数。",
+      "answers": [
+        "同类"
+      ],
+      "answerText": "同类",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-048",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 48,
+      "prompt": "一阶线性标准形必须 y' 系数为 ________。",
+      "promptHtml": "一阶线性标准形必须 y' 系数为 <span class=\"blank\">______</span>。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-049",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 49,
+      "prompt": "可降阶方程 y''=f(x) 直接对 x 积分 ________ 次。",
+      "promptHtml": "可降阶方程 y''=f(x) 直接对 x 积分 <span class=\"blank\">______</span> 次。",
+      "answers": [
+        "两"
+      ],
+      "answerText": "两",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-050",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 50,
+      "prompt": "二阶题检查：重根是否乘 x；复根是否含 sin,cos。",
+      "promptHtml": "二阶题检查：重根是否乘 x；复根是否含 sin,cos。",
+      "answers": [
+        "（检查项）"
+      ],
+      "answerText": "（检查项）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-051",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 51,
+      "prompt": "特征根 0 时通解含常数项与 ________ 项组合。",
+      "promptHtml": "特征根 0 时通解含常数项与 <span class=\"blank\">______</span> 项组合。",
+      "answers": [
+        "x"
+      ],
+      "answerText": "x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-052",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 52,
+      "prompt": "非齐次右端含 sin,cos 时特解设 Acos+________ sin。",
+      "promptHtml": "非齐次右端含 sin,cos 时特解设 Acos+<span class=\"blank\">______</span> sin。",
+      "answers": [
+        "B"
+      ],
+      "answerText": "B",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-053",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 53,
+      "prompt": "齐次方程 y'+P(x)y=0 解含 e^−∫P ________。",
+      "promptHtml": "齐次方程 y'+P(x)y=0 解含 e^−∫P <span class=\"blank\">______</span>。",
+      "answers": [
+        "dx"
+      ],
+      "answerText": "dx",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-054",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 54,
+      "prompt": "通解 + 特解 = 非齐次 ________ 解。",
+      "promptHtml": "通解 + 特解 = 非齐次 <span class=\"blank\">______</span> 解。",
+      "answers": [
+        "通"
+      ],
+      "answerText": "通",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "de-055",
+      "subjectId": "de",
+      "chapterId": "de-4",
+      "num": 55,
+      "prompt": "最高阶导数系数化 1 后再 ________ 型。",
+      "promptHtml": "最高阶导数系数化 1 后再 <span class=\"blank\">______</span> 型。",
+      "answers": [
+        "判"
+      ],
+      "answerText": "判",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "e4"
+    },
+    {
+      "id": "partial-001",
+      "subjectId": "partial",
+      "chapterId": "partial-1",
+      "num": 1,
+      "prompt": "求 ∂z/∂x 时，把 ________ 视为常数。",
+      "promptHtml": "求 ∂z/∂x 时，把 <span class=\"blank\">______</span> 视为常数。",
+      "answers": [
+        "y（其余变量）"
+      ],
+      "answerText": "y（其余变量）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p1"
+    },
+    {
+      "id": "partial-002",
+      "subjectId": "partial",
+      "chapterId": "partial-1",
+      "num": 2,
+      "prompt": "f_xy 连续时 f_xy = f_yx，可交换求导 ________。",
+      "promptHtml": "f_xy 连续时 f_xy = f_yx，可交换求导 <span class=\"blank\">______</span>。",
+      "answers": [
+        "次序"
+      ],
+      "answerText": "次序",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p1"
+    },
+    {
+      "id": "partial-003",
+      "subjectId": "partial",
+      "chapterId": "partial-1",
+      "num": 3,
+      "prompt": "全微分 dz = z_x dx + ________ dy。",
+      "promptHtml": "全微分 dz = z_x dx + <span class=\"blank\">______</span> dy。",
+      "answers": [
+        "z_y"
+      ],
+      "answerText": "z_y",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p1"
+    },
+    {
+      "id": "partial-004",
+      "subjectId": "partial",
+      "chapterId": "partial-1",
+      "num": 4,
+      "prompt": "可微 ________ 连续；偏导存在 ________ 可微（填“推出”或“推不出”）。",
+      "promptHtml": "可微 <span class=\"blank\">______</span> 连续；偏导存在 <span class=\"blank\">______</span> 可微（填“推出”或“推不出”）。",
+      "answers": [
+        "推出",
+        "推不出"
+      ],
+      "answerText": "推出；推不出",
+      "blankCount": 2,
+      "must": false,
+      "readAnchor": "p1"
+    },
+    {
+      "id": "partial-005",
+      "subjectId": "partial",
+      "chapterId": "partial-1",
+      "num": 5,
+      "prompt": "二元极限不存在：找两条路径极限 ________。",
+      "promptHtml": "二元极限不存在：找两条路径极限 <span class=\"blank\">______</span>。",
+      "answers": [
+        "不同"
+      ],
+      "answerText": "不同",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p1"
+    },
+    {
+      "id": "partial-006",
+      "subjectId": "partial",
+      "chapterId": "partial-1",
+      "num": 6,
+      "prompt": "混合偏导相等条件：二阶混合偏导 ________。",
+      "promptHtml": "混合偏导相等条件：二阶混合偏导 <span class=\"blank\">______</span>。",
+      "answers": [
+        "连续"
+      ],
+      "answerText": "连续",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p1"
+    },
+    {
+      "id": "partial-007",
+      "subjectId": "partial",
+      "chapterId": "partial-1",
+      "num": 7,
+      "prompt": "可微 ⇒ 偏导存在；偏导存在 ________ 可微。",
+      "promptHtml": "可微 ⇒ 偏导存在；偏导存在 <span class=\"blank\">______</span> 可微。",
+      "answers": [
+        "推不出"
+      ],
+      "answerText": "推不出",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p1"
+    },
+    {
+      "id": "partial-008",
+      "subjectId": "partial",
+      "chapterId": "partial-1",
+      "num": 8,
+      "prompt": "求全微分先分别求 ________ 导。",
+      "promptHtml": "求全微分先分别求 <span class=\"blank\">______</span> 导。",
+      "answers": [
+        "偏"
+      ],
+      "answerText": "偏",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p1"
+    },
+    {
+      "id": "partial-009",
+      "subjectId": "partial",
+      "chapterId": "partial-1",
+      "num": 9,
+      "prompt": "偏导数是沿坐标轴方向的 ________ 率。",
+      "promptHtml": "偏导数是沿坐标轴方向的 <span class=\"blank\">______</span> 率。",
+      "answers": [
+        "变化"
+      ],
+      "answerText": "变化",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p1"
+    },
+    {
+      "id": "partial-010",
+      "subjectId": "partial",
+      "chapterId": "partial-1",
+      "num": 10,
+      "prompt": "全微分是 Δz 的线性 ________ 部。",
+      "promptHtml": "全微分是 Δz 的线性 <span class=\"blank\">______</span> 部。",
+      "answers": [
+        "主"
+      ],
+      "answerText": "主",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p1"
+    },
+    {
+      "id": "partial-011",
+      "subjectId": "partial",
+      "chapterId": "partial-2",
+      "num": 11,
+      "prompt": "多元链式法则：各路径偏导相乘再 ________。",
+      "promptHtml": "多元链式法则：各路径偏导相乘再 <span class=\"blank\">______</span>。",
+      "answers": [
+        "相加"
+      ],
+      "answerText": "相加",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p2"
+    },
+    {
+      "id": "partial-012",
+      "subjectId": "partial",
+      "chapterId": "partial-2",
+      "num": 12,
+      "prompt": "z=f(u,v)，u,v 为 x,y 函数，∂z/∂x 有两条路径 ________ 加。",
+      "promptHtml": "z=f(u,v)，u,v 为 x,y 函数，∂z/∂x 有两条路径 <span class=\"blank\">______</span> 加。",
+      "answers": [
+        "相"
+      ],
+      "answerText": "相",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p2"
+    },
+    {
+      "id": "partial-013",
+      "subjectId": "partial",
+      "chapterId": "partial-2",
+      "num": 13,
+      "prompt": "隐函数 z=z(x,y) 由 F(x,y,z)=0 确定，∂z/∂x = −F_x / ________。",
+      "promptHtml": "隐函数 z=z(x,y) 由 F(x,y,z)=0 确定，∂z/∂x = −F_x / <span class=\"blank\">______</span>。",
+      "answers": [
+        "F_z"
+      ],
+      "answerText": "F_z",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p2"
+    },
+    {
+      "id": "partial-014",
+      "subjectId": "partial",
+      "chapterId": "partial-2",
+      "num": 14,
+      "prompt": "隐函数公式口诀：负的分子偏导除以 ________。",
+      "promptHtml": "隐函数公式口诀：负的分子偏导除以 <span class=\"blank\">______</span>。",
+      "answers": [
+        "F_z"
+      ],
+      "answerText": "F_z",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p2"
+    },
+    {
+      "id": "partial-015",
+      "subjectId": "partial",
+      "chapterId": "partial-2",
+      "num": 15,
+      "prompt": "全导数 dz/dt 用于中间变量均为一元函数 t 的 ________。",
+      "promptHtml": "全导数 dz/dt 用于中间变量均为一元函数 t 的 <span class=\"blank\">______</span>。",
+      "answers": [
+        "情形"
+      ],
+      "answerText": "情形",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p2"
+    },
+    {
+      "id": "partial-016",
+      "subjectId": "partial",
+      "chapterId": "partial-2",
+      "num": 16,
+      "prompt": "二阶复合偏导要对一阶结果再求偏导，注意别 ________ 项。",
+      "promptHtml": "二阶复合偏导要对一阶结果再求偏导，注意别 <span class=\"blank\">______</span> 项。",
+      "answers": [
+        "漏"
+      ],
+      "answerText": "漏",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p2"
+    },
+    {
+      "id": "partial-017",
+      "subjectId": "partial",
+      "chapterId": "partial-2",
+      "num": 17,
+      "prompt": "F_z = 0 时隐函数公式 ________（可用/不可用）。",
+      "promptHtml": "F_z = 0 时隐函数公式 <span class=\"blank\">______</span>（可用/不可用）。",
+      "answers": [
+        "不可用"
+      ],
+      "answerText": "不可用",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p2"
+    },
+    {
+      "id": "partial-018",
+      "subjectId": "partial",
+      "chapterId": "partial-2",
+      "num": 18,
+      "prompt": "两个方程确定 u,v 时用 ________ 比行列式。",
+      "promptHtml": "两个方程确定 u,v 时用 <span class=\"blank\">______</span> 比行列式。",
+      "answers": [
+        "雅可比"
+      ],
+      "answerText": "雅可比",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p2"
+    },
+    {
+      "id": "partial-019",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 19,
+      "prompt": "无条件极值先求驻点：f_x=0，f_y=________。",
+      "promptHtml": "无条件极值先求驻点：f_x=0，f_y=<span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-020",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 20,
+      "prompt": "判别式 Δ = AC − ________²。",
+      "promptHtml": "判别式 Δ = AC − <span class=\"blank\">______</span>²。",
+      "answers": [
+        "B"
+      ],
+      "answerText": "B",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-021",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 21,
+      "prompt": "Δ>0 且 A>0 ⇒ ________ 值点。",
+      "promptHtml": "Δ>0 且 A>0 ⇒ <span class=\"blank\">______</span> 值点。",
+      "answers": [
+        "极小"
+      ],
+      "answerText": "极小",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-022",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 22,
+      "prompt": "Δ<0 ⇒ ________ 点（非极值）。",
+      "promptHtml": "Δ<0 ⇒ <span class=\"blank\">______</span> 点（非极值）。",
+      "answers": [
+        "鞍"
+      ],
+      "answerText": "鞍",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-023",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 23,
+      "prompt": "条件极值用 ________ 乘数法。",
+      "promptHtml": "条件极值用 <span class=\"blank\">______</span> 乘数法。",
+      "answers": [
+        "拉格朗日"
+      ],
+      "answerText": "拉格朗日",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-024",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 24,
+      "prompt": "拉格朗日函数 L = f + λ________。",
+      "promptHtml": "拉格朗日函数 L = f + λ<span class=\"blank\">______</span>。",
+      "answers": [
+        "φ（约束）"
+      ],
+      "answerText": "φ（约束）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-025",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 25,
+      "prompt": "二重积分直角坐标：先画 ________，再定型写限。",
+      "promptHtml": "二重积分直角坐标：先画 <span class=\"blank\">______</span>，再定型写限。",
+      "answers": [
+        "域"
+      ],
+      "answerText": "域",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-026",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 26,
+      "prompt": "X 型区域：先积 ________ 后积 x（填 y 或 x）。",
+      "promptHtml": "X 型区域：先积 <span class=\"blank\">______</span> 后积 x（填 y 或 x）。",
+      "answers": [
+        "y"
+      ],
+      "answerText": "y",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-027",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 27,
+      "prompt": "极坐标 dσ = r dr ________。",
+      "promptHtml": "极坐标 dσ = r dr <span class=\"blank\">______</span>。",
+      "answers": [
+        "dθ"
+      ],
+      "answerText": "dθ",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-028",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 28,
+      "prompt": "x = r cos θ，y = r ________ θ。",
+      "promptHtml": "x = r cos θ，y = r <span class=\"blank\">______</span> θ。",
+      "answers": [
+        "sin"
+      ],
+      "answerText": "sin",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-029",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 29,
+      "prompt": "圆形区域常用 ________ 坐标。",
+      "promptHtml": "圆形区域常用 <span class=\"blank\">______</span> 坐标。",
+      "answers": [
+        "极"
+      ],
+      "answerText": "极",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-030",
+      "subjectId": "partial",
+      "chapterId": "partial-3",
+      "num": 30,
+      "prompt": "D 关于 y 轴对称且 f 为 x 的奇函数 ⇒ 积分为 ________。",
+      "promptHtml": "D 关于 y 轴对称且 f 为 x 的奇函数 ⇒ 积分为 <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p3"
+    },
+    {
+      "id": "partial-031",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 31,
+      "prompt": "二元函数 z=f(x,y) 定义域为平面 ________ 集。",
+      "promptHtml": "二元函数 z=f(x,y) 定义域为平面 <span class=\"blank\">______</span> 集。",
+      "answers": [
+        "点"
+      ],
+      "answerText": "点",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-032",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 32,
+      "prompt": "偏导 f_x 极限定义中分母为 Δ________。",
+      "promptHtml": "偏导 f_x 极限定义中分母为 Δ<span class=\"blank\">______</span>。",
+      "answers": [
+        "x"
+      ],
+      "answerText": "x",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-033",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 33,
+      "prompt": "f_xy 与 f_yx 相等需二阶混合偏导 ________。",
+      "promptHtml": "f_xy 与 f_yx 相等需二阶混合偏导 <span class=\"blank\">______</span>。",
+      "answers": [
+        "连续"
+      ],
+      "answerText": "连续",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-034",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 34,
+      "prompt": "全微分存在 ⇒ 函数在该点 ________。",
+      "promptHtml": "全微分存在 ⇒ 函数在该点 <span class=\"blank\">______</span>。",
+      "answers": [
+        "可微"
+      ],
+      "answerText": "可微",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-035",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 35,
+      "prompt": "Δz 的线性主部即 ________。",
+      "promptHtml": "Δz 的线性主部即 <span class=\"blank\">______</span>。",
+      "answers": [
+        "dz"
+      ],
+      "answerText": "dz",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-036",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 36,
+      "prompt": "复合函数 z=f(u,v) 对 x 偏导有两条路径 ________ 加。",
+      "promptHtml": "复合函数 z=f(u,v) 对 x 偏导有两条路径 <span class=\"blank\">______</span> 加。",
+      "answers": [
+        "相"
+      ],
+      "answerText": "相",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-037",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 37,
+      "prompt": "全导数 dz/dt 用于 x,y 均为 t 的 ________ 函数。",
+      "promptHtml": "全导数 dz/dt 用于 x,y 均为 t 的 <span class=\"blank\">______</span> 函数。",
+      "answers": [
+        "一元"
+      ],
+      "answerText": "一元",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-038",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 38,
+      "prompt": "隐函数 F_z=0 时公式 ________ 用。",
+      "promptHtml": "隐函数 F_z=0 时公式 <span class=\"blank\">______</span> 用。",
+      "answers": [
+        "不可"
+      ],
+      "answerText": "不可",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-039",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 39,
+      "prompt": "两个方程定 u,v 用雅可比 ________ 式。",
+      "promptHtml": "两个方程定 u,v 用雅可比 <span class=\"blank\">______</span> 式。",
+      "answers": [
+        "行列"
+      ],
+      "answerText": "行列",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-040",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 40,
+      "prompt": "无条件极值 Δ=AC−B² 中 B=f________。",
+      "promptHtml": "无条件极值 Δ=AC−B² 中 B=f<span class=\"blank\">______</span>。",
+      "answers": [
+        "xy"
+      ],
+      "answerText": "xy",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-041",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 41,
+      "prompt": "Δ>0 且 A<0 ⇒ ________ 值。",
+      "promptHtml": "Δ>0 且 A<0 ⇒ <span class=\"blank\">______</span> 值。",
+      "answers": [
+        "极大"
+      ],
+      "answerText": "极大",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-042",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 42,
+      "prompt": "Δ=0 时判别法 ________ 效。",
+      "promptHtml": "Δ=0 时判别法 <span class=\"blank\">______</span> 效。",
+      "answers": [
+        "失"
+      ],
+      "answerText": "失",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-043",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 43,
+      "prompt": "拉格朗日 L_λ=0 即约束 φ=________。",
+      "promptHtml": "拉格朗日 L_λ=0 即约束 φ=<span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-044",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 44,
+      "prompt": "二重积分 dσ 在极坐标下 = r dr ________。",
+      "promptHtml": "二重积分 dσ 在极坐标下 = r dr <span class=\"blank\">______</span>。",
+      "answers": [
+        "dθ"
+      ],
+      "answerText": "dθ",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-045",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 45,
+      "prompt": "X 型区域先对 ________ 积分。",
+      "promptHtml": "X 型区域先对 <span class=\"blank\">______</span> 积分。",
+      "answers": [
+        "y"
+      ],
+      "answerText": "y",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-046",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 46,
+      "prompt": "曲顶柱体体积即二重积分 ________ 意义。",
+      "promptHtml": "曲顶柱体体积即二重积分 <span class=\"blank\">______</span> 意义。",
+      "answers": [
+        "几何"
+      ],
+      "answerText": "几何",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-047",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 47,
+      "prompt": "f≥0 时二重积分表示 ________ 体积。",
+      "promptHtml": "f≥0 时二重积分表示 <span class=\"blank\">______</span> 体积。",
+      "answers": [
+        "曲顶"
+      ],
+      "answerText": "曲顶",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-048",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 48,
+      "prompt": "对称性：x 偶函数+D 关于 y 轴对称 ⇒ 积分 2 倍 ________ 区域。",
+      "promptHtml": "对称性：x 偶函数+D 关于 y 轴对称 ⇒ 积分 2 倍 <span class=\"blank\">______</span> 区域。",
+      "answers": [
+        "半"
+      ],
+      "answerText": "半",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-049",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 49,
+      "prompt": "二重积分次序写错可能 ________ 算或变难。",
+      "promptHtml": "二重积分次序写错可能 <span class=\"blank\">______</span> 算或变难。",
+      "answers": [
+        "难"
+      ],
+      "answerText": "难",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-050",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 50,
+      "prompt": "偏导与全微分：前者是变化率，后者是增量 ________ 部。",
+      "promptHtml": "偏导与全微分：前者是变化率，后者是增量 <span class=\"blank\">______</span> 部。",
+      "answers": [
+        "线性"
+      ],
+      "answerText": "线性",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-051",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 51,
+      "prompt": "多元链式口诀：各路径偏导相乘再 ________。",
+      "promptHtml": "多元链式口诀：各路径偏导相乘再 <span class=\"blank\">______</span>。",
+      "answers": [
+        "相加"
+      ],
+      "answerText": "相加",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-052",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 52,
+      "prompt": "条件极值加乘子 ________。",
+      "promptHtml": "条件极值加乘子 <span class=\"blank\">______</span>。",
+      "answers": [
+        "λ"
+      ],
+      "answerText": "λ",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-053",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 53,
+      "prompt": "极坐标 r 从 0 或 r₁(θ) 到 r₂(________)。",
+      "promptHtml": "极坐标 r 从 0 或 r₁(θ) 到 r₂(<span class=\"blank\">______</span>)。",
+      "answers": [
+        "θ"
+      ],
+      "answerText": "θ",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-054",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 54,
+      "prompt": "二重积分步骤：画域→定型→写限→________ 积分。",
+      "promptHtml": "二重积分步骤：画域→定型→写限→<span class=\"blank\">______</span> 积分。",
+      "answers": [
+        "累次"
+      ],
+      "answerText": "累次",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "partial-055",
+      "subjectId": "partial",
+      "chapterId": "partial-4",
+      "num": 55,
+      "prompt": "江苏大纲对二元极限计算要求 ________（高/不高）。",
+      "promptHtml": "江苏大纲对二元极限计算要求 <span class=\"blank\">______</span>（高/不高）。",
+      "answers": [
+        "不高"
+      ],
+      "answerText": "不高",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "p4"
+    },
+    {
+      "id": "series-001",
+      "subjectId": "series",
+      "chapterId": "series-1",
+      "num": 1,
+      "prompt": "部分和 Sₙ = a₁ + a₂ + … + ________。",
+      "promptHtml": "部分和 Sₙ = a₁ + a₂ + … + <span class=\"blank\">______</span>。",
+      "answers": [
+        "aₙ"
+      ],
+      "answerText": "aₙ",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s1"
+    },
+    {
+      "id": "series-002",
+      "subjectId": "series",
+      "chapterId": "series-1",
+      "num": 2,
+      "prompt": "级数收敛指 lim Sₙ = S 存在且 ________。",
+      "promptHtml": "级数收敛指 lim Sₙ = S 存在且 <span class=\"blank\">______</span>。",
+      "answers": [
+        "有限"
+      ],
+      "answerText": "有限",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s1"
+    },
+    {
+      "id": "series-003",
+      "subjectId": "series",
+      "chapterId": "series-1",
+      "num": 3,
+      "prompt": "级数收敛的必要条件：aₙ → ________。",
+      "promptHtml": "级数收敛的必要条件：aₙ → <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s1"
+    },
+    {
+      "id": "series-004",
+      "subjectId": "series",
+      "chapterId": "series-1",
+      "num": 4,
+      "prompt": "aₙ→0 是收敛的 ________ 条件（必要/充分）。",
+      "promptHtml": "aₙ→0 是收敛的 <span class=\"blank\">______</span> 条件（必要/充分）。",
+      "answers": [
+        "必要"
+      ],
+      "answerText": "必要",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s1"
+    },
+    {
+      "id": "series-005",
+      "subjectId": "series",
+      "chapterId": "series-1",
+      "num": 5,
+      "prompt": "调和级数 Σ1/n 当 p=1 时 ________（收敛/发散）。",
+      "promptHtml": "调和级数 Σ1/n 当 p=1 时 <span class=\"blank\">______</span>（收敛/发散）。",
+      "answers": [
+        "发散"
+      ],
+      "answerText": "发散",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s1"
+    },
+    {
+      "id": "series-006",
+      "subjectId": "series",
+      "chapterId": "series-1",
+      "num": 6,
+      "prompt": "研究级数看 ________ 的极限，不是只看 aₙ。",
+      "promptHtml": "研究级数看 <span class=\"blank\">______</span> 的极限，不是只看 aₙ。",
+      "answers": [
+        "Sₙ"
+      ],
+      "answerText": "Sₙ",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s1"
+    },
+    {
+      "id": "series-007",
+      "subjectId": "series",
+      "chapterId": "series-1",
+      "num": 7,
+      "prompt": "通项不趋于零 ⇒ 级数一定 ________。",
+      "promptHtml": "通项不趋于零 ⇒ 级数一定 <span class=\"blank\">______</span>。",
+      "answers": [
+        "发散"
+      ],
+      "answerText": "发散",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s1"
+    },
+    {
+      "id": "series-008",
+      "subjectId": "series",
+      "chapterId": "series-1",
+      "num": 8,
+      "prompt": "几何级数 Σarⁿ 当 |r|________ 1 时收敛。",
+      "promptHtml": "几何级数 Σarⁿ 当 |r|<span class=\"blank\">______</span> 1 时收敛。",
+      "answers": [
+        "<"
+      ],
+      "answerText": "<",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s1"
+    },
+    {
+      "id": "series-009",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 9,
+      "prompt": "p 级数 Σ1/n^p 当 p>________ 时收敛。",
+      "promptHtml": "p 级数 Σ1/n^p 当 p><span class=\"blank\">______</span> 时收敛。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-010",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 10,
+      "prompt": "p 级数 p≤1 时 ________。",
+      "promptHtml": "p 级数 p≤1 时 <span class=\"blank\">______</span>。",
+      "answers": [
+        "发散"
+      ],
+      "answerText": "发散",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-011",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 11,
+      "prompt": "比较判别：0≤aₙ≤bₙ，Σbₙ 收敛 ⇒ Σaₙ ________。",
+      "promptHtml": "比较判别：0≤aₙ≤bₙ，Σbₙ 收敛 ⇒ Σaₙ <span class=\"blank\">______</span>。",
+      "answers": [
+        "收敛"
+      ],
+      "answerText": "收敛",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-012",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 12,
+      "prompt": "极限比较法 lim(aₙ/bₙ)=L>0 ⇒ 两者 ________ 敛散。",
+      "promptHtml": "极限比较法 lim(aₙ/bₙ)=L>0 ⇒ 两者 <span class=\"blank\">______</span> 敛散。",
+      "answers": [
+        "同"
+      ],
+      "answerText": "同",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-013",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 13,
+      "prompt": "比值法 ρ<1 ⇒ 级数 ________。",
+      "promptHtml": "比值法 ρ<1 ⇒ 级数 <span class=\"blank\">______</span>。",
+      "answers": [
+        "收敛"
+      ],
+      "answerText": "收敛",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-014",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 14,
+      "prompt": "比值法 ρ>1 ⇒ 级数 ________。",
+      "promptHtml": "比值法 ρ>1 ⇒ 级数 <span class=\"blank\">______</span>。",
+      "answers": [
+        "发散"
+      ],
+      "answerText": "发散",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-015",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 15,
+      "prompt": "比值法 ρ=1 时判别法 ________。",
+      "promptHtml": "比值法 ρ=1 时判别法 <span class=\"blank\">______</span>。",
+      "answers": [
+        "失效"
+      ],
+      "answerText": "失效",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-016",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 16,
+      "prompt": "根值法 ρ = lim ⁿ√|aₙ|，判则与 ________ 法相同。",
+      "promptHtml": "根值法 ρ = lim ⁿ√|aₙ|，判则与 <span class=\"blank\">______</span> 法相同。",
+      "answers": [
+        "比值"
+      ],
+      "answerText": "比值",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-017",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 17,
+      "prompt": "交错级数需 uₙ ________ uₙ₊₁（单调）。",
+      "promptHtml": "交错级数需 uₙ <span class=\"blank\">______</span> uₙ₊₁（单调）。",
+      "answers": [
+        "≥"
+      ],
+      "answerText": "≥",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-018",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 18,
+      "prompt": "莱布尼茨要求 lim uₙ = ________。",
+      "promptHtml": "莱布尼茨要求 lim uₙ = <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-019",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 19,
+      "prompt": "Σ(−1)ⁿ⁻¹uₙ 满足莱布尼茨条件则 ________。",
+      "promptHtml": "Σ(−1)ⁿ⁻¹uₙ 满足莱布尼茨条件则 <span class=\"blank\">______</span>。",
+      "answers": [
+        "收敛"
+      ],
+      "answerText": "收敛",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-020",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 20,
+      "prompt": "绝对收敛 ⇒ 级数 ________。",
+      "promptHtml": "绝对收敛 ⇒ 级数 <span class=\"blank\">______</span>。",
+      "answers": [
+        "收敛"
+      ],
+      "answerText": "收敛",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-021",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 21,
+      "prompt": "条件收敛：本身收敛但 Σ|aₙ| ________。",
+      "promptHtml": "条件收敛：本身收敛但 Σ|aₙ| <span class=\"blank\">______</span>。",
+      "answers": [
+        "发散"
+      ],
+      "answerText": "发散",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-022",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 22,
+      "prompt": "几何级数和 = a/(________)（|r|<1）。",
+      "promptHtml": "几何级数和 = a/(<span class=\"blank\">______</span>)（|r|<1）。",
+      "answers": [
+        "1−r"
+      ],
+      "answerText": "1−r",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-023",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 23,
+      "prompt": "Σ1/n² 是 p=________ 的 p 级数。",
+      "promptHtml": "Σ1/n² 是 p=<span class=\"blank\">______</span> 的 p 级数。",
+      "answers": [
+        "2"
+      ],
+      "answerText": "2",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-024",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 24,
+      "prompt": "正项级数首选 ________ 或比值法。",
+      "promptHtml": "正项级数首选 <span class=\"blank\">______</span> 或比值法。",
+      "answers": [
+        "比较"
+      ],
+      "answerText": "比较",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-025",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 25,
+      "prompt": "含阶乘通项常用 ________ 判别法。",
+      "promptHtml": "含阶乘通项常用 <span class=\"blank\">______</span> 判别法。",
+      "answers": [
+        "比值"
+      ],
+      "answerText": "比值",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-026",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 26,
+      "prompt": "含 n 次方通项常用 ________ 判别法。",
+      "promptHtml": "含 n 次方通项常用 <span class=\"blank\">______</span> 判别法。",
+      "answers": [
+        "根值"
+      ],
+      "answerText": "根值",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-027",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 27,
+      "prompt": "交错级数用 ________ 判别法。",
+      "promptHtml": "交错级数用 <span class=\"blank\">______</span> 判别法。",
+      "answers": [
+        "莱布尼茨"
+      ],
+      "answerText": "莱布尼茨",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-028",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 28,
+      "prompt": "绝对收敛比条件收敛 ________（强/弱）。",
+      "promptHtml": "绝对收敛比条件收敛 <span class=\"blank\">______</span>（强/弱）。",
+      "answers": [
+        "强"
+      ],
+      "answerText": "强",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-029",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 29,
+      "prompt": "Σ|aₙ| 收敛称为 ________ 收敛。",
+      "promptHtml": "Σ|aₙ| 收敛称为 <span class=\"blank\">______</span> 收敛。",
+      "answers": [
+        "绝对"
+      ],
+      "answerText": "绝对",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-030",
+      "subjectId": "series",
+      "chapterId": "series-2",
+      "num": 30,
+      "prompt": "aₙ→0 但 Σaₙ 发散的例子：________ 级数。",
+      "promptHtml": "aₙ→0 但 Σaₙ 发散的例子：<span class=\"blank\">______</span> 级数。",
+      "answers": [
+        "调和"
+      ],
+      "answerText": "调和",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s2"
+    },
+    {
+      "id": "series-031",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 31,
+      "prompt": "幂级数一般形式含 (x−________)^n。",
+      "promptHtml": "幂级数一般形式含 (x−<span class=\"blank\">______</span>)^n。",
+      "answers": [
+        "x₀"
+      ],
+      "answerText": "x₀",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-032",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 32,
+      "prompt": "收敛半径 R = 1/ρ，ρ = lim |aₙ₊₁/aₙ|，ρ=0 时 R=________。",
+      "promptHtml": "收敛半径 R = 1/ρ，ρ = lim |aₙ₊₁/aₙ|，ρ=0 时 R=<span class=\"blank\">______</span>。",
+      "answers": [
+        "∞"
+      ],
+      "answerText": "∞",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-033",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 33,
+      "prompt": "求收敛域需检验 ________ 端点。",
+      "promptHtml": "求收敛域需检验 <span class=\"blank\">______</span> 端点。",
+      "answers": [
+        "区间"
+      ],
+      "answerText": "区间",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-034",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 34,
+      "prompt": "幂级数在收敛区间内可逐项 ________ 和积分。",
+      "promptHtml": "幂级数在收敛区间内可逐项 <span class=\"blank\">______</span> 和积分。",
+      "answers": [
+        "求导"
+      ],
+      "answerText": "求导",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-035",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 35,
+      "prompt": "1/(1−x) = Σxⁿ 成立范围 |x|________ 1。",
+      "promptHtml": "1/(1−x) = Σxⁿ 成立范围 |x|<span class=\"blank\">______</span> 1。",
+      "answers": [
+        "<"
+      ],
+      "answerText": "<",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-036",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 36,
+      "prompt": "e^x 的麦克劳林级数分母为 ________!",
+      "promptHtml": "e^x 的麦克劳林级数分母为 <span class=\"blank\">______</span>!",
+      "answers": [
+        "n"
+      ],
+      "answerText": "n",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-037",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 37,
+      "prompt": "sin x 展开只含 ________ 次幂项。",
+      "promptHtml": "sin x 展开只含 <span class=\"blank\">______</span> 次幂项。",
+      "answers": [
+        "奇"
+      ],
+      "answerText": "奇",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-038",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 38,
+      "prompt": "cos x 展开只含 ________ 次幂项。",
+      "promptHtml": "cos x 展开只含 <span class=\"blank\">______</span> 次幂项。",
+      "answers": [
+        "偶"
+      ],
+      "answerText": "偶",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-039",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 39,
+      "prompt": "ln(1+x) 收敛区间左端 x=________。",
+      "promptHtml": "ln(1+x) 收敛区间左端 x=<span class=\"blank\">______</span>。",
+      "answers": [
+        "−1"
+      ],
+      "answerText": "−1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-040",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 40,
+      "prompt": "泰勒级数在 x₀=0 时称 ________ 级数。",
+      "promptHtml": "泰勒级数在 x₀=0 时称 <span class=\"blank\">______</span> 级数。",
+      "answers": [
+        "麦克劳林"
+      ],
+      "answerText": "麦克劳林",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-041",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 41,
+      "prompt": "求幂级数和常通过逐项 ________ 凑已知展开。",
+      "promptHtml": "求幂级数和常通过逐项 <span class=\"blank\">______</span> 凑已知展开。",
+      "answers": [
+        "积分"
+      ],
+      "answerText": "积分",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-042",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 42,
+      "prompt": "和函数 S(x) 在收敛区间内 ________。",
+      "promptHtml": "和函数 S(x) 在收敛区间内 <span class=\"blank\">______</span>。",
+      "answers": [
+        "连续"
+      ],
+      "answerText": "连续",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-043",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 43,
+      "prompt": "收敛区间 = 收敛域去掉 ________ 端点？（填：开区间加端点检验）",
+      "promptHtml": "收敛区间 = 收敛域去掉 <span class=\"blank\">______</span> 端点？（填：开区间加端点检验）",
+      "answers": [
+        "端点"
+      ],
+      "answerText": "端点",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-044",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 44,
+      "prompt": "幂级数中心 x₀=1 时展开为 Σaₙ(x−________)^n。",
+      "promptHtml": "幂级数中心 x₀=1 时展开为 Σaₙ(x−<span class=\"blank\">______</span>)^n。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-045",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 45,
+      "prompt": "展开 1/(1+x²) 可先积后导或利用 ________ 级数。",
+      "promptHtml": "展开 1/(1+x²) 可先积后导或利用 <span class=\"blank\">______</span> 级数。",
+      "answers": [
+        "几何"
+      ],
+      "answerText": "几何",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-046",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 46,
+      "prompt": "逐项求导不改变 ________ 半径（一般情况）。",
+      "promptHtml": "逐项求导不改变 <span class=\"blank\">______</span> 半径（一般情况）。",
+      "answers": [
+        "收敛"
+      ],
+      "answerText": "收敛",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-047",
+      "subjectId": "series",
+      "chapterId": "series-3",
+      "num": 47,
+      "prompt": "交互工具 [数形实验室] 中调和级数通项 Σ ________。",
+      "promptHtml": "交互工具 [数形实验室] 中调和级数通项 Σ <span class=\"blank\">______</span>。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1/n",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s3"
+    },
+    {
+      "id": "series-048",
+      "subjectId": "series",
+      "chapterId": "series-4",
+      "num": 48,
+      "prompt": "判 Σ1/n! 收敛性：用 ________ 法，ρ=0。",
+      "promptHtml": "判 Σ1/n! 收敛性：用 <span class=\"blank\">______</span> 法，ρ=0。",
+      "answers": [
+        "比值"
+      ],
+      "answerText": "比值",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s4"
+    },
+    {
+      "id": "series-049",
+      "subjectId": "series",
+      "chapterId": "series-4",
+      "num": 49,
+      "prompt": "判 Σ(−1)ⁿ/√n：用 ________ 法。",
+      "promptHtml": "判 Σ(−1)ⁿ/√n：用 <span class=\"blank\">______</span> 法。",
+      "answers": [
+        "莱布尼茨"
+      ],
+      "answerText": "莱布尼茨",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s4"
+    },
+    {
+      "id": "series-050",
+      "subjectId": "series",
+      "chapterId": "series-4",
+      "num": 50,
+      "prompt": "Σ1/2ⁿ 是 r=________ 的几何级数。",
+      "promptHtml": "Σ1/2ⁿ 是 r=<span class=\"blank\">______</span> 的几何级数。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1/2",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s4"
+    },
+    {
+      "id": "series-051",
+      "subjectId": "series",
+      "chapterId": "series-4",
+      "num": 51,
+      "prompt": "幂级数 Σn·xⁿ 收敛半径 R=________（|x|<1）。",
+      "promptHtml": "幂级数 Σn·xⁿ 收敛半径 R=<span class=\"blank\">______</span>（|x|<1）。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s4"
+    },
+    {
+      "id": "series-052",
+      "subjectId": "series",
+      "chapterId": "series-4",
+      "num": 52,
+      "prompt": "若 Σaₙ 绝对收敛，则 rearrange 项后级数 ________ 收敛。",
+      "promptHtml": "若 Σaₙ 绝对收敛，则 rearrange 项后级数 <span class=\"blank\">______</span> 收敛。",
+      "answers": [
+        "仍"
+      ],
+      "answerText": "仍",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s4"
+    },
+    {
+      "id": "series-053",
+      "subjectId": "series",
+      "chapterId": "series-4",
+      "num": 53,
+      "prompt": "通项含 (−1)ⁿ 先看 ________ 还是交错。",
+      "promptHtml": "通项含 (−1)ⁿ 先看 <span class=\"blank\">______</span> 还是交错。",
+      "answers": [
+        "符号"
+      ],
+      "answerText": "符号",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s4"
+    },
+    {
+      "id": "series-054",
+      "subjectId": "series",
+      "chapterId": "series-4",
+      "num": 54,
+      "prompt": "p 级数 p=1/2 时 ________。",
+      "promptHtml": "p 级数 p=1/2 时 <span class=\"blank\">______</span>。",
+      "answers": [
+        "发散"
+      ],
+      "answerText": "发散",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s4"
+    },
+    {
+      "id": "series-055",
+      "subjectId": "series",
+      "chapterId": "series-4",
+      "num": 55,
+      "prompt": "级数发散时 Sₙ 极限为 ________ 或不存在。",
+      "promptHtml": "级数发散时 Sₙ 极限为 <span class=\"blank\">______</span> 或不存在。",
+      "answers": [
+        "无穷"
+      ],
+      "answerText": "无穷",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "s4"
+    },
+    {
+      "id": "linear-001",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 1,
+      "prompt": "二阶行列式 |a b; c d| = ad − ________。",
+      "promptHtml": "二阶行列式 |a b; c d| = ad − <span class=\"blank\">______</span>。",
+      "answers": [
+        "bc"
+      ],
+      "answerText": "bc",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-002",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 2,
+      "prompt": "代数余子式 Aᵢⱼ = (−1)^(________) Mᵢⱼ。",
+      "promptHtml": "代数余子式 Aᵢⱼ = (−1)^(<span class=\"blank\">______</span>) Mᵢⱼ。",
+      "answers": [
+        "i+j"
+      ],
+      "answerText": "i+j",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-003",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 3,
+      "prompt": "行列式某行全 0 ⇒ 行列式 = ________。",
+      "promptHtml": "行列式某行全 0 ⇒ 行列式 = <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-004",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 4,
+      "prompt": "两行成比例 ⇒ 行列式 = ________。",
+      "promptHtml": "两行成比例 ⇒ 行列式 = <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-005",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 5,
+      "prompt": "交换两行，行列式变 ________。",
+      "promptHtml": "交换两行，行列式变 <span class=\"blank\">______</span>。",
+      "answers": [
+        "号"
+      ],
+      "answerText": "号",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-006",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 6,
+      "prompt": "行倍加变换 ________ 改变行列式值。",
+      "promptHtml": "行倍加变换 <span class=\"blank\">______</span> 改变行列式值。",
+      "answers": [
+        "不"
+      ],
+      "answerText": "不",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-007",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 7,
+      "prompt": "上三角行列式 = 主对角线元素之 ________。",
+      "promptHtml": "上三角行列式 = 主对角线元素之 <span class=\"blank\">______</span>。",
+      "answers": [
+        "积"
+      ],
+      "answerText": "积",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-008",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 8,
+      "prompt": "|AB| = |A| · ________。",
+      "promptHtml": "|AB| = |A| · <span class=\"blank\">______</span>。",
+      "answers": [
+        "B"
+      ],
+      "answerText": "|B|",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-009",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 9,
+      "prompt": "按第 i 行展开 |A| = Σ aᵢⱼ ________。",
+      "promptHtml": "按第 i 行展开 |A| = Σ aᵢⱼ <span class=\"blank\">______</span>。",
+      "answers": [
+        "Aᵢⱼ"
+      ],
+      "answerText": "Aᵢⱼ",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-010",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 10,
+      "prompt": "三阶行列式可用 ________ 法则（仅三阶）。",
+      "promptHtml": "三阶行列式可用 <span class=\"blank\">______</span> 法则（仅三阶）。",
+      "answers": [
+        "萨鲁斯"
+      ],
+      "answerText": "萨鲁斯",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-011",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 11,
+      "prompt": "含较多 0 的行/列应优先 ________ 展开。",
+      "promptHtml": "含较多 0 的行/列应优先 <span class=\"blank\">______</span> 展开。",
+      "answers": [
+        "按行（列）"
+      ],
+      "answerText": "按行（列）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-012",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 12,
+      "prompt": "行列式转置后值 ________ 变。",
+      "promptHtml": "行列式转置后值 <span class=\"blank\">______</span> 变。",
+      "answers": [
+        "不"
+      ],
+      "answerText": "不",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-013",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 13,
+      "prompt": "|A|≠0 时 A 称 ________ 矩阵。",
+      "promptHtml": "|A|≠0 时 A 称 <span class=\"blank\">______</span> 矩阵。",
+      "answers": [
+        "可逆"
+      ],
+      "answerText": "可逆",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-014",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 14,
+      "prompt": "伴随矩阵法求逆需 |A|________ 0。",
+      "promptHtml": "伴随矩阵法求逆需 |A|<span class=\"blank\">______</span> 0。",
+      "answers": [
+        "≠"
+      ],
+      "answerText": "≠",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-015",
+      "subjectId": "linear",
+      "chapterId": "linear-1",
+      "num": 15,
+      "prompt": "克拉默法则要求 |A|________ 0。",
+      "promptHtml": "克拉默法则要求 |A|<span class=\"blank\">______</span> 0。",
+      "answers": [
+        "≠"
+      ],
+      "answerText": "≠",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l1"
+    },
+    {
+      "id": "linear-016",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 16,
+      "prompt": "Aₘₓₙ Bₙₓₚ 可乘，结果阶数 ________ × p。",
+      "promptHtml": "Aₘₓₙ Bₙₓₚ 可乘，结果阶数 <span class=\"blank\">______</span> × p。",
+      "answers": [
+        "m"
+      ],
+      "answerText": "m",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-017",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 17,
+      "prompt": "矩阵乘法 ________ 交换（可/不可）。",
+      "promptHtml": "矩阵乘法 <span class=\"blank\">______</span> 交换（可/不可）。",
+      "answers": [
+        "不可"
+      ],
+      "answerText": "不可",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-018",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 18,
+      "prompt": "AI = IA = ________。",
+      "promptHtml": "AI = IA = <span class=\"blank\">______</span>。",
+      "answers": [
+        "A"
+      ],
+      "answerText": "A",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-019",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 19,
+      "prompt": "二阶逆矩阵分母为 ad−________。",
+      "promptHtml": "二阶逆矩阵分母为 ad−<span class=\"blank\">______</span>。",
+      "answers": [
+        "bc"
+      ],
+      "answerText": "bc",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-020",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 20,
+      "prompt": "(Aᵀ)ᵢⱼ = a________。",
+      "promptHtml": "(Aᵀ)ᵢⱼ = a<span class=\"blank\">______</span>。",
+      "answers": [
+        "ⱼᵢ"
+      ],
+      "answerText": "ⱼᵢ",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-021",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 21,
+      "prompt": "初等行变换等价于左乘 ________ 矩阵。",
+      "promptHtml": "初等行变换等价于左乘 <span class=\"blank\">______</span> 矩阵。",
+      "answers": [
+        "初等"
+      ],
+      "answerText": "初等",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-022",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 22,
+      "prompt": "求 A⁻¹ 用 (A|I) → (________|A⁻¹)。",
+      "promptHtml": "求 A⁻¹ 用 (A|I) → (<span class=\"blank\">______</span>|A⁻¹)。",
+      "answers": [
+        "I"
+      ],
+      "answerText": "I",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-023",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 23,
+      "prompt": "同型矩阵才能 ________。",
+      "promptHtml": "同型矩阵才能 <span class=\"blank\">______</span>。",
+      "answers": [
+        "相加"
+      ],
+      "answerText": "相加",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-024",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 24,
+      "prompt": "kA 每个元素乘 ________。",
+      "promptHtml": "kA 每个元素乘 <span class=\"blank\">______</span>。",
+      "answers": [
+        "k"
+      ],
+      "answerText": "k",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-025",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 25,
+      "prompt": "AB≠BA 说明乘法 ________ 交换。",
+      "promptHtml": "AB≠BA 说明乘法 <span class=\"blank\">______</span> 交换。",
+      "answers": [
+        "不可"
+      ],
+      "answerText": "不可",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-026",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 26,
+      "prompt": "单位矩阵主对角线为 ________。",
+      "promptHtml": "单位矩阵主对角线为 <span class=\"blank\">______</span>。",
+      "answers": [
+        "1"
+      ],
+      "answerText": "1",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-027",
+      "subjectId": "linear",
+      "chapterId": "linear-2",
+      "num": 27,
+      "prompt": "零矩阵加任何同型矩阵等于 ________ 身。",
+      "promptHtml": "零矩阵加任何同型矩阵等于 <span class=\"blank\">______</span> 身。",
+      "answers": [
+        "原"
+      ],
+      "answerText": "原",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l2"
+    },
+    {
+      "id": "linear-028",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 28,
+      "prompt": "内积 a·b = Σ aᵢ ________。",
+      "promptHtml": "内积 a·b = Σ aᵢ <span class=\"blank\">______</span>。",
+      "answers": [
+        "bᵢ"
+      ],
+      "answerText": "bᵢ",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-029",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 29,
+      "prompt": "线性相关：存在 ________ 全零的系数组合。",
+      "promptHtml": "线性相关：存在 <span class=\"blank\">______</span> 全零的系数组合。",
+      "answers": [
+        "不全"
+      ],
+      "answerText": "不全",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-030",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 30,
+      "prompt": "线性无关：仅 ________ 组合得零向量。",
+      "promptHtml": "线性无关：仅 <span class=\"blank\">______</span> 组合得零向量。",
+      "answers": [
+        "零"
+      ],
+      "answerText": "零",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-031",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 31,
+      "prompt": "n 个 n 维向量线性无关 ⇔ 行列式 ________ 0。",
+      "promptHtml": "n 个 n 维向量线性无关 ⇔ 行列式 <span class=\"blank\">______</span> 0。",
+      "answers": [
+        "≠"
+      ],
+      "answerText": "≠",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-032",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 32,
+      "prompt": "r(A)=r([A|b])=n ⇒ ________ 解。",
+      "promptHtml": "r(A)=r([A|b])=n ⇒ <span class=\"blank\">______</span> 解。",
+      "answers": [
+        "唯一"
+      ],
+      "answerText": "唯一",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-033",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 33,
+      "prompt": "r(A)=r([A|b])<n ⇒ ________ 多解。",
+      "promptHtml": "r(A)=r([A|b])<n ⇒ <span class=\"blank\">______</span> 多解。",
+      "answers": [
+        "无穷"
+      ],
+      "answerText": "无穷",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-034",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 34,
+      "prompt": "r(A)<r([A|b]) ⇒ ________ 解。",
+      "promptHtml": "r(A)<r([A|b]) ⇒ <span class=\"blank\">______</span> 解。",
+      "answers": [
+        "无"
+      ],
+      "answerText": "无",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-035",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 35,
+      "prompt": "齐次 Ax=0 总有 ________ 解。",
+      "promptHtml": "齐次 Ax=0 总有 <span class=\"blank\">______</span> 解。",
+      "answers": [
+        "零"
+      ],
+      "answerText": "零",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-036",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 36,
+      "prompt": "齐次有非零解 ⇔ r(A)________ n。",
+      "promptHtml": "齐次有非零解 ⇔ r(A)<span class=\"blank\">______</span> n。",
+      "answers": [
+        "<"
+      ],
+      "answerText": "<",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-037",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 37,
+      "prompt": "克拉默 xᵢ = |Aᵢ|/________。",
+      "promptHtml": "克拉默 xᵢ = |Aᵢ|/<span class=\"blank\">______</span>。",
+      "answers": [
+        "A"
+      ],
+      "answerText": "|A|",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-038",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 38,
+      "prompt": "自由未知量个数 = n − ________。",
+      "promptHtml": "自由未知量个数 = n − <span class=\"blank\">______</span>。",
+      "answers": [
+        "r(A)"
+      ],
+      "answerText": "r(A)",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-039",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 39,
+      "prompt": "增广矩阵是 [A|________]。",
+      "promptHtml": "增广矩阵是 [A|<span class=\"blank\">______</span>]。",
+      "answers": [
+        "b"
+      ],
+      "answerText": "b",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-040",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 40,
+      "prompt": "求解步骤：行变换 → 判 ________ → 回代。",
+      "promptHtml": "求解步骤：行变换 → 判 <span class=\"blank\">______</span> → 回代。",
+      "answers": [
+        "秩"
+      ],
+      "answerText": "秩",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-041",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 41,
+      "prompt": "唯一解时 r(A)=________。",
+      "promptHtml": "唯一解时 r(A)=<span class=\"blank\">______</span>。",
+      "answers": [
+        "n"
+      ],
+      "answerText": "n",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-042",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 42,
+      "prompt": "无穷解时 r(A)________ n。",
+      "promptHtml": "无穷解时 r(A)<span class=\"blank\">______</span> n。",
+      "answers": [
+        "<"
+      ],
+      "answerText": "<",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-043",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 43,
+      "prompt": "向量模 |a| = √(a·________)。",
+      "promptHtml": "向量模 |a| = √(a·<span class=\"blank\">______</span>)。",
+      "answers": [
+        "a"
+      ],
+      "answerText": "a",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-044",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 44,
+      "prompt": "三个三维向量共面则它们 ________ 相关。",
+      "promptHtml": "三个三维向量共面则它们 <span class=\"blank\">______</span> 相关。",
+      "answers": [
+        "线性"
+      ],
+      "answerText": "线性",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-045",
+      "subjectId": "linear",
+      "chapterId": "linear-3",
+      "num": 45,
+      "prompt": "秩 r(A) 是行向量组的极大无关组含 ________ 个向量。",
+      "promptHtml": "秩 r(A) 是行向量组的极大无关组含 <span class=\"blank\">______</span> 个向量。",
+      "answers": [
+        "r"
+      ],
+      "answerText": "r",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l3"
+    },
+    {
+      "id": "linear-046",
+      "subjectId": "linear",
+      "chapterId": "linear-4",
+      "num": 46,
+      "prompt": "Aα = λα 中 λ 叫 ________ 值。",
+      "promptHtml": "Aα = λα 中 λ 叫 <span class=\"blank\">______</span> 值。",
+      "answers": [
+        "特征"
+      ],
+      "answerText": "特征",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l4"
+    },
+    {
+      "id": "linear-047",
+      "subjectId": "linear",
+      "chapterId": "linear-4",
+      "num": 47,
+      "prompt": "特征向量 α 必须 ________ 零向量。",
+      "promptHtml": "特征向量 α 必须 <span class=\"blank\">______</span> 零向量。",
+      "answers": [
+        "≠"
+      ],
+      "answerText": "≠",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l4"
+    },
+    {
+      "id": "linear-048",
+      "subjectId": "linear",
+      "chapterId": "linear-4",
+      "num": 48,
+      "prompt": "特征值满足 |A−λI| = ________。",
+      "promptHtml": "特征值满足 |A−λI| = <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l4"
+    },
+    {
+      "id": "linear-049",
+      "subjectId": "linear",
+      "chapterId": "linear-4",
+      "num": 49,
+      "prompt": "求特征向量解 (A−λI)x = ________。",
+      "promptHtml": "求特征向量解 (A−λI)x = <span class=\"blank\">______</span>。",
+      "answers": [
+        "0"
+      ],
+      "answerText": "0",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l4"
+    },
+    {
+      "id": "linear-050",
+      "subjectId": "linear",
+      "chapterId": "linear-4",
+      "num": 50,
+      "prompt": "n 阶矩阵最多 n 个特征值（计重数）。",
+      "promptHtml": "n 阶矩阵最多 n 个特征值（计重数）。",
+      "answers": [
+        "（对）"
+      ],
+      "answerText": "（对）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l4"
+    },
+    {
+      "id": "linear-051",
+      "subjectId": "linear",
+      "chapterId": "linear-4",
+      "num": 51,
+      "prompt": "对角矩阵特征值在对角 ________ 上。",
+      "promptHtml": "对角矩阵特征值在对角 <span class=\"blank\">______</span> 上。",
+      "answers": [
+        "线"
+      ],
+      "answerText": "线",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l4"
+    },
+    {
+      "id": "linear-052",
+      "subjectId": "linear",
+      "chapterId": "linear-4",
+      "num": 52,
+      "prompt": "特征值与行列式 |A| 之积 ________ 相关。",
+      "promptHtml": "特征值与行列式 |A| 之积 <span class=\"blank\">______</span> 相关。",
+      "answers": [
+        "（有关）"
+      ],
+      "answerText": "（有关）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l4"
+    },
+    {
+      "id": "linear-053",
+      "subjectId": "linear",
+      "chapterId": "linear-4",
+      "num": 53,
+      "prompt": "相似矩阵有相同 ________ 值。",
+      "promptHtml": "相似矩阵有相同 <span class=\"blank\">______</span> 值。",
+      "answers": [
+        "特征"
+      ],
+      "answerText": "特征",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l4"
+    },
+    {
+      "id": "linear-054",
+      "subjectId": "linear",
+      "chapterId": "linear-4",
+      "num": 54,
+      "prompt": "实对称矩阵特征值均为 ________ 数。",
+      "promptHtml": "实对称矩阵特征值均为 <span class=\"blank\">______</span> 数。",
+      "answers": [
+        "实"
+      ],
+      "answerText": "实",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l4"
+    },
+    {
+      "id": "linear-055",
+      "subjectId": "linear",
+      "chapterId": "linear-4",
+      "num": 55,
+      "prompt": "交互学习见 [数形实验室 · 线性代数]。",
+      "promptHtml": "交互学习见 [数形实验室 · 线性代数]。",
+      "answers": [
+        "（工具）"
+      ],
+      "answerText": "（工具）",
+      "blankCount": 1,
+      "must": false,
+      "readAnchor": "l4"
+    }
+  ]
+}

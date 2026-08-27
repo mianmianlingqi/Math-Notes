@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const katex = require('../vendor/katex/katex.min.js');
+const { buildCards } = require('./build-cards.cjs');
 const { buildAllModules, buildToc, buildPageShell, MODULES } = require('./md2html.cjs');
 
 const ROOT = path.join(__dirname, '..');
@@ -40,6 +41,7 @@ function renderMath(html) {
 }
 
 function build() {
+  buildCards();
   const modules = buildAllModules();
   const content = modules
     .map((html, idx) => (idx > 0 ? '\n      <hr class="divider">\n\n      ' : '') + html)

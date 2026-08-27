@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="专转本高数 · 填空练习 · 主动回忆">
+  <title>练习 · 高数速览</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="quiz-app">
+
+    <div id="screenHome">
+      <div class="quiz-topbar">
+        <a class="back" href="index.html" title="返回速记">←</a>
+        <div>
+          <h1>填空练习</h1>
+          <p>专转本高数 · 共 <span id="totalCards">—</span> 题</p>
+        </div>
+      </div>
+
+      <div class="quiz-hero">
+        <div class="icon">∑</div>
+        <h2>主动回忆练习</h2>
+        <p class="sub">一题一卡 · 自评掌握程度 · 错题自动收录</p>
+      </div>
+
+      <div class="mode-grid">
+        <button type="button" class="mode-btn primary" id="modeReview">
+          <div>
+            <strong>今日复习</strong>
+            <span>按间隔推送到期题目</span>
+          </div>
+          <span class="mode-badge" id="badgeReview">0</span>
+        </button>
+        <button type="button" class="mode-btn" id="modeWrong">
+          <div>
+            <strong>错题本</strong>
+            <span>巩固不会/模糊的题</span>
+          </div>
+          <span class="mode-badge muted" id="badgeWrong">0</span>
+        </button>
+        <button type="button" class="mode-btn" id="modeRandom">
+          <div>
+            <strong>随机刷题</strong>
+            <span>按当前模块随机抽取</span>
+          </div>
+          <span class="mode-badge muted">→</span>
+        </button>
+      </div>
+
+      <div class="panel">
+        <h3>按章节练习（7 模块）</h3>
+        <div class="subject-tabs" id="subjectTabs"></div>
+        <div class="chapter-list" id="chapterList"></div>
+        <div class="count-row">
+          <label for="countSelect">每次题量</label>
+          <select id="countSelect">
+            <option value="10">10 题</option>
+            <option value="20" selected>20 题</option>
+            <option value="30">30 题</option>
+            <option value="0">全部</option>
+          </select>
+        </div>
+        <button type="button" class="btn-start" id="btnStartChapter">开始章节练习</button>
+      </div>
+    </div>
+
+    <div id="screenPractice" class="hidden">
+      <div class="quiz-topbar">
+        <a class="back" href="#" id="btnBackHome" title="返回">←</a>
+        <div>
+          <h1>练习中</h1>
+          <p id="progressChapter">—</p>
+        </div>
+      </div>
+
+      <div class="quiz-progress">
+        <div class="progress-meta">
+          <span class="chapter-label">进度</span>
+          <span class="count-label" id="progressCount">1 / 20</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width:0%"></div>
+        </div>
+      </div>
+
+      <div class="question-card" id="questionCard">
+        <span class="q-badge" id="qBadge">#1</span>
+        <p class="q-prompt" id="qPrompt"></p>
+        <p class="q-hint">先在心中作答，再点「显示答案」</p>
+      </div>
+
+      <div class="answer-panel" id="answerPanel">
+        <h4>参考答案</h4>
+        <p class="answer-text" id="answerText"></p>
+        <a class="answer-link" id="readLink" href="index.html">📖 跳转背诵速记</a>
+      </div>
+
+      <button type="button" class="btn-reveal" id="btnReveal">显示答案</button>
+
+      <div class="rate-bar" id="rateBar">
+        <button type="button" class="rate-btn bad" id="rateBad">不会</button>
+        <button type="button" class="rate-btn mid" id="rateMid">模糊</button>
+        <button type="button" class="rate-btn good" id="rateGood">会</button>
+      </div>
+
+      <div class="nav-row">
+        <button type="button" id="btnPrev">← 上一题</button>
+      </div>
+    </div>
+
+    <div id="screenSummary" class="hidden">
+      <div class="quiz-topbar">
+        <a class="back" href="#" id="btnBackHome2" title="返回">←</a>
+        <div>
+          <h1>练习完成</h1>
+          <p>用时约 <span id="sumTime">—</span> 分钟</p>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <div class="emoji">✓</div>
+        <h2>本次 <span id="sumTotal">0</span> 题</h2>
+        <div class="summary-stats">
+          <div class="stat-box good">
+            <span class="num" id="sumGood">0</span>
+            <span class="label">会</span>
+          </div>
+          <div class="stat-box mid">
+            <span class="num" id="sumMid">0</span>
+            <span class="label">模糊</span>
+          </div>
+          <div class="stat-box bad">
+            <span class="num" id="sumBad">0</span>
+            <span class="label">不会</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="wrongSection">
+        <h3>建议复习</h3>
+        <ul class="wrong-list" id="wrongList"></ul>
+      </div>
+
+      <div class="summary-actions">
+        <button type="button" class="btn-start" id="btnRetryWrong">再练错题</button>
+        <a class="btn-secondary" href="index.html">返回速记</a>
+        <a class="btn-secondary" href="quiz.html">继续练习</a>
+      </div>
+
+      <p style="text-align:center;color:var(--muted);font-size:0.85rem;margin-top:20px">
+        明日待复习：<strong id="sumDue">0</strong> 题
+      </p>
+    </div>
+
+  </div>
+  <script src="quiz.js"></script>
+</body>
+</html>
