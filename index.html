@@ -3,113 +3,513 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="江苏专转本高数 · 无穷级数与线性代数交互练习">
-  <title>数形实验室</title>
+  <meta name="description" content="江苏专转本高数 · 无穷级数与线性代数知识点速览">
+  <title>数形实验室 · 知识点速览</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="brand">
-      <span class="brand-icon" aria-hidden="true">∑</span>
+  <a class="skip" href="#content">跳到正文</a>
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <span class="mark">∑</span>
       <div>
         <strong>数形实验室</strong>
-        <small>专转本高数 · 交互练习</small>
+        <span>知识点速览</span>
       </div>
     </div>
-    <nav class="tabs" aria-label="模块切换">
-      <button class="tab is-active" data-module="series">无穷级数</button>
-      <button class="tab" data-module="linear">线性代数</button>
+    <nav class="toc" aria-label="目录">
+      <p class="toc-group">无穷级数</p>
+      <a href="#series">概览</a>
+      <a href="#s1">第1章 基本概念</a>
+      <a href="#s2">第2章 常数项判别</a>
+      <a href="#s3">第3章 绝对收敛</a>
+      <a href="#s4">第4章 幂级数</a>
+      <a href="#s5">第5章 泰勒级数</a>
+      <a href="#s-compare">易混对比</a>
+      <a href="#s-flow">大题流程</a>
+
+      <p class="toc-group">线性代数</p>
+      <a href="#linear">概览</a>
+      <a href="#l1">第1章 行列式</a>
+      <a href="#l2">第2章 矩阵</a>
+      <a href="#l3">第3章 向量</a>
+      <a href="#l4">第4章 方程组</a>
+      <a href="#l5">第5章 特征值</a>
+      <a href="#l-compare">易混对比</a>
+      <a href="#l-flow">大题流程</a>
     </nav>
-  </header>
+    <p class="sidebar-foot">
+      <a href="https://github.com/mianmianlingqi/Math-Notes">Math-Notes</a>
+    </p>
+  </aside>
 
-  <main>
-    <!-- 无穷级数 -->
-    <section class="panel is-active" id="panel-series">
-      <header class="panel-head">
+  <div class="page">
+    <article class="content" id="content">
+
+      <!-- ========== 无穷级数 ========== -->
+      <header class="module-hero" id="series">
+        <p class="eyebrow">模块 06 · 约占 10%～15%</p>
         <h1>无穷级数</h1>
-        <p>先看部分和怎么变，再练判别流程。</p>
+        <p class="lead">口诀 → 公式 → 步骤 → 易混。考前通读，重点默写带 🔴 的块。</p>
       </header>
 
-      <article class="card">
-        <h2>部分和可视化</h2>
-        <p class="hint">拖动 n，观察 S<sub>n</sub> 是否趋近有限值。</p>
-        <div class="preset-row" id="seriesPresets"></div>
-        <canvas id="seriesCanvas" width="640" height="280" aria-label="部分和折线图"></canvas>
-        <div class="control-row">
-          <label for="seriesN">项数 n = <output id="seriesNOut">20</output></label>
-          <input id="seriesN" type="range" min="5" max="100" value="20">
+      <section class="block" id="s1">
+        <h2>第1章 · 级数基本概念</h2>
+
+        <div class="card def">
+          <p class="card-label">名词解释</p>
+          <ul class="plain">
+            <li><strong>无穷级数</strong>：无穷多项之和 $a_1+a_2+\cdots+a_n+\cdots$</li>
+            <li><strong>部分和</strong> $S_n = a_1+\cdots+a_n$</li>
+            <li><strong>收敛</strong>：$\lim S_n = S$ 存在且有限；否则发散</li>
+            <li><strong>通项</strong>：第 $n$ 项 $a_n$</li>
+          </ul>
         </div>
-        <dl class="stats">
-          <div><dt>通项</dt><dd id="seriesTerm">—</dd></div>
-          <div><dt>部分和 S<sub>n</sub></dt><dd id="seriesSum">—</dd></div>
-          <div><dt>结论</dt><dd id="seriesVerdict">—</dd></div>
-        </dl>
-      </article>
 
-      <article class="card">
-        <h2>判别流程</h2>
-        <p class="hint">拿到级数后，按顺序点选。</p>
-        <div class="flow" id="seriesFlow"></div>
-        <p class="flow-result" id="seriesFlowResult">从第一步开始。</p>
-        <button class="btn ghost" id="seriesFlowReset" type="button">重新开始</button>
-      </article>
+        <div class="card must">
+          <p class="card-label">必要条件（必背）</p>
+          <p>若级数收敛，则</p>
+          <div class="formula">$$\lim_{n\to\infty} a_n = 0$$</div>
+          <p><strong>逆否</strong>：$a_n$ 不趋于 $0$ $\Rightarrow$ 级数<strong>一定发散</strong>。</p>
+          <p class="note">注意：$a_n\to 0$ <strong>推不出</strong>收敛（调和级数反例）。</p>
+        </div>
 
-      <article class="card">
-        <h2>必背公式</h2>
-        <div class="formula-grid" id="seriesFormulas"></div>
-      </article>
-    </section>
+        <table class="table">
+          <caption>口诀</caption>
+          <thead><tr><th>内容</th><th>口诀</th></tr></thead>
+          <tbody>
+            <tr><td>判发散</td><td>通项不趋于零，立即发散</td></tr>
+            <tr><td>研究对象</td><td>看 $S_n$ 的极限，不是只看 $a_n$</td></tr>
+          </tbody>
+        </table>
+      </section>
 
-    <!-- 线性代数 -->
-    <section class="panel" id="panel-linear" hidden>
-      <header class="panel-head">
+      <section class="block" id="s2">
+        <h2>第2章 · 常数项级数判别</h2>
+
+        <div class="card must">
+          <p class="card-label">几何级数</p>
+          <div class="formula">$$\sum_{n=0}^{\infty} ar^n = \frac{a}{1-r}\quad(|r|&lt;1)$$</div>
+          <p>$|r|\ge 1$ 时发散。</p>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">p 级数</p>
+          <div class="formula">$$\sum_{n=1}^{\infty}\frac{1}{n^p}$$</div>
+          <p>$p&gt;1$ 收敛；$p\le 1$ 发散。</p>
+        </div>
+
+        <table class="table">
+          <thead><tr><th>级数</th><th>结论</th></tr></thead>
+          <tbody>
+            <tr><td>调和级数 $\sum 1/n$</td><td>发散（$p=1$）</td></tr>
+            <tr><td>$\sum 1/n^2$</td><td>收敛（$p=2$）</td></tr>
+          </tbody>
+        </table>
+
+        <div class="card must">
+          <p class="card-label">比较判别法</p>
+          <p>$0\le a_n\le b_n$：</p>
+          <ul class="plain">
+            <li>$\sum b_n$ 收敛 $\Rightarrow$ $\sum a_n$ 收敛</li>
+            <li>$\sum a_n$ 发散 $\Rightarrow$ $\sum b_n$ 发散</li>
+          </ul>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">极限比较法</p>
+          <p>$\lim(a_n/b_n)=L&gt;0$ $\Rightarrow$ 同敛散。</p>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">比值判别法（达朗贝尔）</p>
+          <div class="formula">$$\rho = \lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|$$</div>
+        </div>
+
+        <table class="table compact">
+          <thead><tr><th>$\rho$</th><th>结论</th></tr></thead>
+          <tbody>
+            <tr><td>$&lt;1$</td><td>收敛</td></tr>
+            <tr><td>$&gt;1$</td><td>发散</td></tr>
+            <tr><td>$=1$</td><td>失效，换别法</td></tr>
+          </tbody>
+        </table>
+
+        <div class="card must">
+          <p class="card-label">根值判别法（柯西）</p>
+          <div class="formula">$$\rho = \lim_{n\to\infty}\sqrt[n]{|a_n|}$$</div>
+          <p>判则同比值法。</p>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">交错级数（莱布尼茨）</p>
+          <p>$\sum(-1)^{n-1}u_n$ 满足：</p>
+          <ol class="plain">
+            <li>$u_n\ge u_{n+1}$（单调递减）</li>
+            <li>$\lim u_n = 0$</li>
+          </ol>
+          <p>$\Rightarrow$ 收敛。</p>
+        </div>
+      </section>
+
+      <section class="block" id="s3">
+        <h2>第3章 · 绝对收敛与条件收敛</h2>
+
+        <div class="card def">
+          <p class="card-label">定义</p>
+          <ul class="plain">
+            <li><strong>绝对收敛</strong>：$\sum|a_n|$ 收敛</li>
+            <li><strong>条件收敛</strong>：$\sum a_n$ 收敛但 $\sum|a_n|$ 发散</li>
+          </ul>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">关系</p>
+          <p>绝对收敛 $\Rightarrow$ 收敛；收敛 <strong>推不出</strong> 绝对收敛。</p>
+        </div>
+
+        <table class="table">
+          <caption>口诀</caption>
+          <thead><tr><th>类型</th><th>记忆</th></tr></thead>
+          <tbody>
+            <tr><td>绝对收敛</td><td>加绝对值仍收敛</td></tr>
+            <tr><td>条件收敛</td><td>本身收敛，加绝对值发散</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="block" id="s4">
+        <h2>第4章 · 幂级数</h2>
+
+        <div class="card def">
+          <p class="card-label">幂级数</p>
+          <div class="formula">$$\sum_{n=0}^{\infty} a_n(x-x_0)^n$$</div>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">收敛半径 $R$</p>
+          <div class="formula">$$\rho = \lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|$$</div>
+          <p>则 $R = 1/\rho$（$\rho=0$ 时 $R=\infty$；$\rho=\infty$ 时 $R=0$）。</p>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">收敛域</p>
+          <ol class="steps">
+            <li>求 $R$</li>
+            <li>检验 $x=x_0\pm R$ 端点</li>
+            <li>写收敛区间</li>
+          </ol>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">幂级数运算（大纲）</p>
+          <p>在收敛区间内：可<strong>逐项求导</strong>、可<strong>逐项积分</strong>、和函数 $S(x)$ 连续。</p>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">常用展开（必背）</p>
+          <div class="formula-block">
+            <p>$$\frac{1}{1-x}=\sum_{n=0}^{\infty}x^n,\quad |x|&lt;1$$</p>
+            <p>$$e^x=\sum_{n=0}^{\infty}\frac{x^n}{n!},\quad x\in\mathbb{R}$$</p>
+            <p>$$\sin x=\sum_{n=0}^{\infty}(-1)^n\frac{x^{2n+1}}{(2n+1)!}$$</p>
+            <p>$$\cos x=\sum_{n=0}^{\infty}(-1)^n\frac{x^{2n}}{(2n)!}$$</p>
+            <p>$$\ln(1+x)=\sum_{n=1}^{\infty}(-1)^{n-1}\frac{x^n}{n},\quad -1&lt;x\le 1$$</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="s5">
+        <h2>第5章 · 泰勒级数</h2>
+
+        <div class="card must">
+          <p class="card-label">泰勒公式</p>
+          <div class="formula">$$f(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$$</div>
+          <p>$x_0=0$ 时为麦克劳林级数。</p>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">展开条件</p>
+          <p>$f$ 在 $x_0$ 处具有各阶导数，且余项趋于 $0$。</p>
+        </div>
+      </section>
+
+      <section class="block" id="s-compare">
+        <h2>易混对比</h2>
+        <table class="table">
+          <thead><tr><th>对比项</th><th>A</th><th>B</th></tr></thead>
+          <tbody>
+            <tr><td>必要条件</td><td>$a_n\to 0$</td><td>充分条件？否</td></tr>
+            <tr><td>$p$ 级数</td><td>$p&gt;1$ 收敛</td><td>$p\le 1$ 发散</td></tr>
+            <tr><td>比值/根值</td><td>$\rho&lt;1$ 收敛</td><td>$\rho=1$ 失效</td></tr>
+            <tr><td>绝对/条件</td><td>绝对更强</td><td>条件收敛更弱</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="block" id="s-flow">
+        <h2>大题流程速记</h2>
+        <div class="flow-grid">
+          <div class="card flow">
+            <h3>常数项级数</h3>
+            <ol class="steps">
+              <li>看 $a_n$ 是否 $\to 0$</li>
+              <li>判类型：正项 / 交错 / 一般</li>
+              <li>选法：比较、比值、根值、莱布尼茨</li>
+              <li>写结论</li>
+            </ol>
+          </div>
+          <div class="card flow">
+            <h3>幂级数</h3>
+            <ol class="steps">
+              <li>求 $R$（比值或根值）</li>
+              <li>验端点</li>
+              <li>求和：逐项积分/求导，凑已知展开</li>
+              <li>还原收敛域</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- ========== 线性代数 ========== -->
+      <header class="module-hero" id="linear">
+        <p class="eyebrow">模块 07 · 约占 20%</p>
         <h1>线性代数</h1>
-        <p>行列式 = 平行四边形面积；方程组 = 直线交点。</p>
+        <p class="lead">行列式、矩阵、向量、方程组。公式默写 + 秩判解是得分关键。</p>
       </header>
 
-      <article class="card">
-        <h2>二阶行列式 · 几何意义</h2>
-        <p class="hint">|A| = 两列向量张成的平行四边形有向面积。</p>
-        <canvas id="detCanvas" width="640" height="320" aria-label="行列式平行四边形"></canvas>
-        <div class="matrix-inputs" id="detInputs"></div>
-        <dl class="stats">
-          <div><dt>行列式 |A|</dt><dd id="detValue">—</dd></div>
-          <div><dt>含义</dt><dd id="detMeaning">—</dd></div>
-        </dl>
-      </article>
+      <section class="block" id="l1">
+        <h2>第1章 · 行列式</h2>
 
-      <article class="card">
-        <h2>方程组 · 图像判解</h2>
-        <p class="hint">两直线位置对应解的类型。</p>
-        <div class="preset-row" id="systemPresets"></div>
-        <canvas id="systemCanvas" width="640" height="320" aria-label="方程组直线图"></canvas>
-        <dl class="stats">
-          <div><dt>方程组</dt><dd id="systemEqs">—</dd></div>
-          <div><dt>解的类型</dt><dd id="systemType">—</dd></div>
-        </dl>
-      </article>
+        <div class="card def">
+          <p class="card-label">名词</p>
+          <ul class="plain">
+            <li><strong>行列式</strong>：方阵对应的数值，记 $\vert A\vert$ 或 $\det A$</li>
+            <li><strong>余子式</strong> $M_{ij}$：划去第 $i$ 行 $j$ 列后的行列式</li>
+            <li><strong>代数余子式</strong> $A_{ij} = (-1)^{i+j} M_{ij}$</li>
+          </ul>
+        </div>
 
-      <article class="card">
-        <h2>必背公式</h2>
-        <div class="formula-grid" id="linearFormulas"></div>
-      </article>
-    </section>
-  </main>
+        <div class="card must">
+          <p class="card-label">二阶行列式</p>
+          <div class="formula">$$\begin{vmatrix} a &amp; b \\ c &amp; d \end{vmatrix} = ad - bc$$</div>
+        </div>
 
-  <footer class="footer">
-    <a href="https://github.com/mianmianlingqi/Math-Notes">Math-Notes</a>
-    · 配合
-    <a href="https://github.com/mianmianlingqi/Math-Notes/blob/main/专转本高数/06-无穷级数背诵速记.md">06 无穷级数</a>
-    /
-    <a href="https://github.com/mianmianlingqi/Math-Notes/blob/main/专转本高数/07-线性代数背诵速记.md">07 线性代数</a>
-    背诵速记使用
-  </footer>
+        <div class="card must">
+          <p class="card-label">三阶行列式（按行展开）</p>
+          <div class="formula">$$|A|=\sum_{j=1}^{3} a_{ij}A_{ij}$$</div>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">性质（必背）</p>
+          <ol class="plain">
+            <li>行列式转置不变</li>
+            <li>两行（列）互换，值变号</li>
+            <li>某行全 $0$ $\Rightarrow$ $\vert A\vert=0$</li>
+            <li>两行成比例 $\Rightarrow$ $\vert A\vert=0$</li>
+            <li>行倍加不变</li>
+            <li>$\vert AB\vert=\vert A\vert\cdot\vert B\vert$</li>
+          </ol>
+        </div>
+
+        <div class="card tip">
+          <p class="card-label">计算技巧</p>
+          <ul class="plain">
+            <li>化上三角：主对角线元素之积</li>
+            <li>含很多 $0$ 的行/列优先展开</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block" id="l2">
+        <h2>第2章 · 矩阵</h2>
+
+        <div class="card def">
+          <p class="card-label">基本概念</p>
+          <ul class="plain">
+            <li>$m\times n$ 矩阵：$m$ 行 $n$ 列</li>
+            <li>同型才能加减；乘法 $A_{m\times n} B_{n\times p} = C_{m\times p}$</li>
+            <li>单位矩阵 $I$：$AI = IA = A$</li>
+          </ul>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">运算（必会）</p>
+          <ul class="plain">
+            <li><strong>加法</strong>：同型对应元素相加</li>
+            <li><strong>数乘</strong>：各元素乘 $k$</li>
+            <li><strong>乘法</strong>：$c_{ij} = \sum_k a_{ik}b_{kj}$（<strong>不可交换</strong>）</li>
+            <li><strong>转置</strong> $(A^{\mathsf T})_{ij} = a_{ji}$</li>
+            <li><strong>逆矩阵</strong> $A^{-1}$：$AA^{-1} = I$</li>
+          </ul>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">求逆（二阶）</p>
+          <div class="formula">$$A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix},\quad
+A^{-1}=\frac{1}{ad-bc}\begin{pmatrix}d&amp;-b\\-c&amp;a\end{pmatrix}$$</div>
+          <p>三阶及以上：初等行变换 $(A|I)\to(I|A^{-1})$，或伴随矩阵法。</p>
+        </div>
+
+        <table class="table">
+          <caption>初等变换</caption>
+          <thead><tr><th>变换</th><th>矩阵操作</th></tr></thead>
+          <tbody>
+            <tr><td>交换两行</td><td>左乘换行阵</td></tr>
+            <tr><td>某行乘 $k$</td><td>左乘倍乘阵</td></tr>
+            <tr><td>某行加 $k$ 倍另一行</td><td>左乘倍加阵</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="block" id="l3">
+        <h2>第3章 · 向量</h2>
+
+        <div class="card def">
+          <p class="card-label">向量运算</p>
+          <ul class="plain">
+            <li>加法、数乘（同维）</li>
+            <li>内积 $\mathbf a\cdot\mathbf b = \sum a_i b_i$</li>
+            <li>模 $|\mathbf a| = \sqrt{\mathbf a\cdot\mathbf a}$</li>
+          </ul>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">线性相关与无关</p>
+          <p>存在不全为零的 $k_1,\ldots,k_n$ 使 $k_1\alpha_1+\cdots+k_n\alpha_n=0$ $\Rightarrow$ <strong>线性相关</strong>。</p>
+          <p>仅全零解 $\Rightarrow$ <strong>线性无关</strong>。</p>
+          <p>$n$ 个 $n$ 维向量：线性无关 $\Leftrightarrow$ 行列式 $\ne 0$；线性相关 $\Leftrightarrow$ 行列式 $= 0$。</p>
+        </div>
+
+        <table class="table">
+          <caption>口诀</caption>
+          <thead><tr><th>内容</th><th>口诀</th></tr></thead>
+          <tbody>
+            <tr><td>相关</td><td>能非零组合成零</td></tr>
+            <tr><td>无关</td><td>只有零组合</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="block" id="l4">
+        <h2>第4章 · 线性方程组</h2>
+
+        <div class="card must">
+          <p class="card-label">解的判定</p>
+          <p class="sub">系数矩阵 $A$，增广矩阵 $[A|b]$</p>
+        </div>
+
+        <table class="table">
+          <thead><tr><th>情况</th><th>解</th></tr></thead>
+          <tbody>
+            <tr><td>$r(A)=r([A|b])=n$</td><td><strong>唯一解</strong></td></tr>
+            <tr><td>$r(A)=r([A|b])&lt;n$</td><td><strong>无穷多解</strong>（$n-r$ 个自由未知量）</td></tr>
+            <tr><td>$r(A)&lt;r([A|b])$</td><td><strong>无解</strong></td></tr>
+          </tbody>
+        </table>
+
+        <div class="card must">
+          <p class="card-label">克拉默法则</p>
+          <p>$n$ 方程 $n$ 元，$|A|\ne 0$：</p>
+          <div class="formula">$$x_i = \frac{|A_i|}{|A|}$$</div>
+          <p>$A_i$：用 $b$ 替换 $A$ 的第 $i$ 列。</p>
+        </div>
+
+        <div class="card must">
+          <p class="card-label">齐次方程组 $Ax=0$</p>
+          <ul class="plain">
+            <li>总有零解</li>
+            <li>有非零解 $\Leftrightarrow$ $r(A)&lt;n$</li>
+          </ul>
+        </div>
+
+        <div class="card flow">
+          <p class="card-label">求解步骤</p>
+          <ol class="steps">
+            <li>写增广矩阵</li>
+            <li>初等行变换 → 行阶梯形</li>
+            <li>判秩 → 定解类型</li>
+            <li>回代求通解</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="block" id="l5">
+        <h2>第5章 · 特征值与特征向量</h2>
+        <p class="tag-optional">了解 / 选做</p>
+
+        <div class="card def">
+          <p class="card-label">定义</p>
+          <p>$A\alpha = \lambda\alpha$（$\alpha\ne 0$）$\Rightarrow$ $\lambda$ 为特征值，$\alpha$ 为特征向量。</p>
+        </div>
+
+        <div class="card tip">
+          <p class="card-label">求法</p>
+          <ol class="steps">
+            <li>解 $|A-\lambda I|=0$ 得 $\lambda$</li>
+            <li>对每个 $\lambda$ 解 $(A-\lambda I)x=0$</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="block" id="l-compare">
+        <h2>易混对比</h2>
+        <table class="table">
+          <thead><tr><th>对比项</th><th>行列式</th><th>矩阵</th></tr></thead>
+          <tbody>
+            <tr><td>结果</td><td>一个数</td><td>数表</td></tr>
+            <tr><td>乘法</td><td>无</td><td>有，不可交换</td></tr>
+            <tr><td>可逆</td><td>方阵且 $\vert A\vert\ne 0$</td><td>存在 $A^{-1}$</td></tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <thead><tr><th>方程组</th><th>唯一解</th><th>无穷解</th><th>无解</th></tr></thead>
+          <tbody>
+            <tr><td>秩</td><td>$r=n$</td><td>$r&lt;n$</td><td>$r(A)&lt;r([A|b])$</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="block" id="l-flow">
+        <h2>大题流程速记</h2>
+        <div class="flow-grid">
+          <div class="card flow">
+            <h3>行列式</h3>
+            <ol class="steps">
+              <li>观察 $0$ 元素 → 选行/列展开</li>
+              <li>或化三角 → 对角乘积</li>
+              <li>利用性质化简</li>
+            </ol>
+          </div>
+          <div class="card flow">
+            <h3>矩阵方程</h3>
+            <ol class="steps">
+              <li>判 $A$ 是否可逆</li>
+              <li>可逆：$x=A^{-1}b$</li>
+              <li>不可逆：增广矩阵法</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer class="footer">
+      配合
+      <a href="https://github.com/mianmianlingqi/Math-Notes/tree/main/专转本高数">专转本高数背诵速记</a>
+      使用 · 江苏专转本
+    </footer>
+  </div>
 
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
   <script defer src="app.js"></script>
 </body>
 </html>

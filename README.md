@@ -4,7 +4,7 @@
 
 ## 交互学习
 
-- [打开数形实验室](https://mianmianlingqi.github.io/Math-Notes/)：无穷级数与线性代数可视化学习工具
+- [打开数形实验室](https://mianmianlingqi.github.io/Math-Notes/)：无穷级数与线性代数知识点速览（纯阅读）
 
 ## 江苏专转本 · 高数背诵速记
 
