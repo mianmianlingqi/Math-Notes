@@ -5,7 +5,7 @@
 ## 交互学习
 
 - [打开高数知识点速览](https://mianmianlingqi.github.io/Math-Notes/)：7 模块纯阅读速览（函数极限 → 线性代数）
-- [填空练习](https://mianmianlingqi.github.io/Math-Notes/quiz.html)：385 题 · 主动回忆 · 错题本 · 间隔复习
+- [填空练习](https://mianmianlingqi.github.io/Math-Notes/quiz.html)：665 题 · 主动回忆 · 错题本 · 间隔复习
 
 ## 江苏专转本 · 高数背诵速记
 
