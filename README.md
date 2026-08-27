@@ -4,7 +4,7 @@
 
 ## 交互学习
 
-- [打开数形实验室](https://mianmianlingqi.github.io/Math-Notes/)：无穷级数与线性代数知识点速览（纯阅读）
+- [打开高数知识点速览](https://mianmianlingqi.github.io/Math-Notes/)：7 模块纯阅读速览（函数极限 → 线性代数）
 
 ## 江苏专转本 · 高数背诵速记
 

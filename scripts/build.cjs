@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const katex = require('../vendor/katex/katex.min.js');
+const { buildAllModules, buildToc, buildPageShell, MODULES } = require('./md2html.cjs');
 
 const ROOT = path.join(__dirname, '..');
-const srcPath = path.join(ROOT, 'src', 'index.html');
 
 function decodeEntities(text) {
   return text
@@ -40,7 +40,14 @@ function renderMath(html) {
 }
 
 function build() {
-  let html = fs.readFileSync(srcPath, 'utf8');
+  const modules = buildAllModules();
+  const content = modules
+    .map((html, idx) => (idx > 0 ? '\n      <hr class="divider">\n\n      ' : '') + html)
+    .join('');
+
+  const toc = buildToc(MODULES, modules);
+  let html = buildPageShell(toc, content);
+
   const css = fs.readFileSync(path.join(ROOT, 'styles.css'), 'utf8');
   let katexCss = fs.readFileSync(path.join(ROOT, 'vendor/katex/katex.min.css'), 'utf8');
   katexCss = katexCss.replace(/url\(fonts\//g, 'url(vendor/katex/fonts/');
@@ -50,10 +57,10 @@ function build() {
   const styleBlock = `<style>\n${katexCss}\n${css}\n</style>`;
   html = html.replace('</head>', `${styleBlock}\n</head>`);
 
-  const outPath = path.join(ROOT, 'index.html');
-  fs.writeFileSync(outPath, html, 'utf8');
+  fs.writeFileSync(path.join(ROOT, 'index.html'), html, 'utf8');
+
   const kb = (Buffer.byteLength(html, 'utf8') / 1024).toFixed(1);
-  console.log(`Built ${outPath} (${kb} KB)`);
+  console.log(`Built index.html — ${MODULES.length} modules (${kb} KB)`);
 }
 
 build();
