@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="江苏专转本高数 · 7 模块知识点速览">
   <title>高数知识点速览 · 专转本</title>
 <style>
@@ -357,50 +357,188 @@ body {
 
 .footer a { color: var(--ink); }
 
-/* ── Responsive ── */
-@media (max-width: 900px) {
-  .sidebar {
-    position: static;
-    width: 100%;
-    height: auto;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .page { margin-left: 0; }
-
-  .toc {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-
-  .toc-group {
-    width: 100%;
-    margin-top: 12px;
-  }
-
-  .content { padding: 32px 20px 24px; }
-
-  .flow-grid { grid-template-columns: 1fr; }
-
-  .module-hero h1 { font-size: 1.85rem; }
+/* ── Mobile chrome ── */
+.mobile-bar {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 252, 248, 0.96);
+  backdrop-filter: blur(10px);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .toc a { transition: none; }
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.mobile-bar strong {
+  font-size: 0.95rem;
+}
+
+.sidebar-backdrop {
+  display: none;
 }
 
 /* KaTeX overflow in tables */
 .table .katex { font-size: 0.95em; }
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+img, .figure img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  body {
+    font-size: 15px;
+    overflow-x: hidden;
+  }
+
+  .mobile-bar { display: flex; }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: min(300px, 86vw);
+    height: 100vh;
+    height: 100dvh;
+    padding: 20px 16px 32px;
+    border-right: 1px solid var(--line);
+    transform: translateX(-105%);
+    transition: transform 0.2s ease;
+    box-shadow: none;
+  }
+
+  body.nav-open .sidebar {
+    transform: translateX(0);
+    box-shadow: 8px 0 30px rgba(0, 0, 0, 0.12);
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 45;
+    background: rgba(28, 35, 49, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  body.nav-open .sidebar-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .page { margin-left: 0; }
+
+  .toc a {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  .content {
+    padding: 24px 16px 20px;
+    max-width: 100%;
+  }
+
+  .module-hero { margin-bottom: 28px; }
+  .module-hero h1 { font-size: 1.65rem; }
+  .module-hero .lead { font-size: 0.95rem; }
+
+  .block { margin-bottom: 36px; }
+  .block h2 { font-size: 1.2rem; }
+
+  .card {
+    padding: 14px 14px;
+    border-radius: 10px;
+  }
+
+  .flow-grid { grid-template-columns: 1fr; }
+
+  .table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.88rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px 10px;
+    white-space: nowrap;
+  }
+
+  .formula,
+  .formula-block,
+  .katex-display {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .katex { font-size: 1em; }
+  .katex-display > .katex { font-size: 1.05em; }
+
+  .footer {
+    padding: 20px 16px 40px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 14.5px; }
+  .module-hero h1 { font-size: 1.45rem; }
+  .content { padding: 18px 12px 16px; }
+  .card { padding: 12px; }
+  .table th, .table td { padding: 7px 8px; font-size: 0.82rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .toc a, .sidebar, .sidebar-backdrop { transition: none; }
+}
 
 </style>
 </head>
 <body>
   <a class="skip" href="#content">跳到正文</a>
 
-  <aside class="sidebar">
+  <header class="mobile-bar">
+    <button class="menu-btn" type="button" id="menuBtn" aria-label="打开目录" aria-expanded="false" aria-controls="sidebar">☰</button>
+    <strong>高数速览</strong>
+  </header>
+  <div class="sidebar-backdrop" id="sidebarBackdrop" hidden></div>
+
+  <aside class="sidebar" id="sidebar">
     <div class="sidebar-brand">
       <span class="mark">∑</span>
       <div>
@@ -574,5 +712,29 @@ A^{-1}=\frac{1}{ad-bc}\begin{pmatrix}d&amp;-b\\-c&amp;a\end{pmatrix}</annotation
       使用 · 江苏专转本
     </footer>
   </div>
+
+  <script>
+  (function () {
+    var btn = document.getElementById('menuBtn');
+    var backdrop = document.getElementById('sidebarBackdrop');
+    if (!btn) return;
+    function setOpen(open) {
+      document.body.classList.toggle('nav-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? '关闭目录' : '打开目录');
+      if (backdrop) backdrop.hidden = !open;
+    }
+    btn.addEventListener('click', function () {
+      setOpen(!document.body.classList.contains('nav-open'));
+    });
+    if (backdrop) backdrop.addEventListener('click', function () { setOpen(false); });
+    document.querySelectorAll('.toc a').forEach(function (a) {
+      a.addEventListener('click', function () { setOpen(false); });
+    });
+    window.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setOpen(false);
+    });
+  })();
+  </script>
 </body>
 </html>

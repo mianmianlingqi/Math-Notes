@@ -300,14 +300,20 @@ function buildPageShell(toc, content) {
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="江苏专转本高数 · 7 模块知识点速览">
   <title>高数知识点速览 · 专转本</title>
 </head>
 <body>
   <a class="skip" href="#content">跳到正文</a>
 
-  <aside class="sidebar">
+  <header class="mobile-bar">
+    <button class="menu-btn" type="button" id="menuBtn" aria-label="打开目录" aria-expanded="false" aria-controls="sidebar">☰</button>
+    <strong>高数速览</strong>
+  </header>
+  <div class="sidebar-backdrop" id="sidebarBackdrop" hidden></div>
+
+  <aside class="sidebar" id="sidebar">
     <div class="sidebar-brand">
       <span class="mark">∑</span>
       <div>
@@ -334,6 +340,30 @@ ${content}
       使用 · 江苏专转本
     </footer>
   </div>
+
+  <script>
+  (function () {
+    var btn = document.getElementById('menuBtn');
+    var backdrop = document.getElementById('sidebarBackdrop');
+    if (!btn) return;
+    function setOpen(open) {
+      document.body.classList.toggle('nav-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? '关闭目录' : '打开目录');
+      if (backdrop) backdrop.hidden = !open;
+    }
+    btn.addEventListener('click', function () {
+      setOpen(!document.body.classList.contains('nav-open'));
+    });
+    if (backdrop) backdrop.addEventListener('click', function () { setOpen(false); });
+    document.querySelectorAll('.toc a').forEach(function (a) {
+      a.addEventListener('click', function () { setOpen(false); });
+    });
+    window.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setOpen(false);
+    });
+  })();
+  </script>
 </body>
 </html>`;
 }
