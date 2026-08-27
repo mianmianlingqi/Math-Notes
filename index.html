@@ -3,371 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="无穷级数与线性代数交互学习工具">
+  <meta name="description" content="江苏专转本高数 · 无穷级数与线性代数交互练习">
   <title>数形实验室</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#" aria-label="数形实验室首页">
-      <span class="brand-mark" aria-hidden="true">∑</span>
-      <span>数形实验室</span>
-    </a>
-    <nav class="module-switch" aria-label="学习模块">
-      <button class="module-btn is-active" data-module="series">无穷级数</button>
-      <button class="module-btn" data-module="linear">线性代数</button>
-    </nav>
-    <div class="progress-summary" aria-live="polite">
-      <span>今日进度</span>
-      <strong id="progressCount">0 / 6</strong>
+  <header class="header">
+    <div class="brand">
+      <span class="brand-icon" aria-hidden="true">∑</span>
+      <div>
+        <strong>数形实验室</strong>
+        <small>专转本高数 · 交互练习</small>
+      </div>
     </div>
+    <nav class="tabs" aria-label="模块切换">
+      <button class="tab is-active" data-module="series">无穷级数</button>
+      <button class="tab" data-module="linear">线性代数</button>
+    </nav>
   </header>
 
   <main>
-    <section class="module is-active" id="seriesModule" aria-labelledby="seriesTitle">
-      <div class="module-heading">
-        <div>
-          <p class="section-number">01</p>
-          <h1 id="seriesTitle">看见级数如何收敛</h1>
+    <!-- 无穷级数 -->
+    <section class="panel is-active" id="panel-series">
+      <header class="panel-head">
+        <h1>无穷级数</h1>
+        <p>先看部分和怎么变，再练判别流程。</p>
+      </header>
+
+      <article class="card">
+        <h2>部分和可视化</h2>
+        <p class="hint">拖动 n，观察 S<sub>n</sub> 是否趋近有限值。</p>
+        <div class="preset-row" id="seriesPresets"></div>
+        <canvas id="seriesCanvas" width="640" height="280" aria-label="部分和折线图"></canvas>
+        <div class="control-row">
+          <label for="seriesN">项数 n = <output id="seriesNOut">20</output></label>
+          <input id="seriesN" type="range" min="5" max="100" value="20">
         </div>
-        <p class="heading-note">先观察部分和，再选择判别法。</p>
-      </div>
+        <dl class="stats">
+          <div><dt>通项</dt><dd id="seriesTerm">—</dd></div>
+          <div><dt>部分和 S<sub>n</sub></dt><dd id="seriesSum">—</dd></div>
+          <div><dt>结论</dt><dd id="seriesVerdict">—</dd></div>
+        </dl>
+      </article>
 
-      <section class="knowledge-map" aria-labelledby="mapTitle">
-        <div class="map-heading">
-          <div>
-            <p class="section-number">全景地图</p>
-            <h2 id="mapTitle">先知道知识放在哪里</h2>
-          </div>
-          <div class="map-legend" aria-label="地图说明">
-            <span><i class="legend-basic"></i>基础</span>
-            <span><i class="legend-method"></i>判别</span>
-            <span><i class="legend-advanced"></i>拓展</span>
-          </div>
-        </div>
+      <article class="card">
+        <h2>判别流程</h2>
+        <p class="hint">拿到级数后，按顺序点选。</p>
+        <div class="flow" id="seriesFlow"></div>
+        <p class="flow-result" id="seriesFlowResult">从第一步开始。</p>
+        <button class="btn ghost" id="seriesFlowReset" type="button">重新开始</button>
+      </article>
 
-        <div class="map-scroll" tabindex="0" aria-label="无穷级数知识地图，可横向滚动">
-          <p class="map-scroll-hint">左右滑动查看完整地图 <span aria-hidden="true">→</span></p>
-          <div class="map-root-wrap">
-            <button class="map-root is-selected" data-point="series-root">
-              <small>总入口</small><strong>无穷级数</strong><span>研究无穷多项的和</span>
-            </button>
-          </div>
-          <div class="map-trunk" aria-hidden="true"></div>
-          <div class="map-branches">
-            <article class="map-branch branch-basic">
-              <header><span>01</span><strong>基础语言</strong><small>先读懂题目</small></header>
-              <div class="branch-line" aria-hidden="true"></div>
-              <button class="map-node" data-point="term">通项 aₙ</button>
-              <button class="map-node" data-point="partial-sum">部分和 Sₙ</button>
-              <button class="map-node" data-point="convergence">收敛与发散</button>
-              <button class="map-node" data-point="necessary">必要条件</button>
-              <button class="map-node" data-point="cauchy">柯西准则</button>
-            </article>
-
-            <article class="map-branch branch-model">
-              <header><span>02</span><strong>典型样板</strong><small>判断时的尺子</small></header>
-              <div class="branch-line" aria-hidden="true"></div>
-              <button class="map-node" data-point="geometric">几何级数</button>
-              <button class="map-node" data-point="p-series">p 级数</button>
-              <button class="map-node" data-point="telescoping">裂项相消</button>
-            </article>
-
-            <article class="map-branch branch-positive">
-              <header><span>03</span><strong>正项级数</strong><small>所有项非负</small></header>
-              <div class="branch-line" aria-hidden="true"></div>
-              <button class="map-node" data-point="comparison">比较判别</button>
-              <button class="map-node" data-point="limit-comparison">极限比较</button>
-              <button class="map-node" data-point="ratio">比值判别</button>
-              <button class="map-node" data-point="root">根值判别</button>
-              <button class="map-node" data-point="integral">积分判别</button>
-            </article>
-
-            <article class="map-branch branch-general">
-              <header><span>04</span><strong>一般项级数</strong><small>含正负与振荡</small></header>
-              <div class="branch-line" aria-hidden="true"></div>
-              <button class="map-node" data-point="absolute">绝对收敛</button>
-              <button class="map-node" data-point="conditional">条件收敛</button>
-              <button class="map-node" data-point="leibniz">莱布尼茨</button>
-              <button class="map-node" data-point="dirichlet">狄利克雷</button>
-              <button class="map-node" data-point="abel">阿贝尔</button>
-            </article>
-
-            <article class="map-branch branch-power">
-              <header><span>05</span><strong>幂级数</strong><small>把 x 放进级数</small></header>
-              <div class="branch-line" aria-hidden="true"></div>
-              <button class="map-node" data-point="radius">收敛半径</button>
-              <button class="map-node" data-point="interval">收敛区间</button>
-              <button class="map-node" data-point="power-ops">逐项求导积分</button>
-              <button class="map-node" data-point="sum-function">和函数</button>
-              <button class="map-node" data-point="taylor-series">泰勒级数</button>
-            </article>
-          </div>
-        </div>
-
-        <div class="map-detail" id="mapDetail" aria-live="polite">
-          <div class="detail-identity">
-            <span id="mapDetailBranch">总入口</span>
-            <h3 id="mapDetailTitle">无穷级数</h3>
-          </div>
-          <div class="detail-block">
-            <span>什么时候用</span>
-            <p id="mapDetailUse">研究无限多个数相加后，部分和是否趋近一个有限值。</p>
-          </div>
-          <div class="detail-block">
-            <span>核心</span>
-            <strong id="mapDetailRule">看 Sₙ 的极限</strong>
-          </div>
-          <div class="detail-block detail-warning">
-            <span>易错点</span>
-            <p id="mapDetailPitfall">级数研究的是部分和 Sₙ，不是只看通项 aₙ。</p>
-          </div>
-        </div>
-        <button class="map-expand-button" id="mapExpandButton" aria-expanded="false" aria-controls="mapLesson">
-          <span>展开完整讲解</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-        </button>
-
-        <section class="map-lesson" id="mapLesson" hidden aria-labelledby="lessonTitle">
-          <header class="lesson-header">
-            <div>
-              <span id="lessonBranch">总入口</span>
-              <h3 id="lessonTitle">无穷级数</h3>
-            </div>
-            <p id="lessonIntuition">把无穷级数想成一条不断追加新项的账单，我们关心总额是否稳定下来。</p>
-          </header>
-          <div class="lesson-body">
-            <section class="lesson-definition">
-              <span>正式定义</span>
-              <strong id="lessonDefinition">若部分和数列 Sₙ 存在有限极限 S，就称级数收敛到 S。</strong>
-            </section>
-            <section class="lesson-steps">
-              <span>做题三步</span>
-              <ol id="lessonSteps">
-                <li>先检查通项是否趋于 0</li>
-                <li>识别正项、交错或幂级数结构</li>
-                <li>选择判别法并检查使用条件</li>
-              </ol>
-            </section>
-            <section class="lesson-example">
-              <span>代表例子</span>
-              <p id="lessonExample">几何级数 1+q+q²+··· 在 |q|&lt;1 时，部分和趋于 1/(1-q)。</p>
-            </section>
-            <section class="lesson-check">
-              <span>自己想一想</span>
-              <strong id="lessonQuestion">只知道 aₙ→0，能否断定级数收敛？</strong>
-              <details>
-                <summary>查看提示</summary>
-                <p id="lessonHint">想一想调和级数 Σ1/n。</p>
-              </details>
-            </section>
-          </div>
-        </section>
-      </section>
-
-      <div class="workbench series-workbench">
-        <aside class="lesson-rail" aria-label="级数学习路线">
-          <p class="rail-title">学习路线</p>
-          <button class="rail-step is-active" data-series-step="observe">
-            <span>1</span><span><strong>观察</strong><small>部分和在做什么</small></span>
-          </button>
-          <button class="rail-step" data-series-step="classify">
-            <span>2</span><span><strong>分类</strong><small>正项还是交错</small></span>
-          </button>
-          <button class="rail-step" data-series-step="decide">
-            <span>3</span><span><strong>判断</strong><small>选择正确工具</small></span>
-          </button>
-        </aside>
-
-        <div class="visual-stage">
-          <div class="stage-toolbar">
-            <div class="segmented" aria-label="示例级数">
-              <button class="preset-btn is-active" data-preset="harmonic">调和级数</button>
-              <button class="preset-btn" data-preset="square">平方倒数</button>
-              <button class="preset-btn" data-preset="alternating">交错调和</button>
-            </div>
-            <button class="icon-button" id="seriesReset" title="重新播放" aria-label="重新播放">↻</button>
-          </div>
-
-          <div class="canvas-wrap">
-            <canvas id="seriesCanvas" width="900" height="390" aria-label="级数部分和动态图"></canvas>
-            <div class="canvas-caption">
-              <span id="seriesFormula">Σ 1 / n</span>
-              <span><i id="seriesStatusDot"></i><strong id="seriesStatus">仍在缓慢增长</strong></span>
-            </div>
-          </div>
-
-          <div class="term-control">
-            <label for="termSlider">观察前 <strong id="termCount">24</strong> 项</label>
-            <input id="termSlider" type="range" min="3" max="80" value="24">
-            <div class="term-readout">
-              <span>当前部分和</span>
-              <strong id="partialSum">3.77596</strong>
-            </div>
-          </div>
-        </div>
-
-        <aside class="insight-panel">
-          <p class="panel-label">当前观察</p>
-          <h2 id="insightTitle">项越来越小，但总和仍在走高</h2>
-          <p id="insightBody">通项趋于 0 只是必要条件，不能单独保证级数收敛。</p>
-          <div class="key-rule">
-            <span>先问</span>
-            <strong id="keyQuestion">aₙ → 0 吗？</strong>
-          </div>
-          <button class="text-button" id="nextSeriesStep">进入判别流程 <span aria-hidden="true">→</span></button>
-        </aside>
-      </div>
-
-      <section class="decision-section" id="seriesDecision">
-        <div class="section-copy">
-          <p class="section-number">判别地图</p>
-          <h2>拿到一个级数，从这里开始</h2>
-        </div>
-        <div class="decision-flow" aria-label="级数判别流程">
-          <button class="decision-node is-selected" data-detail="term">
-            <span class="node-index">01</span><strong>通项归零？</strong><small>不归零，立即停止</small>
-          </button>
-          <span class="flow-arrow">→</span>
-          <button class="decision-node" data-detail="sign">
-            <span class="node-index">02</span><strong>符号结构？</strong><small>正项 / 交错 / 一般项</small>
-          </button>
-          <span class="flow-arrow">→</span>
-          <button class="decision-node" data-detail="shape">
-            <span class="node-index">03</span><strong>通项长相？</strong><small>幂 / 阶乘 / 指数</small>
-          </button>
-          <span class="flow-arrow">→</span>
-          <button class="decision-node" data-detail="result">
-            <span class="node-index">04</span><strong>收敛类型</strong><small>绝对 / 条件 / 发散</small>
-          </button>
-        </div>
-        <div class="decision-detail" id="decisionDetail">
-          <strong>必要条件</strong>
-          <p>若 aₙ 不趋于 0，级数一定发散；若趋于 0，还要继续检查。</p>
-          <span class="formula-chip">lim aₙ = 0</span>
-        </div>
-      </section>
-
-      <section class="quiz-section" data-quiz="series">
-        <div class="quiz-prompt">
-          <p class="section-number">快速检查</p>
-          <h2>看到这个结构，第一反应是什么？</h2>
-          <div class="quiz-formula">Σ (-1)ⁿ / nᵖ</div>
-        </div>
-        <div class="quiz-options">
-          <button data-correct="false">直接判断绝对收敛</button>
-          <button data-correct="true">分别检查交错收敛与绝对收敛</button>
-          <button data-correct="false">只检查通项是否趋于零</button>
-          <p class="quiz-feedback" aria-live="polite"></p>
-        </div>
-      </section>
+      <article class="card">
+        <h2>必背公式</h2>
+        <div class="formula-grid" id="seriesFormulas"></div>
+      </article>
     </section>
 
-    <section class="module" id="linearModule" aria-labelledby="linearTitle" hidden>
-      <div class="module-heading">
-        <div>
-          <p class="section-number">02</p>
-          <h1 id="linearTitle">把线性代数画出来</h1>
-        </div>
-        <p class="heading-note">向量是箭头，矩阵是变换，行列式是面积。</p>
-      </div>
+    <!-- 线性代数 -->
+    <section class="panel" id="panel-linear" hidden>
+      <header class="panel-head">
+        <h1>线性代数</h1>
+        <p>行列式 = 平行四边形面积；方程组 = 直线交点。</p>
+      </header>
 
-      <div class="linear-tabs" role="tablist" aria-label="线性代数主题">
-        <button class="linear-tab is-active" data-topic="vector">向量</button>
-        <button class="linear-tab" data-topic="matrix">矩阵</button>
-        <button class="linear-tab" data-topic="determinant">行列式</button>
-        <button class="linear-tab" data-topic="relation">线性相关</button>
-      </div>
+      <article class="card">
+        <h2>二阶行列式 · 几何意义</h2>
+        <p class="hint">|A| = 两列向量张成的平行四边形有向面积。</p>
+        <canvas id="detCanvas" width="640" height="320" aria-label="行列式平行四边形"></canvas>
+        <div class="matrix-inputs" id="detInputs"></div>
+        <dl class="stats">
+          <div><dt>行列式 |A|</dt><dd id="detValue">—</dd></div>
+          <div><dt>含义</dt><dd id="detMeaning">—</dd></div>
+        </dl>
+      </article>
 
-      <div class="workbench linear-workbench">
-        <div class="visual-stage linear-stage">
-          <div class="stage-toolbar">
-            <div>
-              <p class="panel-label" id="linearEyebrow">向量 · VECTOR</p>
-              <h2 id="linearStageTitle">一组有方向、有长度的数</h2>
-            </div>
-            <button class="icon-button" id="linearReset" title="重置图形" aria-label="重置图形">↻</button>
-          </div>
-          <div class="canvas-wrap linear-canvas-wrap">
-            <canvas id="linearCanvas" width="900" height="500" aria-label="线性代数交互图形"></canvas>
-            <div class="canvas-legend">
-              <span><i class="legend-a"></i>向量 a</span>
-              <span><i class="legend-b"></i>向量 b</span>
-              <span id="areaLegend"><i class="legend-area"></i>张成面积</span>
-            </div>
-          </div>
-        </div>
+      <article class="card">
+        <h2>方程组 · 图像判解</h2>
+        <p class="hint">两直线位置对应解的类型。</p>
+        <div class="preset-row" id="systemPresets"></div>
+        <canvas id="systemCanvas" width="640" height="320" aria-label="方程组直线图"></canvas>
+        <dl class="stats">
+          <div><dt>方程组</dt><dd id="systemEqs">—</dd></div>
+          <div><dt>解的类型</dt><dd id="systemType">—</dd></div>
+        </dl>
+      </article>
 
-        <aside class="control-panel">
-          <p class="panel-label">动手改变它</p>
-          <div class="vector-control"><span>a₁</span><button class="step-button" data-target="ax" data-delta="-1" aria-label="减小 a₁">−</button><input id="ax" aria-label="a₁" type="range" min="-4" max="4" step="1" value="3"><button class="step-button" data-target="ax" data-delta="1" aria-label="增大 a₁">+</button><strong id="axValue">3</strong></div>
-          <div class="vector-control"><span>a₂</span><button class="step-button" data-target="ay" data-delta="-1" aria-label="减小 a₂">−</button><input id="ay" aria-label="a₂" type="range" min="-4" max="4" step="1" value="1"><button class="step-button" data-target="ay" data-delta="1" aria-label="增大 a₂">+</button><strong id="ayValue">1</strong></div>
-          <div class="vector-control"><span>b₁</span><button class="step-button" data-target="bx" data-delta="-1" aria-label="减小 b₁">−</button><input id="bx" aria-label="b₁" type="range" min="-4" max="4" step="1" value="1"><button class="step-button" data-target="bx" data-delta="1" aria-label="增大 b₁">+</button><strong id="bxValue">1</strong></div>
-          <div class="vector-control"><span>b₂</span><button class="step-button" data-target="by" data-delta="-1" aria-label="减小 b₂">−</button><input id="by" aria-label="b₂" type="range" min="-4" max="4" step="1" value="3"><button class="step-button" data-target="by" data-delta="1" aria-label="增大 b₂">+</button><strong id="byValue">3</strong></div>
-          <div class="det-readout">
-            <span>det(a, b)</span>
-            <strong id="detValue">8</strong>
-            <small id="relationText">面积不为 0：两个向量线性无关</small>
-          </div>
-        </aside>
-
-        <aside class="insight-panel linear-insight">
-          <p class="panel-label">一句话理解</p>
-          <h2 id="linearInsightTitle">向量不是一列孤立的数字</h2>
-          <p id="linearInsightBody">在二维平面中，它可以看成从原点出发的一支箭头。</p>
-          <div class="key-rule linear-rule">
-            <span>记住</span>
-            <strong id="linearRule">坐标决定终点</strong>
-          </div>
-        </aside>
-      </div>
-
-      <section class="concept-strip">
-        <article>
-          <span class="concept-symbol">→</span>
-          <h3>向量</h3>
-          <p>描述方向与大小</p>
-        </article>
-        <span class="concept-arrow">→</span>
-        <article>
-          <span class="concept-symbol matrix-symbol">▦</span>
-          <h3>矩阵</h3>
-          <p>把向量变到新位置</p>
-        </article>
-        <span class="concept-arrow">→</span>
-        <article>
-          <span class="concept-symbol">▱</span>
-          <h3>行列式</h3>
-          <p>记录面积缩放倍数</p>
-        </article>
-        <span class="concept-arrow">→</span>
-        <article>
-          <span class="concept-symbol">∥</span>
-          <h3>线性相关</h3>
-          <p>方向是否发生重复</p>
-        </article>
-      </section>
-
-      <section class="quiz-section linear-quiz" data-quiz="linear">
-        <div class="quiz-prompt">
-          <p class="section-number">快速检查</p>
-          <h2>两个二维向量的行列式为 0，图上发生了什么？</h2>
-        </div>
-        <div class="quiz-options">
-          <button data-correct="false">两支箭头一定长度相等</button>
-          <button data-correct="true">两支箭头共线，张成面积为 0</button>
-          <button data-correct="false">两支箭头一定互相垂直</button>
-          <p class="quiz-feedback" aria-live="polite"></p>
-        </div>
-      </section>
+      <article class="card">
+        <h2>必背公式</h2>
+        <div class="formula-grid" id="linearFormulas"></div>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <span>Math Notes · 交互学习页</span>
-    <button id="clearProgress">清除学习记录</button>
+  <footer class="footer">
+    <a href="https://github.com/mianmianlingqi/Math-Notes">Math-Notes</a>
+    · 配合
+    <a href="https://github.com/mianmianlingqi/Math-Notes/blob/main/专转本高数/06-无穷级数背诵速记.md">06 无穷级数</a>
+    /
+    <a href="https://github.com/mianmianlingqi/Math-Notes/blob/main/专转本高数/07-线性代数背诵速记.md">07 线性代数</a>
+    背诵速记使用
   </footer>
 
-  <script src="app.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="app.js"></script>
 </body>
 </html>
