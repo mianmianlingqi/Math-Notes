@@ -19,17 +19,25 @@ function updateProgress() {
   $('#progressCount').textContent = `${Math.min(progress.size, 6)} / 6`;
 }
 
+function switchModule(target) {
+  $$('.module-btn').forEach(item => item.classList.toggle('is-active', item.dataset.module === target));
+  const seriesActive = target === 'series';
+  $('#seriesModule').hidden = !seriesActive;
+  $('#linearModule').hidden = seriesActive;
+  $('#seriesModule').classList.toggle('is-active', seriesActive);
+  $('#linearModule').classList.toggle('is-active', !seriesActive);
+  if (!seriesActive) requestAnimationFrame(drawLinear);
+}
+
 function setupModules() {
   $$('.module-btn').forEach(button => button.addEventListener('click', () => {
     const target = button.dataset.module;
-    $$('.module-btn').forEach(item => item.classList.toggle('is-active', item === button));
-    const seriesActive = target === 'series';
-    $('#seriesModule').hidden = !seriesActive;
-    $('#linearModule').hidden = seriesActive;
-    $('#seriesModule').classList.toggle('is-active', seriesActive);
-    $('#linearModule').classList.toggle('is-active', !seriesActive);
-    if (!seriesActive) requestAnimationFrame(drawLinear);
+    switchModule(target);
+    history.replaceState(null, '', `#${target}`);
   }));
+
+  const hash = location.hash.slice(1);
+  if (hash === 'linear' || hash === 'series') switchModule(hash);
 }
 
 const seriesPresets = {
